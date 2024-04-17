@@ -1,0 +1,98 @@
+.navbar {
+    background-color: #CFFAFE;
+    width: 100%;
+
+    .nav-link{
+        color: #0E7490;
+        font-weight: 500;
+        size: 14px;
+        line-height: 24px;
+    }
+}
+.navbar-divider {
+    border-bottom: 1px solid rgba(207,250,254, 0.3);
+}
+
+.hero {
+    background-color: #CFFAFE;
+    background-image: url('../images/arts.png');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: bottom;
+    padding: 15% ; // Adjusted padding to leave more space at the bottom
+    text-align: center;
+
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 63.3px;
+        color: #0891B2;
+        margin-bottom: 20px; // Added margin to create space between h1 and p
+        margin-top: -180px; // Adjusted margin from top
+    }
+    p {
+        font-family: 'Poppins', sans-serif; // Using Poppins font for paragraphs
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333; // Adjusted paragraph text color
+        margin-top: 10px; // Adjusted margin from top
+    }
+
+    .heroBottom{
+        margin-top: 6%;
+        align-items: center;
+        margin-bottom: -20%;
+        img {
+            margin-right: 35px; // Adjust the value as needed for the desired spacing
+        }
+    }
+}
+
+
+.btn-contact {
+    background-color: #083344; // Background color
+    color: #FFFFFF;
+    border-radius: 30px;
+
+    span {
+        display: inline-block;
+        width: 35px;
+        border-radius: 50%; // Makes it fully rounded
+        padding: 5px; // Optional padding
+        background-color: #0891B2;
+        margin-left: 5px;
+    }
+
+    .bi-arrow-right {
+        color: white; // Icon color
+        margin-left: 5px; // Adjust spacing between text and icon
+    }
+}
+
+.btn-explore {
+    background-color: #CFFAFE; // Background color
+    color: #0891B2;
+    border-radius: 30px;
+    border-color: #0891B2;
+    padding-right: 10px;
+
+    span {
+        display: inline-block;
+        width: 35px;
+        padding: 5px; // Optional padding
+    }
+
+    .bi-arrow-right {
+        color: white; // Icon color
+        margin-left: 5px; // Adjust spacing between text and icon
+    }
+}
+
+
+.navbar-brand,
+.nav-link,
+.btn {
+    font-family: 'Poppins', sans-serif;
+}
