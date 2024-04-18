@@ -47,23 +47,33 @@
 .hero .heroBottom img {
   margin-right: 35px;
 }
+.hero .btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.hero .material-symbols-outlined {
+  margin-left: 5px; /* Adjust the spacing between icon and text */
+}
 
 .btn-contact {
   background-color: #083344;
   color: #FFFFFF;
-  border-radius: 30px;
+  border-radius: 360px;
+  display: flex;
+  padding: var(--radius-sm, 4px) var(--radius-sm, 4px) var(--radius-sm, 4px) 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .btn-contact span {
-  display: inline-block;
-  width: 35px;
-  border-radius: 50%;
-  padding: 5px;
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 360px;
   background-color: #0891B2;
-  margin-left: 5px;
-}
-.btn-contact .bi-arrow-right {
-  color: white;
-  margin-left: 5px;
 }
 
 .btn-explore {
@@ -156,8 +166,134 @@
   left: 0;
   color: white;
 }
+.about .info .leftContent .btn-companyDeskDownload {
+  background-color: #0891B2;
+  color: #FFFFFF;
+  border-radius: 70px;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.about .info .leftContent .btn-companyDeskDownload .companyDownloadIcon {
+  background-color: #083344;
+  border-radius: 50%;
+  padding: 25px;
+  margin-right: 10px;
+  margin-left: -13px;
+}
+.about .info .leftContent .btn-companyDeskDownload span {
+  display: flex;
+  flex-direction: column;
+}
+.about .info .leftContent .btn-companyDeskDownload h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.about .info .leftContent .btn-companyDeskDownload p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-left: -135px;
+}
+.about .info .leftContent .aboutMore {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.about .info .leftContent .aboutMore .btn-moreInfo {
+  background-image: url("../images/21.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+  border-radius: 70px;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.about .info .leftContent .aboutMore .btn-moreInfo .moreInfoIcon {
+  background-color: #0891B2;
+  border-radius: 50%;
+  padding: 25px;
+  margin-right: 10px;
+  margin-left: -13px;
+}
+.about .info .leftContent .aboutMore .btn-moreInfo span {
+  display: flex;
+  flex-direction: column;
+}
+.about .info .leftContent .aboutMore .btn-moreInfo h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-left: -40px;
+}
+.about .info .leftContent .aboutMore .btn-moreInfo p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-left: 5px;
+}
+.about .info .leftContent .achievements {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.about .info .leftContent .achievements .achivementImgContainer {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  background-color: #0F172A;
+  border-radius: 30px;
+  height: 256px; /* Set a fixed height for the container, adjust as needed */
+}
+.about .info .leftContent .achievements img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image does not exceed the container */
+  margin-bottom: 10px; /* Add spacing between the image and heading */
+}
+.about .info .leftContent .achievements h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about .info .leftContent .achievements .awardSlideBtn {
+  background-color: #0891B2;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px; /* Adjust the right position as needed */
+  border: none;
+  cursor: pointer;
+}
+.about .info .leftContent .achievements .awardSlideBtn .awardSlideIcon {
+  color: white; /* Set icon color */
+}
 .about .info .rightContent {
   padding: 0px 15px 0px 10px;
+  position: sticky;
+  top: 0;
+  height: 100%;
 }
 .about .info .rightContent h1 {
   font-family: "Poppins", sans-serif;
@@ -165,4 +301,50 @@
   font-size: 40px;
   line-height: 60px;
   color: #155E75;
+}
+.about .info .rightContent .allEmpImgContainer {
+  border-radius: 64px;
+  overflow: hidden;
+  position: relative;
+}
+.about .info .rightContent .allEmpImgContainer img {
+  width: 409px;
+  height: 256px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+  filter: brightness(70%);
+}
+.about .info .rightContent .allEmpImgContainer .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.about .info .rightContent .allEmpImgContainer a {
+  text-decoration: none; /* Remove underline */
+  color: #FFFFFF;
+}
+.about .info .rightContent .allEmpImgContainer a .play-icon {
+  margin-left: -10px;
+  margin-right: 5px; /* Add some space between the icon and text */
+}
+.about .info .rightContent .allEmpImgContainer a .play-icon img {
+  width: 56px; /* Width of the play icon */
+  height: 56px; /* Height of the play icon */
+}
+
+.featuredProducts {
+  background-color: #A5F3FC;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

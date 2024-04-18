@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="./assets/css/style.css">
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
 
@@ -61,7 +63,7 @@
                 </ul>
             </div>
             <div class="">
-                <a class="btn btn-contact" href="#">Contact Us <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+                <a class="btn btn-contact" href="#">Contact Us <span class="material-symbols-outlined">call_made</span></a>
             </div>       
         </div>
     </nav>
@@ -71,8 +73,10 @@
         <p>We specialize in delivering cutting-edge software solutions tailored to meet<br> the unique needs of businesses, customers, and government entities. With a <br> passion for technology and a commitment to quality, we empower<br> organizations to thrive in today'sdigital landscape.</p>
 
         
-            <a class="btn btn-explore" href="#"><span><i class="fa-solid fa-rocket"></i></span>Explore Us</a>
-            <a class="btn btn-contact" href="#">Let's Talk<span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            <a class="btn btn-explore" href="#"><span class="material-symbols-outlined">
+                rocket_launch
+                </span>Explore Us</a>
+            <a class="btn btn-contact" href="#">Let's Talk <span class="material-symbols-outlined">call_made</span></a>
         
 
         <div class="heroBottom">
@@ -87,7 +91,7 @@
         
     </section>
 
-    <section class="about">
+    <section class="about" id="aboutSection">
         <div class="container status">
             <div class="row status_content">
                 <div class="col-2">
@@ -174,16 +178,174 @@
                               </div>
                         </div>
                     </div>
+
+
+                    <div class="row aboutMore">
+                        <div class="col-6">
+                            <a class="btn btn-companyDeskDownload" href="#">
+                                <i class="fa-solid fa-download companyDownloadIcon"></i>
+                                <span>
+                                    <h5>Download Company Deck</h5>
+                                    <p>PDF, 3.5MB</p>
+                                </span>
+                            </a>
+                            
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-moreInfo" href="#">
+                                <i class="fa-solid fa-arrow-up-right-from-square moreInfoIcon"></i>
+                                <span>
+                                    <h5> More About Us</h5>
+                                    <p>Tems,Life At BRL, Events</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <p>
+                        We are relentless in our pursuit of innovation.
+                         We continuously strive to develop and launch new 
+                         products and services that address your evolving needs, 
+                         regardless of your sector. Our commitment goes beyond just 
+                         technology – we are dedicated to delivering exceptional service. 
+                         Our goal is zero customer service complaints, ensuring your 
+                         satisfaction is paramount.
+                    </p>
+                    <br>
+
+                    <div class="row achievements">
+                        <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="achivementImgContainer">
+                                                <img src="./assets/images/award.png" width="60px" alt="Achievement 1">
+                                                <h3>BASIS ICT AWARD 2020</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="achivementImgContainer">
+                                                <img src="./assets/images/award.png" width="60px" alt="Achievement 2">
+                                                <h3>BASIS ICT AWARD 2020</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="achivementImgContainer">
+                                                <img src="./assets/images/award.png" width="60px" alt="Achievement 3">
+                                                <h3>BASIS ICT AWARD 2020</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="achivementImgContainer">
+                                                <img src="./assets/images/award.png" width="60px" alt="Achievement 4">
+                                                <h3>BASIS ICT AWARD 2020</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="achivementImgContainer">
+                                                <img src="./assets/images/award.png" width="60px" alt="Achievement 5">
+                                                <h3>BASIS ICT AWARD 2020</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="achivementImgContainer">
+                                                <img src="./assets/images/award.png" width="60px" alt="Achievement 6">
+                                                <h3>BASIS ICT AWARD 2020</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            
+                            <button class="carousel-control-next awardSlideBtn" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                                <i class="fas fa-chevron-right awardSlideIcon"></i> <!-- Font Awesome icon for "Next" -->
+                            </button>
+                        </div>
+                    </div>  
+                    
+                    
+                    <p>
+                        We are relentless in our pursuit of innovation. 
+                        We continuously strive to develop and launch new products 
+                        and services that address your evolving needs, regardless of your sector.
+                    </p>
+                    <br>
+                    
                 </div>
                 <div class="col-4 rightContent">
                     <h1>
                         Founded on Innovation, Driven by Impact
                     </h1>
+                    <div class="allEmpImgContainer">
+                        <img src="./assets/images/allEmp.jpeg" alt="All Employees">
+                        <div class="overlay">
+                            <a href="#">
+                                <span class="play-icon">
+                                    <img src="./assets/images/play.png" alt="Play Icon">
+                                </span>
+                                <span class="play-text">Play Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="featuredProducts">
+ghghg
+    </section>
 <!-- Bootstrap JS Bundle -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var rightContent = document.querySelector('.rightContent');
+    var aboutSection = document.querySelector('.about');
+    var sectionHeight = aboutSection.offsetHeight;
+    var rightContentHeight = rightContent.offsetHeight;
+    var sectionTop = aboutSection.offsetTop;
+    var sectionRight = aboutSection.getBoundingClientRect().right;
+    
+    console.log(sectionHeight);
+    window.addEventListener('scroll', function() {
+        var windowScroll = window.scrollY + window.innerHeight;
+        
+        // Calculate the bottom position of the section
+        var sectionBottom = sectionTop + sectionHeight;
+
+        // Calculate the distance from the section's right side to the window's right side
+        var sectionToWindowRight = window.innerWidth - sectionRight;
+
+        // Calculate the position of the bottom of the section relative to the window's height
+        var sectionBottomToWindow = window.innerHeight - (sectionBottom - windowScroll);
+
+        // If the window is at the bottom of the section
+        if (windowScroll >= sectionBottom) {
+            rightContent.style.position = 'absolute';
+            rightContent.style.top = 'auto';
+            rightContent.style.bottom = '0';
+            rightContent.style.right = sectionToWindowRight + 'px'; // Align to the right side
+            rightContent.style.transform = 'translateY(-' + sectionBottomToWindow + 'px)'; // Move to bottom of section
+        } else {
+            // Reset to the default sticky position
+            rightContent.style.position = 'sticky';
+            rightContent.style.top = '0';
+            rightContent.style.bottom = 'auto';
+            rightContent.style.right = '0';
+            rightContent.style.transform = 'none';
+        }
+    });
+});
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/1c44dc43b7.js" crossorigin="anonymous"></script>
 </body>
