@@ -792,4 +792,229 @@
 .testimonial .rowTestimonial .testimonialCard .cardFooter span svg {
   width: 20px;
   height: 20px;
+}
+
+.blogs {
+  display: flex;
+  width: 100%; /* Set the width to 100% to make it responsive */
+  padding: 96px 312px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background: var(--cyan-200, #A5F3FC);
+}
+.blogs h1 {
+  color: var(--cyan-600, #0891B2);
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: normal;
+}
+.blogs .rowBlogs {
+  display: flex;
+  width: 100%; /* Set width to 100% to make it responsive */
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+.blogs .rowBlogs .blogsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 1 calc(33.33% - 24px); /* Set the width of each card to 1/3 of the container */
+  max-width: 33.33%; /* Limit each card to 33.33% of the row */
+  margin-bottom: 24px; /* Add margin for spacing */
+}
+.blogs .rowBlogs .blogsCard .cardImage {
+  width: 100%; /* Ensure the card image takes up the full width of the card */
+  overflow: hidden; /* Hide overflow */
+}
+.blogs .rowBlogs .blogsCard .cardImage img {
+  width: 100%; /* Make the image stretch to fit the card width */
+  height: 292px;
+  border-radius: 32px 32px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: lightgray;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* Make the card body take up the full width of the card */
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  background: var(--cyan-100, #CFFAFE);
+  padding: 20px;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .tagArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .tagArea .cardTag {
+  padding: 4px 10px;
+  border-radius: 50px;
+  border: 1px solid var(--slate-200, #E2E8F0);
+  font-family: Poppins;
+  font-size: 14px;
+  color: #01767F;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .tagArea .cardTag a {
+  text-decoration: none;
+  color: inherit;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .cardTitle {
+  width: 100%;
+  padding-top: 10px;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .cardTitle h3 {
+  overflow: visible;
+  white-space: normal;
+  color: var(--slate-950, #020617);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .cardFooter {
+  margin-bottom: -15px;
+}
+.blogs .rowBlogs .blogsCard .cardImage .cardBody .cardFooter p {
+  color: #01767F;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.inquiry {
+  display: flex;
+  width: 1920px;
+  padding: 96px 312px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  background: var(--cyan-100, #CFFAFE);
+}
+.inquiry h1 {
+  color: var(--cyan-600, var(--cyan-600, #0891B2));
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.inquiry .rowInquiry {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+.inquiry .rowInquiry .inqImage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.inquiry .rowInquiry .inqImage img {
+  width: 500px;
+  border-radius: 48px;
+}
+.inquiry .rowInquiry .inqForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+.inquiry .rowInquiry .inqForm .tagsArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-7, 24px);
+  align-self: stretch;
+}
+.inquiry .rowInquiry .inqForm .tagsArea p {
+  color: var(--slate-950, #020617);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.inquiry .rowInquiry .inqForm .tagsArea .tags {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.inquiry .rowInquiry .inqForm .tagsArea .tags .tag {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 360px;
+  border: 1px solid var(--slate-300, #CBD5E1);
+}
+.inquiry .rowInquiry .inqForm .tagsArea .tags .tag a {
+  color: var(--slate-700, #334155);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.inquiry .rowInquiry .inqForm .formElements {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.inquiry .rowInquiry .inqForm .formElements .formLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  color: var(--slate-950, #020617);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+}
+.inquiry .rowInquiry .inqForm .formElements .formLabel span {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.inquiry .rowInquiry .inqForm .formElements .formInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inquiry .rowInquiry .inqForm .formElements .formInput {
+  padding: 16px 0px;
+  border-bottom: 2px solid var(--slate-500, #64748B);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
