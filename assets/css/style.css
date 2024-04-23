@@ -359,10 +359,10 @@
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  background: var(--cyan-200, #A5F3FC);
+  background: #A5F3FC;
 }
 .productsSection .featuredProducts h1 {
-  color: var(--cyan-600, #0891B2);
+  color: #0891B2;
   text-align: center;
   font-family: "Roboto Slab", sans-serif;
   font-size: 40px;
@@ -422,10 +422,10 @@
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  background: var(--cyan-100, #CFFAFE);
+  background: #CFFAFE;
 }
 .projectSection h1 {
-  color: var(--cyan-600, var(--cyan-600, #0891B2));
+  color: #0891B2;
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 40px;
@@ -437,7 +437,7 @@
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 24px var(--spacing-7, 24px);
+  gap: 24px;
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -445,11 +445,11 @@
   display: flex;
   width: 636px;
   height: 325px;
-  padding: var(--spacing-7, 24px);
+  padding: 24px;
   align-items: center;
   gap: 20px;
   border-radius: 32px;
-  background: var(--cyan-50, #ECFEFF);
+  background: #ECFEFF;
 }
 .projectSection .rowProjects .projectCard .projectImage {
   width: 306px;
@@ -504,18 +504,18 @@
   display: flex;
   align-items: center;
   align-content: center;
-  gap: 4px var(--radius-sm, 4px);
+  gap: 4px 4px;
   align-self: stretch;
   flex-wrap: wrap;
 }
 .projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectTags .tag {
   display: flex;
-  padding: var(--radius-sm, 4px) 10px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 6px;
   border-radius: 360px;
-  border: 1px solid var(--slate-200, #E2E8F0);
+  border: 1px solid #E2E8F0;
   color: #01767F;
   font-family: Poppins;
   font-size: 14px;
@@ -547,12 +547,12 @@
   text-transform: capitalize;
 }
 .projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectFooter .case {
-  background: var(--cyan-700, #0E7490);
+  background: #0E7490;
   color: #FFF;
 }
 .projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectFooter .live {
   color: #01767F;
-  border: 1px solid var(--cyan-700, #0E7490);
+  border: 1px solid #0E7490;
 }
 
 .services {
@@ -562,10 +562,10 @@
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  background: var(--cyan-200, #A5F3FC);
+  background: #A5F3FC;
 }
 .services h1 {
-  color: var(--cyan-600, var(--cyan-600, #0891B2));
+  color: #0891B2;
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 40px;
@@ -578,7 +578,7 @@
   width: 1296px;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 24px var(--spacing-7, 24px);
+  gap: 24px;
   flex-wrap: wrap;
 }
 .services .rowServices .serviceCard {
@@ -588,10 +588,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: var(--spacing-7, 13px);
+  gap: 13px;
   flex-shrink: 0;
   border-radius: 32px;
-  background: var(--cyan-100, #CFFAFE);
+  background: #CFFAFE;
 }
 .services .rowServices .serviceCard img {
   display: flex;
@@ -613,7 +613,7 @@
   align-self: stretch;
 }
 .services .rowServices .serviceCard .serviceContent h4 {
-  color: var(--slate-950, #020617);
+  color: #020617;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -624,7 +624,7 @@
 }
 .services .rowServices .serviceCard .serviceContent p {
   overflow: hidden;
-  color: var(--cyan-700, #0E7490);
+  color: #0E7490;
   text-overflow: ellipsis;
   font-family: Poppins;
   font-size: 16px;
@@ -633,7 +633,7 @@
   line-height: normal;
 }
 .services .rowServices .serviceCard .btn-service {
-  color: var(--cyan-700, #0E7490);
+  color: #0E7490;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
   font-family: Poppins;
   font-size: 14px;
@@ -641,12 +641,12 @@
   font-weight: 600;
   line-height: 24px; /* 171.429% */
   display: flex;
-  padding: var(--radius-sm, 4px) var(--radius-sm, 4px) var(--radius-sm, 4px) 18px;
+  padding: 18px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 360px;
-  background: var(--base-white, #FFF);
+  background: #FFF;
 }
 .services .rowServices .serviceCard .btn-service span {
   color: #FFF;
@@ -656,7 +656,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 360px;
-  background: var(--cyan-600, #0891B2);
+  background: #0891B2;
 }
 .services .footerButton {
   display: flex;
@@ -1137,12 +1137,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: var(--slate-950, #020617);
+  background: #020617;
 }
 footer .footerTop {
   display: flex;
-  width: 1920px;
-  padding: 96px 312px var(--spacing-7, 24px) 312px;
+  width: 100%;
+  padding: 96px 312px 24px 312px;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -1246,4 +1246,126 @@ footer .footerTop .rightContent {
   justify-content: space-between;
   align-items: flex-start;
   flex: 1 0 0;
+}
+footer .footerTop .rightContent .footerLinks {
+  display: flex;
+  padding: 69px 0px 16px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+footer .footerTop .rightContent .footerLinks h5 {
+  color: var(--base-white, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+footer .footerTop .rightContent .footerLinks a {
+  color: var(--cyan-500, #06B6D4);
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+footer .footerBanner {
+  display: flex;
+  width: 100%;
+  padding: 32px 312px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 16px;
+  flex-wrap: wrap;
+}
+footer .footerBanner .bannerArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+footer .footerBanner .bannerArea .banner {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerBanner .bannerArea .banner .textContainer {
+  margin-bottom: 12px;
+}
+footer .footerBanner .bannerArea .banner .textContainer p {
+  color: #22D3EE;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+footer .footerBanner .bannerArea .banner .imageGroup {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+footer .footerBanner .bannerArea .banner .imageGroup .imageContainer {
+  padding: 9.555px;
+  border-radius: 8px;
+  background: #1E293B;
+}
+footer .footerBanner .bannerArea .banner .imageGroup .imageContainer img {
+  width: auto;
+  height: 36.87px;
+}
+footer .footerBottom {
+  display: flex;
+  width: 100%;
+  padding: var(--spacing-7, 24px) 312px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  background: #020617;
+}
+footer .footerBottom .bottomArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+footer .footerBottom .bottomArea .bottomContent {
+  display: flex;
+  padding: 5px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+footer .footerBottom .bottomArea .bottomContent p {
+  color: var(--red-50, #FEF2F2);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .footerBottom .bottomArea .bottomContent a {
+  color: var(--red-50, #FEF2F2);
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .footerBottom .bottomArea .bottomContent span {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 360px;
+  border: 1px solid #083344;
 }/*# sourceMappingURL=style.css.map */
