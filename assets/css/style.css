@@ -691,7 +691,7 @@
   padding: 96px;
   background: #CFFAFE;
 }
-.testimonial .rowTestimonial .testimonialCard {
+.testimonial .testimonialCard {
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -700,28 +700,22 @@
   border-radius: 32px;
   background: #FFF;
 }
-.testimonial .rowTestimonial .testimonialCard .cardHeader {
+.testimonial .testimonialCard .cardHeader {
   display: flex;
   align-items: center;
   gap: 16px;
   align-self: stretch;
 }
-.testimonial .rowTestimonial .testimonialCard .cardHeader .personImage {
-  position: relative;
-  display: flex;
-  width: 48px;
+.testimonial .testimonialCard .cardHeader .personImage {
+  position: sticky;
   height: 48px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 360px;
 }
-.testimonial .rowTestimonial .testimonialCard .cardHeader .personImage img {
+.testimonial .testimonialCard .cardHeader .personImage img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.testimonial .rowTestimonial .testimonialCard .cardHeader .personImage span {
+.testimonial .testimonialCard .cardHeader .personImage span {
   position: absolute;
   top: 0;
   right: 0;
@@ -734,7 +728,7 @@
   border-radius: 50%;
   border: 3px solid #FFF;
 }
-.testimonial .rowTestimonial .testimonialCard .cardHeader .personInfo .personName {
+.testimonial .testimonialCard .cardHeader .personInfo .personName {
   color: var(--slate-800, var(--slate-800, #1E293B));
   font-family: Poppins;
   font-size: 14px;
@@ -743,7 +737,7 @@
   line-height: normal;
   text-transform: capitalize;
 }
-.testimonial .rowTestimonial .testimonialCard .cardHeader .personInfo .personDesingnation {
+.testimonial .testimonialCard .cardHeader .personInfo .personDesingnation {
   color: var(--slate-700, #334155);
   font-family: Poppins;
   font-size: 14px;
@@ -752,10 +746,10 @@
   line-height: normal;
   text-transform: capitalize;
 }
-.testimonial .rowTestimonial .testimonialCard .cardBody {
+.testimonial .testimonialCard .cardBody {
   align-self: stretch;
 }
-.testimonial .rowTestimonial .testimonialCard .cardBody p {
+.testimonial .testimonialCard .cardBody p {
   color: #020617;
   font-family: "Noto Sans Bengali";
   font-size: 14px;
@@ -764,18 +758,18 @@
   line-height: normal;
   text-transform: capitalize;
 }
-.testimonial .rowTestimonial .testimonialCard .cardBodyImage {
+.testimonial .testimonialCard .cardBodyImage {
   overflow: hidden;
   position: relative;
 }
-.testimonial .rowTestimonial .testimonialCard .cardBodyImage img {
+.testimonial .testimonialCard .cardBodyImage img {
   width: 100%;
   height: 217px;
   border-radius: 32px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.testimonial .rowTestimonial .testimonialCard .cardBodyImage .playIcon {
+.testimonial .testimonialCard .cardBodyImage .playIcon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -788,12 +782,12 @@
   border-radius: 360px;
   background: #000;
 }
-.testimonial .rowTestimonial .testimonialCard .cardFooter {
+.testimonial .testimonialCard .cardFooter {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.testimonial .rowTestimonial .testimonialCard .cardFooter p {
+.testimonial .testimonialCard .cardFooter p {
   color: var(--slate-900, #0F172A);
   font-family: Poppins;
   font-size: 16px;
@@ -804,13 +798,13 @@
   display: flex;
   align-items: center;
 }
-.testimonial .rowTestimonial .testimonialCard .cardFooter span {
+.testimonial .testimonialCard .cardFooter span {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 7px;
 }
-.testimonial .rowTestimonial .testimonialCard .cardFooter span svg {
+.testimonial .testimonialCard .cardFooter span svg {
   width: 20px;
   height: 20px;
 }

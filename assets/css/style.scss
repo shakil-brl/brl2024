@@ -790,151 +790,141 @@
     
     background: #CFFAFE;
 
-    .rowTestimonial{
+    .testimonialCard{
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 32px;
+        background: #FFF;
 
-        
-        .testimonialCard{
+        .cardHeader {
             display: flex;
-            padding: 24px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 24px;
-            border-radius: 32px;
-            background: #FFF;
-
-            .cardHeader {
-                display: flex;
-                align-items: center;
-                gap: 16px;
-                align-self: stretch;
-            
-                .personImage {
-                    position: relative; 
-                    display: flex;
-                    width: 48px;
-                    height: 48px;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 10px;
-                    border-radius: 360px;
-            
-                    img {
-                        width: 100%; 
-                        height: 100%; 
-                        border-radius: 50%; 
-                    }
-            
-                    span {
-                        position: absolute; 
-                        top: 0; 
-                        right: 0; 
-                        width: 17px;
-                        height: 17px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #22C55E;
-                        border-radius: 50%;
-                        border: 3px solid #FFF;
-                    }
-                }
-
-                .personInfo{
-                    .personName{
-                        color: var(--slate-800, var(--slate-800, #1E293B));
-                        font-family: Poppins;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        text-transform: capitalize;
-                    }
-    
-                    .personDesingnation{
-                        color: var(--slate-700, #334155);
-                        font-family: Poppins;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        text-transform: capitalize;
-                    }
-                }
-                
-            }
-
-            .cardBody{
-                align-self: stretch;
-                p{
-                    color: #020617;
-                    font-family: "Noto Sans Bengali";
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    text-transform: capitalize;
-                }
-            }           
-
-            .cardBodyImage {
-                overflow: hidden;
-                position: relative;
-            
+            align-items: center;
+            gap: 16px;
+            align-self: stretch;
+        
+            .personImage {
+                position: sticky;
+                height: 48px;
+        
                 img {
                     width: 100%; 
-                    height: 217px; 
-                    border-radius: 32px;
-                    object-fit: cover;
+                    height: 100%; 
+                    border-radius: 50%; 
                 }
-            
-                .playIcon {
+        
+                span {
                     position: absolute; 
-                    top: 50%; 
-                    left: 50%; 
-                    transform: translate(-50%, -50%);
-                    padding: 16px;
+                    top: 0; 
+                    right: 0; 
+                    width: 17px;
+                    height: 17px;
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-                    gap: 10px;
-                    border-radius: 360px;
-                    background: #000;
+                    justify-content: center;
+                    background-color: #22C55E;
+                    border-radius: 50%;
+                    border: 3px solid #FFF;
                 }
             }
-            
 
-            .cardFooter {
-                display: flex;
-                align-items: center; 
-                gap: 4px; 
-            
-                p {
-                    color: var(--slate-900, #0F172A);
+            .personInfo{
+                .personName{
+                    color: var(--slate-800, var(--slate-800, #1E293B));
                     font-family: Poppins;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
                     text-transform: capitalize;
-                    display: flex;
-                    align-items: center;
                 }
-            
-                span {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-left: 7px;
 
-                    svg{
-                        width: 20px;
-                        height: 20px;
-                    }
+                .personDesingnation{
+                    color: var(--slate-700, #334155);
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: capitalize;
                 }
             }
             
-            
         }
+
+        .cardBody{
+            align-self: stretch;
+            p{
+                color: #020617;
+                font-family: "Noto Sans Bengali";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+        }           
+
+        .cardBodyImage {
+            overflow: hidden;
+            position: relative;
+        
+            img {
+                width: 100%; 
+                height: 217px; 
+                border-radius: 32px;
+                object-fit: cover;
+            }
+        
+            .playIcon {
+                position: absolute; 
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%);
+                padding: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 360px;
+                background: #000;
+            }
+        }
+        
+
+        .cardFooter {
+            display: flex;
+            align-items: center; 
+            gap: 4px; 
+        
+            p {
+                color: var(--slate-900, #0F172A);
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+            }
+        
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 7px;
+
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        
+        
     }
 }
 
