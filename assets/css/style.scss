@@ -12,13 +12,13 @@
         width: auto; margin-top: 7px;
     }
 
-    .nav-item{
+    .nav-link{
         border-radius: 360px;
+        padding: 10px;
         &:hover {
             background-color: #A5F3FC;
         }
     }
-
 
     .nav-dropdown-section {
         padding: 24px;
@@ -637,113 +637,77 @@
     height: auto;
     padding: 92px;
 
+    @media (max-width: 992px) {
+        padding: 55px 35px 45px 35px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 55px 35px 45px 35px;
+    }
+
     @media (max-width: 576px) {
-        padding: 92px;
+        padding: 50px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 50px 15px 35px 15px;
     }
 
     .status {
+        width: 100%;
         background-color: #0891B2;
         border-radius: 60px;
+        padding: 30px;
 
-
-        @media (max-width: 576px) {
-            width: 475px;
-            margin-left: -85px;
+        @media (max-width: 1024px) {
+            padding: 20px;
         }
 
-        @media (max-width: 500px) {
-            width: 420px;
-        }
-
-        @media (max-width: 450px) {
-            width: 385px;
-            margin-left: -85px;
-        }
-
-        @media (max-width: 375px) {
-            width: 335px;
-            margin-left: -80px;
-        }
-
-        @media (max-width: 320px) {
-            width: 280px;
-            margin-left: -80px;
+        @media (max-width: 768px) {
+            padding: 25px;
         }
 
         .status-content{
-            
-            text-align: center;
-
-
-            @media (max-width: 1024px) {
-                display: flex;
-                text-align: left;
-            }
-
             @media (max-width: 992px) {
-                display: flex;
-                gap: 25px;
-                text-align: left;
-            }
-
-            @media (max-width: 768px) {
-                display: flex;
-                gap: 45px;
-                text-align: left;
-            }
-
-            @media (max-width: 750px) {
-                display: flex;
                 gap: 0px;
-                text-align: left;
             }
 
-            @media (max-width: 580px) {
-                display: flex;
-                gap: 65px;
+            @media (max-width: 770px) {
+                gap: 10px;
             }
 
-            @media (max-width: 500px) {
-                display: flex;
-                gap: 55px;
+            @media (max-width: 769px) {
+                gap: 0px;
             }
 
-            @media (max-width: 425px) {
-                text-align: left;
-                display: flex;
+            @media (max-width: 755px) {
+                gap: 0px;
+            }
+
+            @media (max-width: 576px) {
+                gap: 0px;
+            }
+
+            @media (max-width: 575px) {
+                gap: 50px;
+            }
+
+            @media (max-width: 480px) {
                 gap: 60px;
             }
 
-            @media (max-width: 375px) {
-                text-align: left;
-                display: flex;
-                gap: 120px;
+            @media (max-width: 405px) {
+                gap: 115px;
+                padding-left: 20px;
             }
 
-            @media (max-width: 320px) {
-                text-align: left;
-                display: flex;
-                gap: 70px;
-            }
-
-            .status-item{
-                @media (max-width: 576px) {
-                    
-                }
-    
-                @media (max-width: 320px) {
-                    
-                }
+            @media (max-width: 350px) {
+                padding-left: 5px;
             }
 
             .margin-top{
-
-                @media (max-width: 375px) {
-                    margin-top: -120px;
-                }
-
-                @media (max-width: 320px) {
-                    margin-top: -60px;
+                @media (max-width: 405px) {
+                    margin-top: -110px;
                 }
             }
 
@@ -752,6 +716,14 @@
                 font-weight: 700;
                 font-size: 36px;
                 color: #FFFFFF;
+
+                @media (max-width: 480px) {
+                    font-size: 32px;
+                }
+    
+                @media (max-width: 405px) {
+                    font-size: 30px;
+                }
             }
             
             p{
@@ -759,54 +731,28 @@
                 font-weight: 600;
                 font-size: 16px;
                 color: #A5F3FC;
+
+                @media (max-width: 480px) {
+                    font-size: 14px;
+                }
+    
+                @media (max-width: 405px) {
+                    font-size: 12px;
+                }
             }
         }
     }
 
     .info{
-        margin-top: 9%;
+        margin-top: 100px;
 
         .leftContent{
-            
-            @media (max-width: 768px) {
-                margin: 25px 0 0 0px;
-                padding: 0;
-                width: 615px;
-            }
-
-            @media (max-width: 576px) {
-                margin: 25px 0 0 -75px;
-                width: 500px;
-            }
-
-            @media (max-width: 500px) {
-                margin: 25px 0 0 -75px;
-                width: 500px;
-            }
-
-            @media (max-width: 425px) {
-                margin: 25px 0 0 -75px;
-                padding: 0;
-                width: 385px;
-            }
-
-            @media (max-width: 375px) {
-                margin: 25px 0 0 -75px;
-                padding: 0;
-                width: 330px;
-            }
-
-            @media (max-width: 320px) {
-                margin: 25px 0 0 -75px;
-                padding: 0;
-                width: 280px;
-            }
+            width: 100%;
             
             p{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
                 font-size: 16px;
-                line-height: 24px;
                 color: #94A3B8;
             }
             
@@ -820,36 +766,29 @@
                 overflow: hidden;
                 margin-bottom: 20px;
 
-                @media (max-width: 768px) {
-                    margin: 25px 0 0 -10px;
-                    padding: 0;
-                    width: 305px;
-                    height: 160.5px;
+                @media (max-width: 1400px) {
+                    width: 325px;
+                    height: 171px;
                 }
 
-                @media (max-width: 576px) {
-                    margin: 25px 0 0 35px;
-                    padding: 0;
-                    width: 450px;
-                    height: 236.84px;
+                @media (max-width: 1200px) {
+                    width: 245px;
+                    height: 128.9px;
                 }
 
-                @media (max-width: 425px) {
-                    margin: 25px 0 0 -10px;
-                    padding: 0;
-                    width: 385px;
+                @media (max-width: 1024px) {
+                    width: 260px;
+                    height: 136.8px;
                 }
-    
-                @media (max-width: 375px) {
-                    margin-left: -6px;
-                    width: 330px; 
-                    height: 173.68px;
+
+                @media (max-width: 991px) {
+                    width: 335px;
+                    height: 176.3px;
                 }
-    
-                @media (max-width: 320px) {
-                    margin-left: -6px;
-                    width: 275px; 
-                    height: 144.73px;
+
+                @media (max-width: 370px) {
+                    width: 250px;
+                    height: 131.5px;
                 }
             
                 h2 {
@@ -882,19 +821,17 @@
                 margin-top: 25px;
                 margin-bottom: 50px;
 
-                @media (max-width: 768px) {
-                    margin: 25px 0 30px 0px;
-                    padding: 0;
-                    width: 100%;
+                @media (max-width: 1024px) {
+                    width: 650px;
                 }
 
-                @media (max-width: 576px) {
-                    width: 350px;
+                @media (max-width: 991px) {
+                    width: 635px;
                 }
 
-                @media (max-width: 346px) {
-                    margin-left: -15px;
-                    width: 305px;
+                @media (max-width: 370px) {
+                    width: 250px;
+                    height: 131.5px;
                 }
 
                 .btn-companyDeskDownload {
@@ -959,12 +896,8 @@
                     padding: 0 20px;
 
                     
-                    @media (max-width: 576px) {
-                        margin-top: 25px;
-                    }
-
-                    @media (max-width: 425px) {
-                        width: 265px;
+                    @media (max-width: 991px) {
+                        margin-top: 15px;
                     }
                 
                     .moreInfoIcon {
