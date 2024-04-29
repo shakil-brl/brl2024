@@ -705,6 +705,11 @@
                 padding-left: 5px;
             }
 
+            @media (max-width: 349px) {
+                gap: 100px;
+                padding-left: 0px;
+            }
+
             .margin-top{
                 @media (max-width: 405px) {
                     margin-top: -110px;
@@ -821,30 +826,45 @@
                 margin-top: 25px;
                 margin-bottom: 50px;
 
-                @media (max-width: 1024px) {
-                    width: 650px;
-                }
-
-                @media (max-width: 991px) {
-                    width: 635px;
-                }
-
-                @media (max-width: 370px) {
-                    width: 250px;
-                    height: 131.5px;
-                }
 
                 .btn-companyDeskDownload {
                     background-color: #0891B2;
                     color: #FFFFFF;
                     border-radius: 70px;
                     height: 75px;
-                    width: 380px; 
+                    width: 100%; 
                     display: flex;
                     padding: 0 20px; 
 
-                    @media (max-width: 425px) {
-                        width: 265px;
+                    // &:hover {
+                    //     background-color: #FFFFFF; 
+                    //     color: #67E8F9;
+                    //     .companyDownloadIcon{
+                    //         background-color: #0891B2; 
+                    //         color: #FFF;
+
+                    //         h5 {
+                    //             background-color: #0891B2; 
+                    //             color: #FFF;
+                    //         }
+                        
+                    //         p {
+                    //             background-color: #0891B2; 
+                    //             color: #FFF;
+                    //         }
+                    //     }
+                    // }
+
+                    @media (max-width: 1200px) {
+                        width: 245px;
+                    }
+
+                    @media (max-width: 991px) {
+                        width: 335px;
+                    }
+
+                    @media (max-width: 370px) {
+                        width: 250px;
                     }
                 
                     .companyDownloadIcon {
@@ -853,21 +873,23 @@
                         padding: 20px;
                         margin-right: 10px;
                         margin-left: -13px;
+
+                        
                     }
                 
                     span {
                         display: flex;
                         flex-direction: column;
+                        &:hover {
+                            background-color: #0891B2;
+                        }
                     }
                 
                     h5 {
                         font-weight: 600;
                         font-size: 16px;
                         margin: 0; 
-                        
-                        @media (max-width: 425px) {
-                            text-align: left;
-                        }
+                        text-align: left;
                     }
                 
                     p {
@@ -875,10 +897,7 @@
                         font-size: 14px;
                         color: #FFFFFF;
                         margin: 0; 
-                        margin-left: -135px;
-                        @media (max-width: 425px) {
-                            margin-left: -85px;
-                        }
+                        text-align: left;
                     }
                 }
                 
@@ -889,15 +908,26 @@
                     background-position: center;
                     color: #FFFFFF;
                     border-radius: 70px;
-                    width: 380px; 
+                    width: 100%; 
                     height: 75px;
                     display: flex;
                     align-items: center;
                     padding: 0 20px;
 
-                    
+                    @media (max-width: 1200px) {
+                        width: 245px;
+                    }
+
                     @media (max-width: 991px) {
+                        width: 335px;
+                    }
+
+                    @media (max-width: 767px) {
                         margin-top: 15px;
+                    }
+                    @media (max-width: 370px) {
+                        margin-top: 15px;
+                        width: 250px;
                     }
                 
                     .moreInfoIcon {
@@ -918,10 +948,7 @@
                         font-size: 16px;
                         line-height: 24px;
                         margin: 0;
-                        margin-left: -40px;
-                        @media (max-width: 425px) {
-                            margin-left: -48px;
-                        }
+                        text-align: left;
                     }
                 
                     p {
@@ -930,10 +957,7 @@
                         line-height: 24px;
                         color: #FFFFFF;
                         margin: 0;
-                        margin-left: 5px;
-                        @media (max-width: 425px) {
-                            margin-left: -2px;
-                        }
+                        text-align: left;
                     }
                 }
             }   
@@ -942,6 +966,22 @@
             .achievements {
                 margin-top: 30px;
                 margin-bottom: 40px;
+
+                @media screen and (min-width:767px){
+                    .carousel-inner{
+                        display: flex;
+
+                        .carousel-item{
+                            display: block;
+                            margin-right: 0;
+                            flex: 0 0 calc(100%/3);
+                        }
+                    }
+                }
+
+                .carousel-item{
+                    padding-right: 1rem;
+                }
                 
                 .achivementImgContainer {
                     display: flex;
@@ -952,6 +992,10 @@
                     background-color: #0F172A;
                     border-radius: 30px;
                     height: 256px; 
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
                 }
                 
                 img {
@@ -1011,6 +1055,8 @@
                 border-radius: 64px;
                 overflow: hidden;
                 position: relative; 
+                justify-content: center;
+                text-align: center;
         
                 img {
                     width: 409px; 
@@ -1034,12 +1080,12 @@
                     font-family: 'Poppins', sans-serif;
                     font-weight: 700;
                     font-size: 24px;
-                    line-height: 36px;
                 }
 
                 a {
                     text-decoration: none; /* Remove underline */
                     color: #FFFFFF;
+                    text-align: center;
                     .play-icon {
                         margin-left: -10px;
                         margin-right: 5px; /* Add some space between the icon and text */

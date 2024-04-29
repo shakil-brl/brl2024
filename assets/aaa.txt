@@ -1,4 +1,62 @@
- 
+  <div class="row achievements">
+        <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="achivementImgContainer">
+                                <img src="./assets/images/award.png" width="60px" alt="Achievement 1">
+                                <h3>BASIS ICT AWARD 2020</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="achivementImgContainer">
+                                <img src="./assets/images/award.png" width="60px" alt="Achievement 2">
+                                <h3>BASIS ICT AWARD 2020</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="achivementImgContainer">
+                                <img src="./assets/images/award.png" width="60px" alt="Achievement 3">
+                                <h3>BASIS ICT AWARD 2020</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="achivementImgContainer">
+                                <img src="./assets/images/award.png" width="60px" alt="Achievement 4">
+                                <h3>BASIS ICT AWARD 2020</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="achivementImgContainer">
+                                <img src="./assets/images/award.png" width="60px" alt="Achievement 5">
+                                <h3>BASIS ICT AWARD 2020</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="achivementImgContainer">
+                                <img src="./assets/images/award.png" width="60px" alt="Achievement 6">
+                                <h3>BASIS ICT AWARD 2020</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-next awardSlideBtn" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+                
+                <span class="material-symbols-outlined awardSlideIcon">
+                    keyboard_arrow_right
+                    </span>
+            </button>
+        </div>
+    </div> 
+
 
     <section class="product-section">
         <div class="container">

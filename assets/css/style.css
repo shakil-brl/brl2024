@@ -681,6 +681,12 @@
     padding-left: 5px;
   }
 }
+@media (max-width: 349px) {
+  .about .status .status-content {
+    gap: 100px;
+    padding-left: 0px;
+  }
+}
 @media (max-width: 405px) {
   .about .status .status-content .margin-top {
     margin-top: -110px;
@@ -794,34 +800,28 @@
   margin-top: 25px;
   margin-bottom: 50px;
 }
-@media (max-width: 1024px) {
-  .about .info .leftContent .aboutMore {
-    width: 650px;
-  }
-}
-@media (max-width: 991px) {
-  .about .info .leftContent .aboutMore {
-    width: 635px;
-  }
-}
-@media (max-width: 370px) {
-  .about .info .leftContent .aboutMore {
-    width: 250px;
-    height: 131.5px;
-  }
-}
 .about .info .leftContent .aboutMore .btn-companyDeskDownload {
   background-color: #0891B2;
   color: #FFFFFF;
   border-radius: 70px;
   height: 75px;
-  width: 380px;
+  width: 100%;
   display: flex;
   padding: 0 20px;
 }
-@media (max-width: 425px) {
+@media (max-width: 1200px) {
   .about .info .leftContent .aboutMore .btn-companyDeskDownload {
-    width: 265px;
+    width: 245px;
+  }
+}
+@media (max-width: 991px) {
+  .about .info .leftContent .aboutMore .btn-companyDeskDownload {
+    width: 335px;
+  }
+}
+@media (max-width: 370px) {
+  .about .info .leftContent .aboutMore .btn-companyDeskDownload {
+    width: 250px;
   }
 }
 .about .info .leftContent .aboutMore .btn-companyDeskDownload .companyDownloadIcon {
@@ -835,27 +835,21 @@
   display: flex;
   flex-direction: column;
 }
+.about .info .leftContent .aboutMore .btn-companyDeskDownload span:hover {
+  background-color: #0891B2;
+}
 .about .info .leftContent .aboutMore .btn-companyDeskDownload h5 {
   font-weight: 600;
   font-size: 16px;
   margin: 0;
-}
-@media (max-width: 425px) {
-  .about .info .leftContent .aboutMore .btn-companyDeskDownload h5 {
-    text-align: left;
-  }
+  text-align: left;
 }
 .about .info .leftContent .aboutMore .btn-companyDeskDownload p {
   font-weight: 500;
   font-size: 14px;
   color: #FFFFFF;
   margin: 0;
-  margin-left: -135px;
-}
-@media (max-width: 425px) {
-  .about .info .leftContent .aboutMore .btn-companyDeskDownload p {
-    margin-left: -85px;
-  }
+  text-align: left;
 }
 .about .info .leftContent .aboutMore .btn-moreInfo {
   background-image: url("../images/21.png");
@@ -864,15 +858,31 @@
   background-position: center;
   color: #FFFFFF;
   border-radius: 70px;
-  width: 380px;
+  width: 100%;
   height: 75px;
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
+@media (max-width: 1200px) {
+  .about .info .leftContent .aboutMore .btn-moreInfo {
+    width: 245px;
+  }
+}
 @media (max-width: 991px) {
   .about .info .leftContent .aboutMore .btn-moreInfo {
+    width: 335px;
+  }
+}
+@media (max-width: 767px) {
+  .about .info .leftContent .aboutMore .btn-moreInfo {
     margin-top: 15px;
+  }
+}
+@media (max-width: 370px) {
+  .about .info .leftContent .aboutMore .btn-moreInfo {
+    margin-top: 15px;
+    width: 250px;
   }
 }
 .about .info .leftContent .aboutMore .btn-moreInfo .moreInfoIcon {
@@ -891,12 +901,7 @@
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  margin-left: -40px;
-}
-@media (max-width: 425px) {
-  .about .info .leftContent .aboutMore .btn-moreInfo h5 {
-    margin-left: -48px;
-  }
+  text-align: left;
 }
 .about .info .leftContent .aboutMore .btn-moreInfo p {
   font-weight: 500;
@@ -904,16 +909,24 @@
   line-height: 24px;
   color: #FFFFFF;
   margin: 0;
-  margin-left: 5px;
-}
-@media (max-width: 425px) {
-  .about .info .leftContent .aboutMore .btn-moreInfo p {
-    margin-left: -2px;
-  }
+  text-align: left;
 }
 .about .info .leftContent .achievements {
   margin-top: 30px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 767px) {
+  .about .info .leftContent .achievements .carousel-inner {
+    display: flex;
+  }
+  .about .info .leftContent .achievements .carousel-inner .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 33.3333333333%;
+  }
+}
+.about .info .leftContent .achievements .carousel-item {
+  padding-right: 1rem;
 }
 .about .info .leftContent .achievements .achivementImgContainer {
   display: flex;
@@ -924,6 +937,11 @@
   background-color: #0F172A;
   border-radius: 30px;
   height: 256px;
+}
+@media (max-width: 767px) {
+  .about .info .leftContent .achievements .achivementImgContainer {
+    width: 100%;
+  }
 }
 .about .info .leftContent .achievements img {
   max-width: 100%;
@@ -973,6 +991,8 @@
   border-radius: 64px;
   overflow: hidden;
   position: relative;
+  justify-content: center;
+  text-align: center;
 }
 .about .info .rightContent .allEmpImgContainer img {
   width: 409px;
@@ -996,11 +1016,11 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 36px;
 }
 .about .info .rightContent .allEmpImgContainer a {
   text-decoration: none; /* Remove underline */
   color: #FFFFFF;
+  text-align: center;
 }
 .about .info .rightContent .allEmpImgContainer a .play-icon {
   margin-left: -10px;
