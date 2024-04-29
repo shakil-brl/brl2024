@@ -542,7 +542,11 @@
         }
     }
 
-    
+    .hero-link-page{
+        @media (max-width: 310px) {
+            margin-top: 15px;
+        }
+    }
 }
 
 

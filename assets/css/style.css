@@ -514,6 +514,11 @@
   align-items: center;
   text-decoration: none;
 }
+@media (max-width: 310px) {
+  .hero .hero-link-page {
+    margin-top: 15px;
+  }
+}
 
 .btn-linkPage {
   background-color: #083344;
