@@ -395,7 +395,7 @@
   background-repeat: no-repeat;
   background-size: 45%;
   background-position: bottom;
-  padding: 100px 100px 140px 100px;
+  padding: 100px 100px 160px 100px;
   text-align: center;
 }
 @media (max-width: 1200px) {
@@ -433,12 +433,33 @@
     background-size: 80%;
   }
 }
+.hero .hero-content {
+  justify-content: center;
+}
 @media (max-width: 576px) {
   .hero .hero-content {
-    padding-top: 30px;
+    padding-top: 45px;
   }
 }
-.hero .hero-content h1 {
+.hero .hero-content .center-content {
+  padding: 0px 250px 0px 250px;
+}
+@media (max-width: 1200px) {
+  .hero .hero-content .center-content {
+    padding: 0px 150px 0px 150px;
+  }
+}
+@media (max-width: 992px) {
+  .hero .hero-content .center-content {
+    padding: 0px 100px 0px 100px;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-content .center-content {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.hero .hero-content .center-content h1 {
   align-self: stretch;
   color: #0891B2;
   text-align: center;
@@ -447,20 +468,19 @@
   font-weight: 900;
 }
 @media (max-width: 576px) {
-  .hero .hero-content h1 {
+  .hero .hero-content .center-content h1 {
     font-size: 32px;
   }
 }
-.hero .hero-content p {
+.hero .hero-content .center-content p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   color: #333;
   margin-top: 10px;
 }
 @media (max-width: 576px) {
-  .hero .hero-content p {
+  .hero .hero-content .center-content p {
     margin-top: 15px;
   }
 }
@@ -527,7 +547,6 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
   border-radius: 360px;
   display: flex;
   padding: 4px 4px 4px 18px;
@@ -596,7 +615,6 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
 }
 
 .about {
@@ -640,6 +658,11 @@
     padding: 25px;
   }
 }
+@media (min-width: 1200px) {
+  .about .status .status-content {
+    padding-left: 35px;
+  }
+}
 @media (max-width: 992px) {
   .about .status .status-content {
     gap: 0px;
@@ -657,6 +680,7 @@
 }
 @media (max-width: 755px) {
   .about .status .status-content {
+    padding-left: 65px;
     gap: 0px;
   }
 }
@@ -667,18 +691,19 @@
 }
 @media (max-width: 575px) {
   .about .status .status-content {
-    gap: 50px;
+    gap: 0px;
   }
 }
 @media (max-width: 480px) {
   .about .status .status-content {
-    gap: 60px;
+    padding-left: 55px;
+    gap: 0px;
   }
 }
 @media (max-width: 405px) {
   .about .status .status-content {
-    gap: 115px;
-    padding-left: 20px;
+    gap: 0px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 350px) {
@@ -688,13 +713,8 @@
 }
 @media (max-width: 349px) {
   .about .status .status-content {
-    gap: 100px;
-    padding-left: 0px;
-  }
-}
-@media (max-width: 405px) {
-  .about .status .status-content .margin-top {
-    margin-top: -110px;
+    gap: 0px;
+    padding-left: 25px;
   }
 }
 .about .status .status-content h2 {
@@ -744,47 +764,14 @@
 .about .info .leftContent .aboutImageLeft {
   margin-top: 15px;
   position: relative;
-  width: 380px;
-  height: 200px;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 20px;
-}
-@media (max-width: 1400px) {
-  .about .info .leftContent .aboutImageLeft {
-    width: 325px;
-    height: 171px;
-  }
-}
-@media (max-width: 1200px) {
-  .about .info .leftContent .aboutImageLeft {
-    width: 245px;
-    height: 128.9px;
-  }
-}
-@media (max-width: 1024px) {
-  .about .info .leftContent .aboutImageLeft {
-    width: 260px;
-    height: 136.8px;
-  }
-}
-@media (max-width: 991px) {
-  .about .info .leftContent .aboutImageLeft {
-    width: 335px;
-    height: 176.3px;
-  }
-}
-@media (max-width: 370px) {
-  .about .info .leftContent .aboutImageLeft {
-    width: 250px;
-    height: 131.5px;
-  }
 }
 .about .info .leftContent .aboutImageLeft h2 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 31.65px;
   color: #E2E8F0;
   padding: 5px 80px 10px 25px;
 }
@@ -813,21 +800,6 @@
   width: 100%;
   display: flex;
   padding: 0 20px;
-}
-@media (max-width: 1200px) {
-  .about .info .leftContent .aboutMore .btn-companyDeskDownload {
-    width: 245px;
-  }
-}
-@media (max-width: 991px) {
-  .about .info .leftContent .aboutMore .btn-companyDeskDownload {
-    width: 335px;
-  }
-}
-@media (max-width: 370px) {
-  .about .info .leftContent .aboutMore .btn-companyDeskDownload {
-    width: 250px;
-  }
 }
 .about .info .leftContent .aboutMore .btn-companyDeskDownload .companyDownloadIcon {
   background-color: #083344;
@@ -869,16 +841,6 @@
   align-items: center;
   padding: 0 20px;
 }
-@media (max-width: 1200px) {
-  .about .info .leftContent .aboutMore .btn-moreInfo {
-    width: 245px;
-  }
-}
-@media (max-width: 991px) {
-  .about .info .leftContent .aboutMore .btn-moreInfo {
-    width: 335px;
-  }
-}
 @media (max-width: 767px) {
   .about .info .leftContent .aboutMore .btn-moreInfo {
     margin-top: 15px;
@@ -887,7 +849,6 @@
 @media (max-width: 370px) {
   .about .info .leftContent .aboutMore .btn-moreInfo {
     margin-top: 15px;
-    width: 250px;
   }
 }
 .about .info .leftContent .aboutMore .btn-moreInfo .moreInfoIcon {
@@ -904,14 +865,12 @@
 .about .info .leftContent .aboutMore .btn-moreInfo h5 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
   margin: 0;
   text-align: left;
 }
 .about .info .leftContent .aboutMore .btn-moreInfo p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
   color: #FFFFFF;
   margin: 0;
   text-align: left;
@@ -950,8 +909,8 @@
 }
 .about .info .leftContent .achievements img {
   max-width: 100%;
-  max-height: 100%; /* Ensure the image does not exceed the container */
-  margin-bottom: 10px; /* Add spacing between the image and heading */
+  max-height: 100%;
+  margin-bottom: 10px;
 }
 .about .info .leftContent .achievements h3 {
   color: #FFFFFF;
@@ -959,7 +918,6 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
 }
 .about .info .leftContent .achievements .awardSlideBtn {
   background-color: #0891B2;
@@ -972,12 +930,12 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -5px; /* Adjust the right position as needed */
+  right: -5px;
   border: none;
   cursor: pointer;
 }
 .about .info .leftContent .achievements .awardSlideBtn .awardSlideIcon {
-  color: white; /* Set icon color */
+  color: white;
 }
 .about .info .rightContent {
   padding: 0px 15px 0px 10px;
@@ -985,11 +943,15 @@
   top: 0;
   height: 100%;
 }
+@media (max-width: 992px) {
+  .about .info .rightContent {
+    padding: 0px 15px 30px 10px;
+  }
+}
 .about .info .rightContent h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 40px;
-  line-height: 60px;
   color: #155E75;
 }
 .about .info .rightContent .allEmpImgContainer {
@@ -999,7 +961,7 @@
   justify-content: center;
   text-align: center;
 }
-.about .info .rightContent .allEmpImgContainer img {
+.about .info .rightContent .allEmpImgContainer .all-emp-img {
   width: 409px;
   height: 256px;
   -o-object-fit: cover;
@@ -1015,25 +977,84 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   border-radius: 20px;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
-.about .info .rightContent .allEmpImgContainer a {
-  text-decoration: none; /* Remove underline */
+@media (max-width: 1600px) {
+  .about .info .rightContent .allEmpImgContainer .overlay {
+    padding: 0px;
+  }
+}
+@media (max-width: 1400px) {
+  .about .info .rightContent .allEmpImgContainer .overlay {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1230px) {
+  .about .info .rightContent .allEmpImgContainer .overlay {
+    padding: 0px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 992px) {
+  .about .info .rightContent .allEmpImgContainer .overlay {
+    padding: 0px;
+    font-size: 20px;
+  }
+}
+.about .info .rightContent .allEmpImgContainer a.play-link {
+  text-decoration: none;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
 }
-.about .info .rightContent .allEmpImgContainer a .play-icon {
-  margin-left: -10px;
-  margin-right: 5px; /* Add some space between the icon and text */
+.about .info .rightContent .allEmpImgContainer a.play-link:hover .play-icon {
+  background-color: rgba(1, 183, 196, 0.5);
+  color: #FFF;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.about .info .rightContent .allEmpImgContainer a .play-icon img {
-  width: 56px; /* Width of the play icon */
-  height: 56px; /* Height of the play icon */
+@media (max-width: 1150px) {
+  .about .info .rightContent .allEmpImgContainer a.play-link {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .about .info .rightContent .allEmpImgContainer a.play-link {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .about .info .rightContent .allEmpImgContainer a.play-link {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 410px) {
+  .about .info .rightContent .allEmpImgContainer a.play-link {
+    display: block;
+  }
+}
+@media (max-width: 380px) {
+  .about .info .rightContent .allEmpImgContainer a.play-link {
+    flex-direction: column;
+  }
+}
+.about .info .rightContent .allEmpImgContainer a.play-link .play-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .product-section {
@@ -1043,10 +1064,12 @@
   gap: 48px;
   background: #A5F3FC;
 }
-.product-section .rowProducts {
-  flex-wrap: wrap;
+@media (max-width: 370px) {
+  .product-section {
+    padding: 50px;
+  }
 }
-.product-section .rowProducts .productCard {
+.product-section .productCard {
   margin-bottom: 15px;
   display: flex;
   width: 100%;
@@ -1058,7 +1081,12 @@
   border-radius: 32px;
   background: var(--cyan-100, #CFFAFE);
 }
-.product-section .rowProducts .productCard .productImage {
+@media (max-width: 1200px) {
+  .product-section .productCard {
+    padding: 5px;
+  }
+}
+.product-section .productCard .productImage {
   margin: 25px;
   display: flex;
   width: 128px;
@@ -1069,7 +1097,13 @@
   background: #FFF;
   box-shadow: 0px 6.5px 13px rgba(0, 0, 0, 0.03);
 }
-.product-section .rowProducts .productCard h3 {
+@media (max-width: 1200px) {
+  .product-section .productCard .productImage {
+    width: 120px;
+    height: 120px;
+  }
+}
+.product-section .productCard h3 {
   color: var(--slate-950, #020617);
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1077,12 +1111,22 @@
   font-weight: 600;
   text-transform: capitalize;
 }
-.product-section .rowProducts .productCard p {
+@media (max-width: 1200px) {
+  .product-section .productCard h3 {
+    font-size: 18px;
+  }
+}
+.product-section .productCard p {
   color: var(--cyan-700, #0E7490);
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .product-section .productCard p {
+    font-size: 14px;
+  }
 }
 
 .projectSection {
@@ -1092,10 +1136,17 @@
   gap: 48px;
   background: #CFFAFE;
 }
-.projectSection .rowProjects {
-  flex-wrap: wrap;
+@media (max-width: 1400px) {
+  .projectSection {
+    padding: 96px 50px 50px 50px;
+  }
 }
-.projectSection .rowProjects .projectCard {
+@media (max-width: 1200px) {
+  .projectSection {
+    padding: 96px 50px 50px 50px;
+  }
+}
+.projectSection .projectCard {
   margin-bottom: 15px;
   display: flex;
   width: 100%;
@@ -1105,13 +1156,13 @@
   border-radius: 32px;
   background: #ECFEFF;
 }
-.projectSection .rowProjects .projectCard .projectImage {
+.projectSection .projectCard .projectImage {
   width: 100%;
   height: 260px;
   flex-shrink: 0;
   border-radius: 12px;
 }
-.projectSection .rowProjects .projectCard .projectDetails {
+.projectSection .projectCard .projectDetails {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1119,34 +1170,32 @@
   flex: 1 0 0;
   align-self: stretch;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo {
+.projectSection .projectCard .projectDetails .projectInfo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
   align-self: stretch;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo h4 {
+.projectSection .projectCard .projectDetails .projectInfo h4 {
   align-self: stretch;
   color: #020617;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .project {
+.projectSection .projectCard .projectDetails .projectInfo .project {
   display: flex;
   align-items: center;
   color: #01767F;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .project .projectIcon {
+.projectSection .projectCard .projectDetails .projectInfo .project .projectIcon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1154,7 +1203,7 @@
   height: 20px;
   margin-right: 8px;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectTags {
+.projectSection .projectCard .projectDetails .projectInfo .projectTags {
   display: flex;
   align-items: center;
   align-content: center;
@@ -1162,7 +1211,7 @@
   align-self: stretch;
   flex-wrap: wrap;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectTags .tag {
+.projectSection .projectCard .projectDetails .projectInfo .projectTags .tag {
   display: flex;
   padding: 10px;
   justify-content: center;
@@ -1175,17 +1224,21 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: capitalize;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectFooter {
+.projectSection .projectCard .projectDetails .projectInfo .projectFooter {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
   align-self: stretch;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectFooter a {
+@media (max-width: 398px) {
+  .projectSection .projectCard .projectDetails .projectInfo .projectFooter {
+    flex-direction: column;
+  }
+}
+.projectSection .projectCard .projectDetails .projectInfo .projectFooter a {
   display: flex;
   padding: 8px 16px;
   justify-content: center;
@@ -1197,16 +1250,23 @@
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  line-height: 24px;
   text-transform: capitalize;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectFooter .case {
+.projectSection .projectCard .projectDetails .projectInfo .projectFooter .case {
   background: #0E7490;
   color: #FFF;
 }
-.projectSection .rowProjects .projectCard .projectDetails .projectInfo .projectFooter .live {
+.projectSection .projectCard .projectDetails .projectInfo .projectFooter .case:hover {
+  background: #083344;
+  color: #FFF;
+}
+.projectSection .projectCard .projectDetails .projectInfo .projectFooter .live {
   color: #01767F;
   border: 1px solid #0E7490;
+}
+.projectSection .projectCard .projectDetails .projectInfo .projectFooter .live:hover {
+  background: #06B6D4;
+  color: #FFF;
 }
 
 .services {
@@ -1258,7 +1318,6 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
 }
 .services .rowServices .serviceCard .serviceContent p {
@@ -1269,7 +1328,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .services .rowServices .serviceCard .btn-service {
   color: #0E7490;
@@ -1278,7 +1336,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 171.429% */
   display: flex;
   padding: 18px;
   justify-content: center;
@@ -1362,7 +1419,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
 }
 .testimonial .testimonialCard .cardHeader .personInfo .personDesingnation {
@@ -1371,7 +1427,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-transform: capitalize;
 }
 .testimonial .testimonialCard .cardBody {
@@ -1383,7 +1438,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: capitalize;
 }
 .testimonial .testimonialCard .cardBodyImage {
@@ -1421,7 +1475,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -1519,7 +1572,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: capitalize;
 }
 
@@ -1557,7 +1609,6 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
 }
 .inquiry .inqForm .formElement .tagsArea .tags {
@@ -1582,7 +1633,6 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -1603,7 +1653,6 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  line-height: normal;
 }
 .inquiry .inqForm .formElement .formLabel span {
   display: flex;
@@ -1636,7 +1685,6 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
 }
 .inquiry .inqForm .formElement .formInput .mobileNoInputArea {
   display: flex;
@@ -1658,7 +1706,6 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
 }
 .inquiry .inqForm .formElement .formInput .mobileNoInputArea input {
   flex-grow: 1;
@@ -1671,7 +1718,6 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
 }
 .inquiry .inqForm .formElement .formInput span {
   width: 18px;
@@ -1691,7 +1737,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
 .btn-button {
@@ -1708,7 +1753,6 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 171.429% */
 }
 .btn-button span {
   display: flex;
@@ -1744,7 +1788,6 @@ footer .footerTop .leftContent p {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 footer .footerTop .leftContent .footerContact {
   display: flex;
@@ -1759,7 +1802,6 @@ footer .footerTop .leftContent .footerContact p {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   display: flex;
   align-items: center;
 }
@@ -1775,7 +1817,6 @@ footer .footerTop .leftContent .footerContact .contactInfoText {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-decoration-line: underline;
   text-decoration: none;
   margin: -20px 0px 5px 35px;
@@ -1800,7 +1841,6 @@ footer .footerTop .leftContent .footerContact .subscribe input {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
 }
 footer .footerTop .leftContent .footerContact .subscribe button {
   display: flex;
@@ -1815,7 +1855,6 @@ footer .footerTop .leftContent .footerContact .subscribe button {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 footer .footerTop .rightContent .footerLinks {
   display: flex;
@@ -1830,7 +1869,6 @@ footer .footerTop .rightContent .footerLinks h5 {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 footer .footerTop .rightContent .footerLinks a {
   color: var(--cyan-500, #06B6D4);
@@ -1839,7 +1877,6 @@ footer .footerTop .rightContent .footerLinks a {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: capitalize;
 }
 footer .footerBanner {
@@ -1852,7 +1889,6 @@ footer .footerBanner p {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 footer .footerBanner .imageContainer img {
   height: 36.87px;
@@ -1871,7 +1907,6 @@ footer .footerBottom .bottomContent p {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 footer .footerBottom .bottomContent a {
   color: var(--red-50, #FEF2F2);
@@ -1880,7 +1915,6 @@ footer .footerBottom .bottomContent a {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 footer .footerBottom .bottomContent span {
   display: flex;
