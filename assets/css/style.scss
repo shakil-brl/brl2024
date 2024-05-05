@@ -2526,6 +2526,64 @@
     }
 }
 
+
+
+.about-slider {
+    display: flex;
+    width: 100%;
+    padding: 96px 0px 92px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #083344;
+
+    h1 {
+        color: #06B6D4;
+        text-align: center;
+        font-family: "Roboto Slab";
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    h3 {
+        color: #0E7490;
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    /* Slider container */
+    .slider-container {
+        overflow: hidden; /* Hide overflow to keep the track within bounds */
+        margin-top: 20px; /* Add margin at the top */
+        width: 100%; /* Full width of the screen */
+        height: auto; /* Adjust height according to the content */
+    }
+
+    /* Track for the images */
+    .slider-track {
+        display: flex;
+        gap: 20px; /* Set equal spacing (gap) between images */
+        transition: transform 0.5s linear; /* Smooth transition for sliding */
+        width: fit-content; /* Allow the track width to adjust dynamically */
+    }
+
+    /* Styling each image item */
+    .slider-item {
+        display: flex;
+        align-self: center; /* Align each image item along the horizontal line */
+        margin-right: 20px; /* Add right margin between items */
+        
+        img {
+            max-height: 100%; /* Maintain original height while scaling width */
+            display: block;
+            object-fit: cover; /* Ensure images cover their area */
+        }
+    }
+}
+
+
 footer{
     background: #020617;
 
