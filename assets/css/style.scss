@@ -2522,6 +2522,10 @@
     background: #083344;
     text-align: center;
 
+    @media (max-width: 1200px) {
+        padding: 50px 0px 50px 0px;
+    }
+
     h1, h3 {
         color: #06B6D4;
         font-family: "Roboto Slab", sans-serif;
@@ -2531,6 +2535,10 @@
     h1 {
         font-size: 40px;
         font-weight: 900;
+
+        @media (max-width: 570px) {
+            font-size: 30px;
+        }
     }
 
     h3 {
@@ -2538,23 +2546,19 @@
         font-size: 24px;
         font-weight: 500;
         color: #0E7490;
+        @media (max-width: 570px) {
+            font-size: 20px;
+        }
     }
 
     .owl-carousel{
         margin-top: 60px;
-        .item{
-            
-        }
     }
 
     .owl-stage{
         display: flex;
         align-items: center;
         padding: 0;
-    }
-
-    .owl-stage-outer {
-        padding: 0; /* Ensure there is no extra padding */
     }
 
     img{

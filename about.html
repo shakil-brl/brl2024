@@ -579,30 +579,27 @@
 
     <script>
         $('.owl-carousel').owlCarousel({
-            loop: true, // Enables continuous looping of images
-            autoplay: true, // Enables auto-sliding
-            autoplayTimeout: 1000, // Time between slides (in milliseconds)
-            autoplayHoverPause: true, // Pause on hover
-            items: 1, // Number of items (images) shown at once
-            nav: false, // Hide navigation buttons (true to show)
+            loop: true, 
+            autoplay: true, 
+            autoplayTimeout: 1000, 
+            autoplayHoverPause: true, 
+            nav: false, 
             dots: false,
+            autoWidth:true,
+            margin:10,
             items:4,
-            margin:20
-            // responsive:{
-            //     0:{
-            //         items:1,
-            //         nav:true
-            //     },
-            //     600:{
-            //         items:1,
-            //         nav:false
-            //     },
-            //     1000:{
-            //         items:3,
-            //         nav:true,
-            //         loop:false
-            //     }
-            // }
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                },
+                600:{
+                    items:3,
+                },
+                1000:{
+                    items:4,
+                }
+            }
         })
     </script>
      

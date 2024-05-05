@@ -2376,6 +2376,11 @@
   background: #083344;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .about-slider {
+    padding: 50px 0px 50px 0px;
+  }
+}
 .about-slider h1, .about-slider h3 {
   color: #06B6D4;
   font-family: "Roboto Slab", sans-serif;
@@ -2385,11 +2390,21 @@
   font-size: 40px;
   font-weight: 900;
 }
+@media (max-width: 570px) {
+  .about-slider h1 {
+    font-size: 30px;
+  }
+}
 .about-slider h3 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: #0E7490;
+}
+@media (max-width: 570px) {
+  .about-slider h3 {
+    font-size: 20px;
+  }
 }
 .about-slider .owl-carousel {
   margin-top: 60px;
@@ -2398,9 +2413,6 @@
   display: flex;
   align-items: center;
   padding: 0;
-}
-.about-slider .owl-stage-outer {
-  padding: 0; /* Ensure there is no extra padding */
 }
 .about-slider img {
   border-radius: 24px;
