@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
 
@@ -346,14 +348,20 @@
         <h1>Life at BRL</h1>
         <h3>We learn, work and enjoy together</h3>
 
-        <div class="slider-container">
-            <div class="slider-track" id="sliderTrack">
-                <div class="slider-item"><img src="./assets/images/slider/1.jpeg" alt="Image 1"></div>
-                <div class="slider-item"><img src="./assets/images/slider/2.jpeg" alt="Image 2"></div>
-                <div class="slider-item"><img src="./assets/images/slider/3.jpeg" alt="Image 3"></div>
-                <div class="slider-item"><img src="./assets/images/slider/4.jpeg" alt="Image 4"></div>
-            </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="./assets/images/slider/1.jpeg" alt="Image 1"></div>
+            <div class="item"><img src="./assets/images/slider/2.jpeg" alt="Image 2"></div>
+            <div class="item"><img src="./assets/images/slider/3.jpeg" alt="Image 3"></div>
+            <div class="item"><img src="./assets/images/slider/4.jpeg" alt="Image 4"></div>
+            <div class="item"><img src="./assets/images/slider/5.jpeg" alt="Image 5"></div>
+            <div class="item"><img src="./assets/images/slider/6.jpeg" alt="Image 6"></div>
+            <div class="item"><img src="./assets/images/slider/7.jpeg" alt="Image 7"></div>
+            <div class="item"><img src="./assets/images/slider/8.jpeg" alt="Image 8"></div>
+            <div class="item"><img src="./assets/images/slider/9.jpeg" alt="Image 9"></div>
+            <div class="item"><img src="./assets/images/slider/10.jpeg" alt="Image 10"></div>
+            <!-- Add more images as needed -->
         </div>
+        
     </section>
 
     <footer>
@@ -564,7 +572,39 @@
         </div>
     </footer>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true, // Enables continuous looping of images
+            autoplay: true, // Enables auto-sliding
+            autoplayTimeout: 1000, // Time between slides (in milliseconds)
+            autoplayHoverPause: true, // Pause on hover
+            items: 1, // Number of items (images) shown at once
+            nav: false, // Hide navigation buttons (true to show)
+            dots: false,
+            items:4,
+            margin:20
+            // responsive:{
+            //     0:{
+            //         items:1,
+            //         nav:true
+            //     },
+            //     600:{
+            //         items:1,
+            //         nav:false
+            //     },
+            //     1000:{
+            //         items:3,
+            //         nav:true,
+            //         loop:false
+            //     }
+            // }
+        })
+    </script>
      
 <!-- Bootstrap JS Bundle -->
 

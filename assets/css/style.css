@@ -11,6 +11,10 @@
   width: auto;
   margin-top: 7px;
 }
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+  outline: 0;
+}
 .navbar .nav-link {
   color: #0E7490;
   font-family: Poppins;
@@ -894,45 +898,33 @@
   margin-top: 30px;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 767px) {
-  .about .info .leftContent .achievements .carousel-inner {
-    display: flex;
-  }
-  .about .info .leftContent .achievements .carousel-inner .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 33.3333333333%;
-  }
-}
-.about .info .leftContent .achievements .carousel-item {
-  padding-right: 1rem;
-}
 .about .info .leftContent .achievements .achivementImgContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-color: #0F172A;
   border-radius: 30px;
   height: 256px;
 }
-@media (max-width: 767px) {
-  .about .info .leftContent .achievements .achivementImgContainer {
-    width: 100%;
-  }
+.about .info .leftContent .achievements .achivementImgContainer img {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 30px;
 }
-.about .info .leftContent .achievements img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-bottom: 10px;
-}
-.about .info .leftContent .achievements h3 {
+.about .info .leftContent .achievements .achivementImgContainer h3 {
   color: #FFFFFF;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  margin-top: auto;
+  padding-bottom: 10px;
+}
+.about .info .leftContent .achievements .owl-carousel {
+  position: relative;
+  padding-right: 45px;
 }
 .about .info .leftContent .achievements .awardSlideBtn {
   background-color: #0891B2;
@@ -945,9 +937,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -5px;
+  right: 0;
   border: none;
   cursor: pointer;
+  z-index: 10;
 }
 .about .info .leftContent .achievements .awardSlideBtn .awardSlideIcon {
   color: white;
@@ -1080,7 +1073,7 @@
 .product-section {
   display: flex;
   width: 100%;
-  padding: 96px;
+  padding: 96px 0px 96px 0px;
   gap: 48px;
   background: #A5F3FC;
 }
@@ -1091,22 +1084,22 @@
 }
 @media (max-width: 768px) {
   .product-section {
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 40px 0px;
   }
 }
 @media (max-width: 576px) {
   .product-section {
-    padding: 60px;
+    padding: 60px 0px 60px 0px;
   }
 }
 @media (max-width: 425px) {
   .product-section {
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
   }
 }
 @media (max-width: 370px) {
   .product-section {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 0px 40px 0px;
   }
 }
 .product-section .productCard {
@@ -1175,18 +1168,18 @@
 .projectSection {
   display: flex;
   width: 100%;
-  padding: 96px;
+  padding: 96px 0px 96px 0px;
   gap: 48px;
   background: #CFFAFE;
 }
 @media (max-width: 1400px) {
   .projectSection {
-    padding: 96px 50px 50px 50px;
+    padding: 96px 0px 50px 0px;
   }
 }
 @media (max-width: 1200px) {
   .projectSection {
-    padding: 96px 50px 50px 50px;
+    padding: 96px 0px 50px 0px;
   }
 }
 @media (max-width: 992px) {
@@ -1196,17 +1189,17 @@
 }
 @media (max-width: 768px) {
   .projectSection {
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 40px 0px;
   }
 }
 @media (max-width: 576px) {
   .projectSection {
-    padding: 60px;
+    padding: 60px 0px 60px 0px;
   }
 }
 @media (max-width: 425px) {
   .projectSection {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 0px 40px 0px;
   }
 }
 .projectSection .projectCard {
@@ -1221,7 +1214,6 @@
 }
 .projectSection .projectCard .projectImage {
   width: 100%;
-  height: 260px;
   flex-shrink: 0;
   border-radius: 12px;
 }
@@ -1335,13 +1327,13 @@
 .services {
   display: flex;
   width: 100%;
-  padding: 96px;
+  padding: 96px 0px 96px 0px;
   gap: 48px;
   background: #A5F3FC;
 }
 @media (max-width: 1200px) {
   .services {
-    padding: 96px 50px 50px 50px;
+    padding: 96px 0px 50px 0px;
   }
 }
 @media (max-width: 992px) {
@@ -1351,17 +1343,17 @@
 }
 @media (max-width: 768px) {
   .services {
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 40px 0px;
   }
 }
 @media (max-width: 576px) {
   .services {
-    padding: 60px;
+    padding: 60px 0px 60px 0px;
   }
 }
 @media (max-width: 425px) {
   .services {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 0px 40px 0px;
   }
 }
 .services .serviceCard {
@@ -1523,12 +1515,12 @@
 }
 
 .testimonial {
-  padding: 96px;
+  padding: 96px 0px 96px 0px;
   background: #CFFAFE;
 }
 @media (max-width: 1300px) {
   .testimonial {
-    padding: 50px;
+    padding: 50px 0px 50px 0px;
   }
 }
 @media (max-width: 992px) {
@@ -1538,17 +1530,17 @@
 }
 @media (max-width: 768px) {
   .testimonial {
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 40px 0px;
   }
 }
 @media (max-width: 576px) {
   .testimonial {
-    padding: 60px;
+    padding: 60px 0px 60px 0px;
   }
 }
 @media (max-width: 425px) {
   .testimonial {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 0px 40px 0px;
   }
 }
 .testimonial .testimonialCard {
@@ -1647,7 +1639,6 @@
 }
 .testimonial .testimonialCard .cardBodyImage img {
   width: 100%;
-  height: 217px;
   border-radius: 32px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2381,54 +2372,38 @@
 }
 
 .about-slider {
-  display: flex;
-  width: 100%;
-  padding: 96px 0px 92px 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 96px 0 92px;
   background: #083344;
-  /* Slider container */
-  /* Track for the images */
-  /* Styling each image item */
+  text-align: center;
+}
+.about-slider h1, .about-slider h3 {
+  color: #06B6D4;
+  font-family: "Roboto Slab", sans-serif;
+  margin: 0;
 }
 .about-slider h1 {
-  color: #06B6D4;
-  text-align: center;
-  font-family: "Roboto Slab";
   font-size: 40px;
   font-weight: 900;
 }
 .about-slider h3 {
-  color: #0E7490;
-  text-align: center;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
+  color: #0E7490;
 }
-.about-slider .slider-container {
-  overflow: hidden; /* Hide overflow to keep the track within bounds */
-  margin-top: 20px; /* Add margin at the top */
-  width: 100%; /* Full width of the screen */
-  height: auto; /* Adjust height according to the content */
+.about-slider .owl-carousel {
+  margin-top: 60px;
 }
-.about-slider .slider-track {
+.about-slider .owl-stage {
   display: flex;
-  gap: 20px; /* Set equal spacing (gap) between images */
-  transition: transform 0.5s linear; /* Smooth transition for sliding */
-  width: -moz-fit-content;
-  width: fit-content; /* Allow the track width to adjust dynamically */
+  align-items: center;
+  padding: 0;
 }
-.about-slider .slider-item {
-  display: flex;
-  align-self: center; /* Align each image item along the horizontal line */
-  margin-right: 20px; /* Add right margin between items */
+.about-slider .owl-stage-outer {
+  padding: 0; /* Ensure there is no extra padding */
 }
-.about-slider .slider-item img {
-  max-height: 100%; /* Maintain original height while scaling width */
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover; /* Ensure images cover their area */
+.about-slider img {
+  border-radius: 24px;
 }
 
 footer {
