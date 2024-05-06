@@ -2450,7 +2450,6 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  /* Style the dots */
 }
 .clients .clients .owl-dots .owl-dot {
   width: 10px;
