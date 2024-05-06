@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('.lab-carousel').owlCarousel({
     loop: true, 
     autoplay: true, 
     autoplayTimeout: 1000, 
@@ -23,26 +23,20 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-$('.owl-carousel-client').owlCarousel({
+$('.client-carousel').owlCarousel({
     loop: true, 
     margin: 10, 
     nav: false, 
     dots: true, 
-    vertical: true,
-    responsiveClass:true,
     responsive:{
         0:{
-            items:3,
-            nav:true
+            items:3
         },
         600:{
-            items:4,
-            nav:false
+            items:4
         },
         1000:{
-            items:6,
-            nav:true,
-            loop:false
+            items:6
         }
     }
 });

@@ -2422,15 +2422,16 @@
   padding: 96px 0px;
   background-color: #A5F3FC;
 }
-.clients .owl-carousel-client {
+.clients .clients {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
   align-self: stretch;
+  /* Owl Carousel dots */
 }
-.clients .owl-carousel-client .owl-item {
+.clients .clients .item {
   display: flex;
   height: 96px;
   padding: 16px 10px;
@@ -2441,9 +2442,35 @@
   border-radius: 24px;
   background: #FFF;
 }
-.clients .owl-carousel-client .owl-item img {
+.clients .clients .item img {
   width: 106.458px;
   height: 35px;
+}
+.clients .clients .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* Style the dots */
+}
+.clients .clients .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 1000px;
+  background: #06B6D4;
+  cursor: pointer;
+}
+.clients .clients .owl-dots .owl-dot.active {
+  width: 25px;
+  height: 10px;
+  border-radius: 1000px;
+  background: #0E7490;
+}
+.clients .clients .owl-dots .owl-dot:hover {
+  width: 25px;
+  height: 10px;
+  border-radius: 1000px;
+  background: #0E7490;
 }
 
 .work-flow {
