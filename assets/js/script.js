@@ -24,10 +24,10 @@ $('.owl-carousel').owlCarousel({
 
 
 $('.owl-carousel-client').owlCarousel({
-    loop: true, // Enable looping
-    margin: 10, // Margin between items
-    nav: false, // Enable navigation (optional)
-    dots: true, // Enable dots for navigation (optional)
+    loop: true, 
+    margin: 10, 
+    nav: false, 
+    dots: true, 
     vertical: true,
     responsiveClass:true,
     responsive:{
