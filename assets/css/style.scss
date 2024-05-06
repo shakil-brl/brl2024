@@ -2515,8 +2515,6 @@
     }
 }
 
-
-
 .about-slider {
     padding: 96px 0 92px;
     background: #083344;
@@ -2565,6 +2563,24 @@
         border-radius: 24px;
     }
 
+    
+}
+
+.clients {
+    padding: 96px 0px;
+    background-color: #A5F3FC;
+
+    .owl-carousel-client {
+        display: block; // Set to block for vertical alignment
+        .owl-item {
+            margin: 16px 0; // Add margin between items
+            height: auto; // Let the height adjust automatically based on content
+            padding: 16px 30px;
+            border-radius: 24px;
+            background: #FFF;
+            width: auto; // Adjust width as necessary
+        }
+    }  
     
 }
 

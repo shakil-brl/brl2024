@@ -1,3 +1,52 @@
+$('.owl-carousel').owlCarousel({
+    loop: true, 
+    autoplay: true, 
+    autoplayTimeout: 1000, 
+    autoplayHoverPause: true, 
+    nav: false, 
+    dots: false,
+    autoWidth:true,
+    margin:10,
+    items:4,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:4,
+        }
+    }
+})
+
+
+$('.owl-carousel-client').owlCarousel({
+    loop: true, // Enable looping
+    margin: 10, // Margin between items
+    nav: false, // Enable navigation (optional)
+    dots: true, // Enable dots for navigation (optional)
+    vertical: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:3,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:false
+        },
+        1000:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
 var awardCarousel = document.querySelector('#achievementsCarousel');
 
 var nextButton = document.querySelector('.carousel-control-next');
