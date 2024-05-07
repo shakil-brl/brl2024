@@ -1965,6 +1965,7 @@
 
             @media (max-width: 1400px) {
                 width: 390px;
+                height: 620px;
             }
 
             @media (max-width: 1200px) {
@@ -3164,7 +3165,6 @@
         padding: 72px;
         justify-content: left;
         align-items: left;
-        gap: 72px;
         border-radius: 72px;
         background-color: #A5F3FC;
 
@@ -3173,11 +3173,8 @@
         } 
 
         .circle{
-            position: absolute;
-            left: 455.162px;
-            top: 36.145px;
-            stroke-width: 2px;
-            stroke: #67E8F9;
+            width: 35.855px;
+            height: 35.855px;
         }
 
         h1{
@@ -3188,7 +3185,7 @@
         }
 
         p{
-            margin: -50px 0px -40px 0px;
+            margin: 20px 0px 25px 0px;
             color: #334155;
             font-family: Poppins;
             font-size: 16px;
