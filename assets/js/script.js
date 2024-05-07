@@ -25,14 +25,19 @@ $('.lab-carousel').owlCarousel({
 
 $('.client-carousel').owlCarousel({
     loop: true, 
+    autoplay: true, 
+    autoplayTimeout: 1000, 
     margin: 10, 
     nav: false, 
     dots: true, 
     responsive:{
         0:{
-            items:3
+            items:2
         },
         600:{
+            items:3
+        },
+        700:{
             items:4
         },
         1000:{
