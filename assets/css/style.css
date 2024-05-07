@@ -1801,9 +1801,6 @@
     padding: 30px 20px 40px 20px;
   }
 }
-.inquiry .inqImage {
-  width: 500px;
-}
 @media (max-width: 1400px) {
   .inquiry .inqImage {
     width: 100%;
@@ -1817,10 +1814,9 @@
 }
 .inquiry .inqImage img {
   width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 730px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 48px;
 }
 @media (max-width: 1400px) {
@@ -2896,15 +2892,16 @@
 }
 .team .team-tags {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   gap: 9px;
+  flex-wrap: wrap;
 }
 .team .team-tags .active {
   border-radius: 360px;
   background: #A5F3FC;
 }
 .team .team-tags .tag {
-  text-decoration: none;
   text-decoration: none;
   display: flex;
   padding: 8px 16px;
@@ -2920,10 +2917,44 @@
   border-radius: 360px;
   background: #A5F3FC;
 }
+@media (max-width: 768px) {
+  .team .team-tags {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .team .team-tags .tag {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .team .team-tags {
+    justify-content: center;
+    gap: 12px;
+  }
+  .team .team-tags .tag {
+    justify-content: center;
+    width: auto;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 1025px) {
+  .team .team-tags {
+    justify-content: center;
+    gap: 9px;
+  }
+  .team .team-tags .tag {
+    justify-content: center;
+    width: auto;
+    padding: 8px 16px;
+  }
+}
 .team .employees {
   margin-top: 35px;
 }
 .team .employees .employee-card {
+  margin-top: 27px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2934,10 +2965,14 @@
 }
 .team .employees .employee-card img {
   border-radius: 360px;
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 200px;
   height: 200px;
+}
+@media (max-width: 991px) {
+  .team .employees .employee-card img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .team .employees .employee-card .name {
   margin-top: 16px;
@@ -2970,6 +3005,42 @@
   gap: 10px;
   border-radius: 360px;
   border: 1px solid #E2E8F0;
+}
+.team .career {
+  margin-top: 192px;
+  display: flex;
+  flex-direction: column;
+  padding: 72px;
+  justify-content: left;
+  align-items: left;
+  gap: 72px;
+  border-radius: 72px;
+  background-color: #A5F3FC;
+}
+@media (max-width: 568px) {
+  .team .career {
+    padding: 40px;
+  }
+}
+.team .career .circle {
+  position: absolute;
+  left: 455.162px;
+  top: 36.145px;
+  stroke-width: 2px;
+  stroke: #67E8F9;
+}
+.team .career h1 {
+  color: #0891B2;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 900;
+}
+.team .career p {
+  margin: -50px 0px -40px 0px;
+  color: #334155;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 footer {
