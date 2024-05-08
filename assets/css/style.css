@@ -3023,8 +3023,163 @@
   }
 }
 .team .career .circle {
-  width: 35.855px;
-  height: 35.855px;
+  margin: -27px 0px 0px 380px;
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 1399px) {
+  .team .career .circle {
+    margin: -27px 0px 0px 290px;
+  }
+}
+@media (max-width: 1199px) {
+  .team .career .circle {
+    margin: -27px 0px 0px 390px;
+  }
+}
+@media (max-width: 992px) {
+  .team .career .circle {
+    margin: -27px 0px 0px 200px;
+  }
+}
+@media (max-width: 767px) {
+  .team .career .circle {
+    margin: -40px 0px 0px 125px;
+  }
+}
+@media (max-width: 576px) {
+  .team .career .circle {
+    margin: -14px 0px 0px 195px;
+  }
+}
+.team .career .tringle {
+  margin: -96px 0px 0px 67px;
+  width: 66.313px;
+  height: 66.313px;
+  transform: rotate(21.748deg);
+}
+@media (max-width: 1399px) {
+  .team .career .tringle {
+    margin: -96px 0px 0px -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .team .career .tringle {
+    margin: -135px 0px 0px -38px;
+  }
+}
+@media (max-width: 992px) {
+  .team .career .tringle {
+    margin: -135px 0px 0px 130px;
+  }
+}
+@media (max-width: 767px) {
+  .team .career .tringle {
+    margin: -220px 0px 0px 220px;
+  }
+}
+@media (max-width: 576px) {
+  .team .career .tringle {
+    margin: -314px 0px 0px 303px;
+  }
+}
+.team .career .star {
+  margin: -130px 0px 0px 1045px;
+  width: 73.964px;
+  height: 73.964px;
+}
+@media (max-width: 1399px) {
+  .team .career .star {
+    margin: -130px 0px 0px 900px;
+  }
+}
+@media (max-width: 1199px) {
+  .team .career .star {
+    margin: -75px 0px 0px 775px;
+  }
+}
+@media (max-width: 992px) {
+  .team .career .star {
+    margin: -75px 0px 0px 510px;
+  }
+}
+@media (max-width: 767px) {
+  .team .career .star {
+    margin: -75px 0px 0px 345px;
+  }
+}
+@media (max-width: 576px) {
+  .team .career .star {
+    margin: -150px 0px 0px 335px;
+  }
+}
+.team .career .text-bottom-icons {
+  display: flex;
+}
+.team .career .text-bottom-icons .octagon {
+  margin: 25px 0px 0px 405px;
+  width: 45.022px;
+  height: 45.022px;
+}
+@media (max-width: 1399px) {
+  .team .career .text-bottom-icons .octagon {
+    margin: 25px 0px 0px 316px;
+  }
+}
+@media (max-width: 1199px) {
+  .team .career .text-bottom-icons .octagon {
+    margin: 25px 0px 0px 260px;
+  }
+}
+@media (max-width: 992px) {
+  .team .career .text-bottom-icons .octagon {
+    margin: 25px 0px 0px 220px;
+  }
+}
+@media (max-width: 767px) {
+  .team .career .text-bottom-icons .octagon {
+    margin: 25px 0px 0px 185px;
+  }
+}
+@media (max-width: 576px) {
+  .team .career .text-bottom-icons .octagon {
+    margin: 25px 0px 10px 185px;
+  }
+}
+.team .career .text-bottom-icons .rectangle {
+  margin: -35px 0px 0px 182px;
+  width: 31.5px;
+  height: 31.5px;
+}
+@media (max-width: 1399px) {
+  .team .career .text-bottom-icons .rectangle {
+    margin: -20px 0px 0px 182px;
+  }
+}
+@media (max-width: 992px) {
+  .team .career .text-bottom-icons .rectangle {
+    margin: -20px 0px 0px 85px;
+  }
+}
+@media (max-width: 767px) {
+  .team .career .text-bottom-icons .rectangle {
+    margin: -20px 0px 0px 55px;
+  }
+}
+.team .career .text-bottom-icons .hexagonal {
+  margin: 10px 0px 10px 215px;
+  width: 50.7px;
+  height: 50.7px;
+}
+@media (max-width: 992px) {
+  .team .career .text-bottom-icons .hexagonal {
+    margin: 10px 0px 10px 145px;
+  }
+}
+@media (max-width: 767px) {
+  .team .career .text-bottom-icons .hexagonal {
+    margin: 10px 0px 10px 45px;
+  }
 }
 .team .career h1 {
   color: #0891B2;
@@ -3033,11 +3188,14 @@
   font-weight: 900;
 }
 .team .career p {
-  margin: 20px 0px 25px 0px;
+  margin: -25px 0px 25px 0px;
   color: #334155;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
+}
+.team .career .join-button {
+  margin: -75px 0px -10px 0px;
 }
 
 footer {

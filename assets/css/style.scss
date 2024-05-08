@@ -3173,8 +3173,144 @@
         } 
 
         .circle{
-            width: 35.855px;
-            height: 35.855px;
+            margin: -27px 0px 0px 380px;
+            width: 40px;
+            height: 40px;
+
+            @media (max-width: 1399px){
+                margin: -27px 0px 0px 290px;
+            }
+
+            @media (max-width: 1199px){
+                margin: -27px 0px 0px 390px;
+            }
+
+            @media (max-width: 992px){
+                margin: -27px 0px 0px 200px;
+            }
+
+            @media (max-width: 767px){
+                margin: -40px 0px 0px 125px;
+            }
+
+            @media (max-width: 576px){
+                margin: -14px 0px 0px 195px;
+            }
+        }
+
+        .tringle{
+            margin: -96px 0px 0px 67px;
+            width: 66.313px;
+            height: 66.313px;
+            transform: rotate(21.748deg);
+
+            @media (max-width: 1399px){
+                margin: -96px 0px 0px -20px;
+            }
+
+            @media (max-width: 1199px){
+                margin: -135px 0px 0px -38px;
+            }
+
+            @media (max-width: 992px){
+                margin: -135px 0px 0px 130px;
+            }
+
+            @media (max-width: 767px){
+                margin: -220px 0px 0px 220px;
+            }
+
+            @media (max-width: 576px){
+                margin: -314px 0px 0px 303px;
+            }
+            
+        }
+
+        .star{
+            margin: -130px 0px 0px 1045px;
+            width: 73.964px;
+            height: 73.964px;
+
+            @media (max-width: 1399px){
+                margin: -130px 0px 0px 900px;
+            }
+
+            @media (max-width: 1199px){
+                margin: -75px 0px 0px 775px;
+            }
+
+            @media (max-width: 992px){
+                margin: -75px 0px 0px 510px;
+            }
+
+            @media (max-width: 767px){
+                margin: -75px 0px 0px 345px;
+            }
+
+            @media (max-width: 576px){
+                margin: -150px 0px 0px 335px;
+            }
+        }
+
+        .text-bottom-icons{
+            display: flex;
+            .octagon{
+                margin: 25px 0px 0px 405px;
+                width: 45.022px;
+                height: 45.022px;
+
+                @media (max-width: 1399px){
+                    margin: 25px 0px 0px 316px;
+                }
+
+                @media (max-width: 1199px){
+                    margin: 25px 0px 0px 260px;
+                }
+
+                @media (max-width: 992px){
+                    margin: 25px 0px 0px 220px;
+                }
+
+                @media (max-width: 767px){
+                    margin: 25px 0px 0px 185px;
+                }
+
+                @media (max-width: 576px){
+                    margin: 25px 0px 10px 185px;
+                }
+            }
+    
+            .rectangle{
+                margin: -35px 0px 0px 182px;
+                width: 31.5px;
+                height: 31.5px;
+
+                @media (max-width: 1399px){
+                    margin: -20px 0px 0px 182px;
+                }
+
+                @media (max-width: 992px){
+                    margin: -20px 0px 0px 85px;
+                }
+
+                @media (max-width: 767px){
+                    margin: -20px 0px 0px 55px;
+                }
+            }
+    
+            .hexagonal{
+                margin: 10px 0px 10px 215px;
+                width: 50.7px;
+                height: 50.7px;
+
+                @media (max-width: 992px){
+                    margin: 10px 0px 10px 145px;
+                }
+
+                @media (max-width: 767px){
+                    margin: 10px 0px 10px 45px;
+                }
+            }
         }
 
         h1{
@@ -3185,11 +3321,15 @@
         }
 
         p{
-            margin: 20px 0px 25px 0px;
+            margin: -25px 0px 25px 0px;
             color: #334155;
             font-family: Poppins;
             font-size: 16px;
             font-weight: 500;
+        }
+
+        .join-button{
+            margin: -75px 0px -10px 0px;
         }
     }
 }
