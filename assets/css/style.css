@@ -6,7 +6,6 @@
 .navbar .dropdown-menu {
   background-color: transparent;
   border: 0;
-  left: 50%;
   transform: translateX(-50%);
   width: auto;
   margin-top: 7px;
@@ -2348,6 +2347,7 @@
 }
 
 .breadcrumb {
+  margin-top: 55px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -3236,6 +3236,73 @@
   .team .career .join-button {
     margin: 0px 0px -10px 0px;
   }
+}
+
+.banner-career {
+  background-color: #CFFAFE;
+  text-align: center;
+  padding: 40px 10px 50px 10px;
+}
+.banner-career .banner-content {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  align-items: flex-start;
+  gap: 15px;
+}
+.banner-career .banner-content h1 {
+  color: #0891B2;
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  font-weight: 900;
+}
+@media (max-width: 530px) {
+  .banner-career .banner-content h1 {
+    font-size: 38px;
+  }
+}
+.banner-career .banner-content p {
+  color: #334155;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 530px) {
+  .banner-career .banner-content p {
+    font-size: 15px;
+  }
+}
+.banner-career .banner-content .img-cpntainer {
+  display: flex;
+  width: 100%;
+  margin-top: 35px;
+}
+@media (max-width: 768px) {
+  .banner-career .banner-content .img-cpntainer {
+    gap: 20px;
+  }
+}
+.banner-career .banner-content .img-cpntainer .img-area {
+  height: 416px;
+}
+@media (max-width: 992px) {
+  .banner-career .banner-content .img-cpntainer .img-area {
+    height: 290px;
+  }
+}
+@media (max-width: 530px) {
+  .banner-career .banner-content .img-cpntainer .img-area {
+    height: 180px;
+  }
+}
+.banner-career .banner-content .img-cpntainer .img-area img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
 }
 
 footer {
