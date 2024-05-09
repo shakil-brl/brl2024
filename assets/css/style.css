@@ -3052,6 +3052,11 @@
     margin: -14px 0px 0px 195px;
   }
 }
+@media (max-width: 490px) {
+  .team .career .circle {
+    display: none;
+  }
+}
 .team .career .tringle {
   margin: -96px 0px 0px 67px;
   width: 66.313px;
@@ -3083,6 +3088,11 @@
     margin: -314px 0px 0px 303px;
   }
 }
+@media (max-width: 490px) {
+  .team .career .tringle {
+    display: none;
+  }
+}
 .team .career .star {
   margin: -130px 0px 0px 1045px;
   width: 73.964px;
@@ -3111,6 +3121,11 @@
 @media (max-width: 576px) {
   .team .career .star {
     margin: -150px 0px 0px 335px;
+  }
+}
+@media (max-width: 490px) {
+  .team .career .star {
+    display: none;
   }
 }
 .team .career .text-bottom-icons {
@@ -3146,6 +3161,11 @@
     margin: 25px 0px 10px 185px;
   }
 }
+@media (max-width: 490px) {
+  .team .career .text-bottom-icons .octagon {
+    display: none;
+  }
+}
 .team .career .text-bottom-icons .rectangle {
   margin: -35px 0px 0px 182px;
   width: 31.5px;
@@ -3166,6 +3186,11 @@
     margin: -20px 0px 0px 55px;
   }
 }
+@media (max-width: 490px) {
+  .team .career .text-bottom-icons .rectangle {
+    display: none;
+  }
+}
 .team .career .text-bottom-icons .hexagonal {
   margin: 10px 0px 10px 215px;
   width: 50.7px;
@@ -3181,6 +3206,11 @@
     margin: 10px 0px 10px 45px;
   }
 }
+@media (max-width: 490px) {
+  .team .career .text-bottom-icons .hexagonal {
+    display: none;
+  }
+}
 .team .career h1 {
   color: #0891B2;
   font-family: "Roboto Slab";
@@ -3194,8 +3224,18 @@
   font-size: 16px;
   font-weight: 500;
 }
+@media (max-width: 490px) {
+  .team .career p {
+    margin: 0px 0px 25px 0px;
+  }
+}
 .team .career .join-button {
   margin: -75px 0px -10px 0px;
+}
+@media (max-width: 490px) {
+  .team .career .join-button {
+    margin: 0px 0px -10px 0px;
+  }
 }
 
 footer {

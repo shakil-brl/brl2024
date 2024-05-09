@@ -3196,6 +3196,10 @@
             @media (max-width: 576px){
                 margin: -14px 0px 0px 195px;
             }
+
+            @media (max-width: 490px){
+                display: none;
+            }
         }
 
         .tringle{
@@ -3223,6 +3227,10 @@
             @media (max-width: 576px){
                 margin: -314px 0px 0px 303px;
             }
+
+            @media (max-width: 490px){
+                display: none;
+            }
             
         }
 
@@ -3249,6 +3257,10 @@
 
             @media (max-width: 576px){
                 margin: -150px 0px 0px 335px;
+            }
+
+            @media (max-width: 490px){
+                display: none;
             }
         }
 
@@ -3278,6 +3290,10 @@
                 @media (max-width: 576px){
                     margin: 25px 0px 10px 185px;
                 }
+
+                @media (max-width: 490px){
+                    display: none;
+                }
             }
     
             .rectangle{
@@ -3296,6 +3312,10 @@
                 @media (max-width: 767px){
                     margin: -20px 0px 0px 55px;
                 }
+
+                @media (max-width: 490px){
+                    display: none;
+                }
             }
     
             .hexagonal{
@@ -3309,6 +3329,10 @@
 
                 @media (max-width: 767px){
                     margin: 10px 0px 10px 45px;
+                }
+
+                @media (max-width: 490px){
+                    display: none;
                 }
             }
         }
@@ -3326,10 +3350,17 @@
             font-family: Poppins;
             font-size: 16px;
             font-weight: 500;
+            @media (max-width: 490px){
+                margin: 0px 0px 25px 0px;
+            }
         }
 
         .join-button{
             margin: -75px 0px -10px 0px;
+
+            @media (max-width: 490px){
+                margin: 0px 0px -10px 0px;
+            }
         }
     }
 }
