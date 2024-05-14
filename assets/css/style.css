@@ -2416,12 +2416,18 @@
   font-style: normal;
   font-weight: 600;
 }
+.breadcrumb .links {
+  color: #CFFAFE !important;
+}
 .breadcrumb .active {
   color: #0E7490;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
+}
+.breadcrumb .light-active {
+  color: #FFF !important;
 }
 
 .about-slider {
@@ -3745,6 +3751,223 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
+}
+
+.job-post {
+  display: flex;
+  background-color: #06B6D4;
+  padding: 60px 0px;
+}
+.job-post .job-heading {
+  margin-top: 48px;
+}
+.job-post .job-heading h1 {
+  color: #FFF;
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.job-post .job-heading p {
+  color: #CFFAFE;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+.job-post .job-heading h3 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.job-post .job-heading .title {
+  color: #FFF !important;
+  font-size: 16px !important;
+}
+
+.job-description {
+  background-color: #CFFAFE;
+  padding: 20px 0px;
+}
+.job-description h3 {
+  padding-top: 20px;
+  color: #0E7490;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+.job-description .texts {
+  color: #334155;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.apply-card {
+  margin-top: -260px;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 32px;
+  background: #ECFEFF;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
+}
+@media (max-width: 767px) {
+  .apply-card {
+    margin-top: 0px;
+  }
+}
+.apply-card .salary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .apply-card .salary {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (max-width: 767px) {
+  .apply-card .salary {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.apply-card .salary h2 {
+  color: #083344;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.apply-card .salary .bdt {
+  padding: 7px 0px 0px 10px;
+  color: #0891B2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .apply-card .salary .bdt {
+    padding: 7px 0px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .apply-card .salary .bdt {
+    padding: 7px 0px 0px 10px;
+  }
+}
+.apply-card .slr {
+  padding-top: 0px;
+  color: #0891B2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+.apply-card p {
+  color: #334155;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+.apply-card p a {
+  color: #334155;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+.apply-card .apply-foot-text {
+  color: #334155;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+.apply-card .btn-apply {
+  text-decoration: none;
+  display: flex;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #06B6D4;
+  box-shadow: 0px 4px 5px 0px rgba(34, 211, 238, 0.2);
+  color: #FFF;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.faq {
+  display: flex;
+  flex-direction: row;
+  padding: 96px 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 256px;
+  background: #A5F3FC;
+}
+.faq .title {
+  display: flex;
+  flex-direction: column;
+}
+.faq .title h1 {
+  color: #0891B2;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 900;
+}
+.faq .accordion-item {
+  margin-bottom: 10px;
+  padding: 12px 24px;
+  border-radius: 16px;
+  background: #CFFAFE;
+  position: relative;
+}
+.faq .accordion-button {
+  width: calc(100% - 40px);
+  border: none;
+  background-color: transparent;
+  color: #0E7490;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: none;
+  outline: 0;
+}
+.faq .accordion-button::before {
+  content: "-";
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background-image: none;
+}
+.faq .accordion-button::after {
+  background-image: none;
+}
+.faq .accordion-button.collapsed::before {
+  content: "+";
+  background-image: none;
+}
+.faq .accordion-collapse {
+  padding: 0 24px;
+}
+.faq .accordion-body {
+  color: #334155;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 footer {
