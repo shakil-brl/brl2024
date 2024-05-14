@@ -3970,6 +3970,24 @@
   font-weight: 400;
 }
 
+.work-process {
+  display: flex;
+  padding: 40px 0px 96px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #CFFAFE;
+}
+.work-process .banner-section {
+  padding-top: 55px;
+}
+.work-process .banner-section img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 448px;
+  border-radius: 1000px;
+}
+
 footer {
   background: #020617;
 }

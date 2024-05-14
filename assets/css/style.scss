@@ -4118,6 +4118,25 @@
 
 }
 
+.work-process{
+    display: flex;
+    padding: 40px 0px 96px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #CFFAFE;
+
+    .banner-section{
+        padding-top: 55px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 448px;
+            border-radius: 1000px;
+        }
+    }
+}
+
 footer{
     background: #020617;
 
