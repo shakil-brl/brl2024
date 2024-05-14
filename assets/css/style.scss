@@ -494,7 +494,7 @@
             }
 
             @media (max-width: 768px) {
-                padding: 0px 0px 0px 0px;
+                padding: 30px 0px 0px 0px;
             }
 
             h1 {
@@ -676,22 +676,22 @@
 .about {
     background-color: #083344;
     height: auto;
-    padding: 92px;
+    padding: 92px 0px;
 
     @media (max-width: 992px) {
-        padding: 55px 35px 45px 35px;
+        padding: 55px 0px 45px 0px;
     }
 
     @media (max-width: 768px) {
-        padding: 55px 35px 45px 35px;
+        padding: 55px 0px 45px 0px;
     }
 
     @media (max-width: 576px) {
-        padding: 50px;
+        padding: 50px 0px;
     }
 
     @media (max-width: 575px) {
-        padding: 50px 15px 35px 15px;
+        padding: 50px 0px 35px 0px;
     }
 
     .status {
@@ -816,30 +816,6 @@
                 overflow: hidden;
                 margin-bottom: 20px;
 
-                // @media (max-width: 1400px) {
-                //     width: 325px;
-                //     height: 171px;
-                // }
-
-                // @media (max-width: 1200px) {
-                //     width: 245px;
-                //     height: 128.9px;
-                // }
-
-                // @media (max-width: 1024px) {
-                //     width: 260px;
-                //     height: 136.8px;
-                // }
-
-                // @media (max-width: 991px) {
-                //     width: 335px;
-                //     height: 176.3px;
-                // }
-
-                // @media (max-width: 370px) {
-                //     width: 250px;
-                //     height: 131.5px;
-                // }
             
                 h2 {
                     font-family: 'Roboto Slab', serif;
