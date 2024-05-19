@@ -26,6 +26,24 @@
 .navbar .nav-link:hover {
   background-color: #A5F3FC;
 }
+.navbar .nav-item {
+  margin-right: 5px;
+}
+@media (max-width: 991px) {
+  .navbar .nav-item {
+    margin-bottom: 7px;
+  }
+}
+.navbar .nav-item .active {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: #0E7490;
+  border-radius: 360px;
+  padding: 10px;
+  background: #A5F3FC;
+}
 .navbar .nav-button {
   display: flex;
   align-items: center;
@@ -479,7 +497,7 @@
 }
 @media (max-width: 576px) {
   .hero .hero-content .center-content h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 }
 .hero .hero-content .center-content p {
@@ -2636,7 +2654,7 @@
 }
 @media (max-width: 991px) {
   .work-flow .left-content .content h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 .work-flow .left-content .content p {
@@ -2647,7 +2665,7 @@
 }
 @media (max-width: 991px) {
   .work-flow .left-content .content p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .work-flow .right-content {
@@ -3110,6 +3128,9 @@
   border-radius: 360px;
   border: 1px solid #E2E8F0;
 }
+.team .employees .employee-card .social span:hover {
+  background-color: #E2E8F0;
+}
 .team .career {
   margin-top: 192px;
   display: flex;
@@ -3123,6 +3144,7 @@
 @media (max-width: 568px) {
   .team .career {
     padding: 40px;
+    border-radius: 50px;
   }
 }
 .team .career .circle {
@@ -3320,12 +3342,22 @@
   font-size: 40px;
   font-weight: 900;
 }
+@media (max-width: 568px) {
+  .team .career h1 {
+    font-size: 34px;
+  }
+}
 .team .career p {
   margin: -25px 0px 25px 0px;
   color: #334155;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
+}
+@media (max-width: 568px) {
+  .team .career p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 490px) {
   .team .career p {
@@ -3439,7 +3471,7 @@
 }
 @media (max-width: 991px) {
   .career-opening .vacancy-card .details {
-    gap: 40px;
+    gap: 34px;
   }
 }
 @media (max-width: 525px) {
@@ -3551,7 +3583,7 @@
 }
 @media (max-width: 530px) {
   .activities .right-content h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 }
 .activities .left-content {
@@ -3781,7 +3813,7 @@
 }
 @media (max-width: 530px) {
   .core-values .heading-section h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 }
 .core-values .heading-section p {
