@@ -7,11 +7,9 @@ $('.lab-carousel').owlCarousel({
     dots: false,
     autoWidth:true,
     margin:10,
-    items:4,
-    responsiveClass:true,
     responsive:{
         0:{
-            items:2,
+            items:1,
         },
         600:{
             items:3,
