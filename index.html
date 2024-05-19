@@ -16,6 +16,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
 
@@ -514,7 +517,7 @@
                             <div class="allEmpImgContainer">
                                 <img class="all-emp-img" src="./assets/images/allEmp.jpeg" alt="All Employees">
                                 <div class="overlay">
-                                    <a href="#" class="play-link">
+                                    <a href="https://www.youtube.com/watch?v=NQDom2gxiVc" class="play-link video-popup">
                                         <span class="play-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                                                 <path d="M27.9998 4.66663C15.1198 4.66663 4.6665 15.12 4.6665 28C4.6665 40.88 15.1198 51.3333 27.9998 51.3333C40.8798 51.3333 51.3332 40.88 51.3332 28C51.3332 15.12 40.8798 4.66663 27.9998 4.66663ZM23.3332 36.1666V19.8333C23.3332 18.8766 24.4298 18.3166 25.1998 18.9L36.0965 27.0666C36.7265 27.5333 36.7265 28.4666 36.0965 28.9333L25.1998 37.1C24.4298 37.6833 23.3332 37.1233 23.3332 36.1666Z" fill="white"/>
@@ -1098,11 +1101,9 @@
         
                         <div class="cardBodyImage">
                             <img src="./assets/images/testimonial/1.png" alt="">
-                            <div class="playIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M8.5 9.14L13.77 12.5L8.5 15.86V9.14ZM6.5 5.5V19.5L17.5 12.5L6.5 5.5Z" fill="white"/>
-                                </svg>
-                            </div>
+                            <a href="https://www.youtube.com/watch?v=NQDom2gxiVc" class="playIcon video-popup">
+                                <span class="material-symbols-outlined">play_arrow</span>
+                            </a>
                         </div>
         
                         <div class="cardFooter">
@@ -1215,11 +1216,9 @@
         
                         <div class="cardBodyImage">
                             <img src="./assets/images/testimonial/1.png" alt="">
-                            <div class="playIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M8.5 9.14L13.77 12.5L8.5 15.86V9.14ZM6.5 5.5V19.5L17.5 12.5L6.5 5.5Z" fill="white"/>
-                                </svg>
-                            </div>
+                            <a href="https://www.youtube.com/watch?v=NQDom2gxiVc" class="playIcon video-popup">
+                                <span class="material-symbols-outlined">play_arrow</span>
+                            </a>
                         </div>
         
                         <div class="cardFooter">
@@ -1274,11 +1273,9 @@
         
                         <div class="cardBodyImage">
                             <img src="./assets/images/testimonial/1.png" alt="">
-                            <div class="playIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M8.5 9.14L13.77 12.5L8.5 15.86V9.14ZM6.5 5.5V19.5L17.5 12.5L6.5 5.5Z" fill="white"/>
-                                </svg>
-                            </div>
+                            <a href="https://www.youtube.com/watch?v=NQDom2gxiVc" class="playIcon video-popup">
+                                <span class="material-symbols-outlined">play_arrow</span>
+                            </a>
                         </div>
         
                         <div class="cardFooter">
@@ -1391,11 +1388,9 @@
         
                         <div class="cardBodyImage">
                             <img src="./assets/images/testimonial/1.png" alt="">
-                            <div class="playIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M8.5 9.14L13.77 12.5L8.5 15.86V9.14ZM6.5 5.5V19.5L17.5 12.5L6.5 5.5Z" fill="white"/>
-                                </svg>
-                            </div>
+                            <a href="https://www.youtube.com/watch?v=NQDom2gxiVc" class="playIcon video-popup">
+                                <span class="material-symbols-outlined">play_arrow</span>
+                            </a>
                         </div>
         
                         <div class="cardFooter">
@@ -1960,8 +1955,19 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <!-- Magnific Popup JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
     <!-- Owl Carousel JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.video-popup').magnificPopup({
+                type: 'iframe'
+            });
+        });
+    </script>
 
     <script>
         $(document).ready(function() {

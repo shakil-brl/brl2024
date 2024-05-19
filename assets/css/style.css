@@ -669,11 +669,18 @@
 @media (max-width: 1024px) {
   .about .status {
     padding: 20px;
+    border-radius: 50px;
   }
 }
 @media (max-width: 768px) {
   .about .status {
     padding: 25px;
+    border-radius: 45px;
+  }
+}
+@media (max-width: 576px) {
+  .about .status {
+    border-radius: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -733,6 +740,21 @@
   .about .status .status-content {
     gap: 0px;
     padding-left: 25px;
+  }
+}
+@media (max-width: 3000px) {
+  .about .status .status-content .status-item {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 755px) {
+  .about .status .status-content .status-item {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 470px) {
+  .about .status .status-content .status-item {
+    padding-left: 0px;
   }
 }
 .about .status .status-content h2 {
@@ -967,6 +989,11 @@
   position: relative;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .about .info .rightContent .allEmpImgContainer {
+    border-radius: 40px;
+  }
 }
 .about .info .rightContent .allEmpImgContainer .all-emp-img {
   width: 409px;
@@ -1499,6 +1526,14 @@
   border-radius: 360px;
   background: #0891B2;
 }
+.services .serviceCard .btn-service:hover {
+  background-color: #0891B2;
+  color: #FFF;
+}
+.services .serviceCard .btn-service:hover span {
+  background-color: #FFF;
+  color: #0E7490;
+}
 .services .footerButton {
   display: flex;
   justify-content: center;
@@ -1643,6 +1678,7 @@
      object-fit: cover;
 }
 .testimonial .testimonialCard .cardBodyImage .playIcon {
+  text-decoration: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1653,7 +1689,12 @@
   align-items: center;
   gap: 10px;
   border-radius: 360px;
-  background: #000;
+  background: #FFF;
+  color: #000;
+}
+.testimonial .testimonialCard .cardBodyImage .playIcon:hover {
+  background-color: #000;
+  color: #FFF;
 }
 .testimonial .testimonialCard .cardFooter {
   display: flex;
@@ -2174,7 +2215,7 @@
 }
 @media (max-width: 991px) {
   .banner-content .left-content h1 {
-    font-size: 30px;
+    font-size: 34px;
   }
 }
 .banner-content .left-content p {
@@ -2182,11 +2223,6 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
-}
-@media (max-width: 991px) {
-  .banner-content .left-content p {
-    font-size: 13px;
-  }
 }
 .banner-content .about-banner-image {
   display: flex;
@@ -3322,7 +3358,7 @@
 }
 @media (max-width: 530px) {
   .banner-career .banner-content h1 {
-    font-size: 38px;
+    font-size: 34px;
   }
 }
 .banner-career .banner-content p {
@@ -3330,11 +3366,6 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
-}
-@media (max-width: 530px) {
-  .banner-career .banner-content p {
-    font-size: 15px;
-  }
 }
 .banner-career .banner-content .img-cpntainer {
   display: flex;
@@ -3571,6 +3602,11 @@
     width: 100%;
   }
 }
+@media (max-width: 575px) {
+  .activities .left-content .act-image .tour-img {
+    border-radius: 32px;
+  }
+}
 .activities .left-content .act-image p {
   color: #FFF;
   font-family: Poppins;
@@ -3627,6 +3663,11 @@
     height: 245px;
   }
 }
+@media (max-width: 575px) {
+  .activities .left-content .act-image .food-image {
+    border-radius: 32px;
+  }
+}
 .activities .left-content .act-image .food-text {
   bottom: 36px;
   left: 50%;
@@ -3658,6 +3699,11 @@
     width: 100%;
   }
 }
+@media (max-width: 575px) {
+  .activities .left-content .act-image .work-image {
+    border-radius: 32px;
+  }
+}
 .activities .left-content .act-image .work-text {
   bottom: 21px;
   left: 37%;
@@ -3678,6 +3724,11 @@
 @media (max-width: 1199px) {
   .activities .left-content .act-image .culture-img {
     width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .activities .left-content .act-image .culture-img {
+    border-radius: 32px;
   }
 }
 .activities .left-content .act-image .culture-text {
@@ -3816,7 +3867,7 @@
   background: #ECFEFF;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .apply-card {
     margin-top: 0px;
   }

@@ -702,10 +702,16 @@
 
         @media (max-width: 1024px) {
             padding: 20px;
+            border-radius: 50px;
         }
 
         @media (max-width: 768px) {
             padding: 25px;
+            border-radius: 45px;
+        }
+
+        @media (max-width: 576px) {
+            border-radius: 40px;
         }
 
         .status-content{
@@ -755,6 +761,20 @@
             @media (max-width: 349px) {
                 gap: 0px;
                 padding-left: 25px;
+            }
+
+            .status-item{
+                @media (max-width: 3000px) {
+                    padding-left: 50px;
+                }
+
+                @media (max-width: 755px) {
+                    padding-left: 20px;
+                }
+
+                @media (max-width: 470px) {
+                    padding-left: 0px;
+                }
             }
 
             // .margin-top{
@@ -1062,6 +1082,10 @@
                 position: relative; 
                 justify-content: center;
                 text-align: center;
+
+                @media (max-width: 1000px){
+                    border-radius: 40px;
+                }
         
                 .all-emp-img {
                     width: 409px; 
@@ -1595,6 +1619,15 @@
                 border-radius: 360px;
                 background: #0891B2;
             }
+
+            &:hover {
+                background-color: #0891B2; 
+                color: #FFF;
+                span{
+                    background-color: #FFF; 
+                    color: #0E7490;
+                }
+            }
         }
     }
     
@@ -1748,6 +1781,7 @@
             }
         
             .playIcon {
+                text-decoration: none;
                 position: absolute; 
                 top: 50%; 
                 left: 50%; 
@@ -1758,7 +1792,13 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 360px;
-                background: #000;
+                background: #FFF;
+                color: #000;
+
+                &:hover {
+                    background-color: #000;
+                    color: #FFF;
+                }
             }
         }
         
@@ -2308,7 +2348,7 @@
             font-weight: 900;
 
             @media (max-width: 991px) {
-                font-size: 30px;
+                font-size: 34px;
             }
         }
         p{
@@ -2316,10 +2356,6 @@
             font-family: Poppins;
             font-size: 16px;
             font-weight: 500;
-
-            @media (max-width: 991px) {
-                font-size: 13px;
-            }
         }
     }
 
@@ -3427,7 +3463,7 @@
             font-weight: 900;
 
             @media (max-width: 530px){
-                font-size: 38px;
+                font-size: 34px;
             }
         }
 
@@ -3436,10 +3472,6 @@
             font-family: Poppins;
             font-size: 16px;
             font-weight: 500;
-
-            @media (max-width: 530px){
-                font-size: 15px;
-            }
         }
 
         .img-cpntainer{
@@ -3677,6 +3709,10 @@
                 @media (max-width: 1199px) {
                     width: 100%;
                 }
+
+                @media (max-width: 575px) {
+                    border-radius: 32px;
+                }
             }
             
             p {
@@ -3728,6 +3764,10 @@
                     width: 100%;
                     height: 245px;
                 }
+
+                @media (max-width: 575px) {
+                    border-radius: 32px;
+                }
             }
 
             .food-text{
@@ -3755,6 +3795,10 @@
                 @media (max-width: 1199px) {
                     width: 100%;
                 }
+
+                @media (max-width: 575px) {
+                    border-radius: 32px;
+                }
             }
 
             .work-text{
@@ -3773,6 +3817,10 @@
                 filter: brightness(70%);
                 @media (max-width: 1199px)  {
                     width: 100%;
+                }
+
+                @media (max-width: 575px) {
+                    border-radius: 32px;
                 }
             }
 
@@ -3928,7 +3976,7 @@
     background: #ECFEFF;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
 
-    @media (max-width: 767px){
+    @media (max-width: 991px){
         margin-top: 0px;
     }
 
