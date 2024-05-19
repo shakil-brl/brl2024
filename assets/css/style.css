@@ -6,7 +6,6 @@
 .navbar .dropdown-menu {
   background-color: transparent;
   border: 0;
-  transform: translateX(-50%);
   width: auto;
   margin-top: 7px;
 }
@@ -54,7 +53,7 @@
   }
 }
 .navbar .active {
-  padding: 0px 5px 0px 5px;
+  padding: 0px 5px;
   border-radius: 360px;
   background: #A5F3FC;
 }
@@ -71,37 +70,26 @@
 @media (max-width: 992px) {
   .navbar .dropdown-lg {
     width: 100%;
-    margin-left: 340px;
   }
 }
 @media (max-width: 768px) {
   .navbar .dropdown-lg {
-    width: 700px;
-    margin-left: 700px;
-  }
-}
-@media (max-width: 767px) {
-  .navbar .dropdown-lg {
-    width: 500px;
-    margin-left: 500px;
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
   .navbar .dropdown-lg {
-    width: 400px;
-    margin-left: 400px;
+    width: 100%;
   }
 }
 @media (max-width: 430px) {
   .navbar .dropdown-lg {
-    width: 240px;
-    margin-left: 240px;
+    width: 100%;
   }
 }
 @media (max-width: 330px) {
   .navbar .dropdown-lg {
-    width: 250px;
-    margin-left: 250px;
+    width: 100%;
   }
 }
 .navbar .dropdown-md {
@@ -109,43 +97,32 @@
 }
 @media (max-width: 1200px) {
   .navbar .dropdown-md {
-    width: 600px;
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
   .navbar .dropdown-md {
-    width: 600px;
-    margin-left: 600px;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .navbar .dropdown-md {
-    width: 600px;
-    margin-left: 600px;
-  }
-}
-@media (max-width: 750px) {
-  .navbar .dropdown-md {
-    width: 500px;
-    margin-left: 500px;
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
   .navbar .dropdown-md {
-    width: 300px;
-    margin-left: 300px;
+    width: 100%;
   }
 }
 @media (max-width: 430px) {
   .navbar .dropdown-md {
-    width: 330px;
-    margin-left: 330px;
+    width: 100%;
   }
 }
 @media (max-width: 330px) {
   .navbar .dropdown-md {
-    width: 280px;
-    margin-left: 280px;
+    width: 100%;
   }
 }
 .navbar .row-left {
@@ -417,6 +394,26 @@
   font-weight: 700;
 }
 
+@media (max-width: 567px) {
+  .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .dropdown-menu::-webkit-scrollbar {
+    width: 4px;
+  }
+  .dropdown-menu::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #0E7490;
+    border-radius: 10px;
+  }
+  .dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #0891B2;
+  }
+}
 .hero {
   background-color: #CFFAFE;
   background-image: url("../images/arts.png");
