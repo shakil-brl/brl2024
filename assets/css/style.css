@@ -4191,6 +4191,7 @@ footer .footerTop .subscribe input {
   font-weight: 500;
 }
 footer .footerTop .subscribe button {
+  border: none;
   display: flex;
   padding: 10px 14px;
   justify-content: center;
