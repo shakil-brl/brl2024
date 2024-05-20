@@ -6,8 +6,9 @@
     .dropdown-menu {
         background-color: transparent;
         border: 0;
-        width: auto; 
+        width: auto;
         margin-top: 7px;
+        overflow: auto;
     }
 
     .navbar-toggler:focus {
@@ -31,7 +32,7 @@
 
     .nav-item {
         margin-right: 5px;
-        
+
         @media (max-width: 991px) {
             margin-bottom: 7px;
         }
@@ -51,12 +52,6 @@
     .nav-button {
         display: flex;
         align-items: center;
-    }
-
-    @media (max-width: 768px), (max-width: 576px), (max-width: 430px), (max-width: 380px), (max-width: 330px) {
-        .nav-button {
-            margin-left: -5px;
-        }
     }
 
     .active {
@@ -79,48 +74,12 @@
         @media (max-width: 992px) {
             width: 100%;
         }
-
-        @media (max-width: 768px) {
-            width: 100%;
-        }
-
-        @media (max-width: 576px) {
-            width: 100%;
-        }
-
-        @media (max-width: 430px) {
-            width: 100%;
-        }
-
-        @media (max-width: 330px) {
-            width: 100%;
-        }
     }
 
     .dropdown-md {
         width: 600px;
 
         @media (max-width: 1200px) {
-            width: 100%;
-        }
-
-        @media (max-width: 992px) {
-            width: 100%;
-        }
-
-        @media (max-width: 768px) {
-            width: 100%;
-        }
-
-        @media (max-width: 576px) {
-            width: 100%;
-        }
-
-        @media (max-width: 430px) {
-            width: 100%;
-        }
-
-        @media (max-width: 330px) {
             width: 100%;
         }
     }
@@ -332,11 +291,11 @@
 
             @media (max-width: 430px) {
                 display: block;
-            } 
+            }
 
             @media (max-width: 330px) {
                 margin-left: -20px;
-            } 
+            }
 
             h2 {
                 color: #0891B2;
@@ -422,33 +381,53 @@
     }
 }
 
-// Add media query for screens smaller than 567px
-@media (max-width: 567px) {
-    .dropdown-menu {
-        max-height: 300px; // Adjust height as needed
-        overflow-y: auto; // Add vertical scrollbar if content overflows
-        overflow-x: hidden; // Hide horizontal scrollbar
-
-        // Custom scrollbar styling
+@media (max-width: 991px) {
+    .navbar-collapse {
+        max-height: 100vh; 
+        overflow-y: auto;
+        overflow-x: hidden;
+    
         &::-webkit-scrollbar {
-            width: 4px; // Thin scrollbar width
+            width: 4px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background: #0E7490;
+            border-radius: 10px;
+        }
+    
+        &::-webkit-scrollbar-thumb:hover {
+            background: #0891B2;
+        }
+    }
+
+    .dropdown-menu {
+        max-height: 100vh; 
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 4px;
         }
 
         &::-webkit-scrollbar-track {
-            background: transparent; // Track background
+            background: transparent;
         }
 
         &::-webkit-scrollbar-thumb {
-            background: #0E7490; // Scrollbar thumb color
-            border-radius: 10px; // Rounded corners
+            background: #0E7490;
+            border-radius: 10px;
         }
 
         &::-webkit-scrollbar-thumb:hover {
-            background: #0891B2; 
+            background: #0891B2;
         }
     }
 }
-
 
 .hero {
     background-color: #CFFAFE;
@@ -1038,7 +1017,7 @@
             
                 .owl-carousel {
                     position: relative;
-                    padding-right: 45px; // Adjust padding for the next button placement
+                    padding-right: 45px; 
                 }
             
                 .awardSlideBtn {
@@ -1049,13 +1028,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    position: absolute;
-                    top: 50%; // Ensure this is vertically centered
-                    transform: translateY(-50%); // Vertically center the button
-                    right: 0; // Make sure it's right-aligned with the most right image
+                    position: static;
                     border: none;
                     cursor: pointer;
-                    z-index: 10; // Increase z-index to ensure button is on top
+                    float: right;
+                    margin-top: -145px;
             
                     .awardSlideIcon {
                         color: white;

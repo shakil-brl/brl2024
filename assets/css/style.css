@@ -8,6 +8,7 @@
   border: 0;
   width: auto;
   margin-top: 7px;
+  overflow: auto;
 }
 .navbar .navbar-toggler:focus {
   box-shadow: none;
@@ -47,11 +48,6 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 768px), (max-width: 576px), (max-width: 430px), (max-width: 380px), (max-width: 330px) {
-  .navbar .nav-button {
-    margin-left: -5px;
-  }
-}
 .navbar .active {
   padding: 0px 5px;
   border-radius: 360px;
@@ -72,55 +68,10 @@
     width: 100%;
   }
 }
-@media (max-width: 768px) {
-  .navbar .dropdown-lg {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .navbar .dropdown-lg {
-    width: 100%;
-  }
-}
-@media (max-width: 430px) {
-  .navbar .dropdown-lg {
-    width: 100%;
-  }
-}
-@media (max-width: 330px) {
-  .navbar .dropdown-lg {
-    width: 100%;
-  }
-}
 .navbar .dropdown-md {
   width: 600px;
 }
 @media (max-width: 1200px) {
-  .navbar .dropdown-md {
-    width: 100%;
-  }
-}
-@media (max-width: 992px) {
-  .navbar .dropdown-md {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .navbar .dropdown-md {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .navbar .dropdown-md {
-    width: 100%;
-  }
-}
-@media (max-width: 430px) {
-  .navbar .dropdown-md {
-    width: 100%;
-  }
-}
-@media (max-width: 330px) {
   .navbar .dropdown-md {
     width: 100%;
   }
@@ -394,9 +345,27 @@
   font-weight: 700;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 991px) {
+  .navbar-collapse {
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .navbar-collapse::-webkit-scrollbar {
+    width: 4px;
+  }
+  .navbar-collapse::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .navbar-collapse::-webkit-scrollbar-thumb {
+    background: #0E7490;
+    border-radius: 10px;
+  }
+  .navbar-collapse::-webkit-scrollbar-thumb:hover {
+    background: #0891B2;
+  }
   .dropdown-menu {
-    max-height: 300px;
+    max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -970,13 +939,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  position: static;
   border: none;
   cursor: pointer;
-  z-index: 10;
+  float: right;
+  margin-top: -145px;
 }
 .about .info .leftContent .achievements .awardSlideBtn .awardSlideIcon {
   color: white;

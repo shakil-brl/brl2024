@@ -22,7 +22,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo.png" alt="Logo">
@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#">Case Studies</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="dropdown-center nav-item">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
@@ -490,14 +490,14 @@
                                         <h3>BASIS ICT AWARD 2024</h3>
                                     </div>
                                 </div>
-                            
-                                <!-- <button class="owl-next awardSlideBtn" type="button">
+                                <button class="owl-next awardSlideBtn" type="button">
                                     <span class="visually-hidden">Next</span>
                                     <span class="material-symbols-outlined awardSlideIcon">
                                         keyboard_arrow_right
                                     </span>
-                                </button> -->
+                                </button>
                             </div>
+                            
                             
                             
                             <p>
@@ -1971,29 +1971,50 @@
 
     <script>
         $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
+            var owl = $('.owl-carousel');
+
+            owl.owlCarousel({
                 loop: true, 
                 autoplay: true, 
                 autoplayTimeout: 3000, 
                 autoplayHoverPause: true,
                 nav: false, 
                 dots: false, 
-                margin:20,
+                margin: 20,
                 responsive: {
                     992: {
                         items: 3 
                     },
-                    
                     768: {
                         items: 2 
                     },
-                    
                     0: {
                         items: 1 
                     }
                 }
             });
+
+            // Adjust button position when carousel is initialized
+            adjustButtonPosition();
+
+            // Re-adjust button position on window resize
+            $(window).resize(function(){
+                adjustButtonPosition();
+            });
+
+            // Function to adjust button position
+            function adjustButtonPosition() {
+                var $lastItem = owl.find('.owl-item:last');
+                var lastItemWidth = $lastItem.width();
+                var lastItemPosition = $lastItem.position().left;
+                var buttonWidth = $('.awardSlideBtn').outerWidth();
+                
+                var buttonPosition = lastItemPosition + lastItemWidth - buttonWidth / 2;
+                
+                $('.awardSlideBtn').css('left', buttonPosition + 'px');
+            }
         });
+
     </script>
      
 <!-- Bootstrap JS Bundle -->
