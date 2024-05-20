@@ -364,24 +364,6 @@
   .navbar-collapse::-webkit-scrollbar-thumb:hover {
     background: #0891B2;
   }
-  .dropdown-menu {
-    max-height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .dropdown-menu::-webkit-scrollbar {
-    width: 4px;
-  }
-  .dropdown-menu::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .dropdown-menu::-webkit-scrollbar-thumb {
-    background: #0E7490;
-    border-radius: 10px;
-  }
-  .dropdown-menu::-webkit-scrollbar-thumb:hover {
-    background: #0891B2;
-  }
 }
 .hero {
   background-color: #CFFAFE;
@@ -902,6 +884,7 @@
 .about .info .leftContent .achievements {
   margin-top: 30px;
   margin-bottom: 40px;
+  position: relative;
 }
 .about .info .leftContent .achievements .achivementImgContainer {
   display: flex;
@@ -927,10 +910,6 @@
   margin-top: auto;
   padding-bottom: 10px;
 }
-.about .info .leftContent .achievements .owl-carousel {
-  position: relative;
-  padding-right: 45px;
-}
 .about .info .leftContent .achievements .awardSlideBtn {
   background-color: #0891B2;
   border-radius: 50%;
@@ -939,11 +918,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: static;
   border: none;
   cursor: pointer;
-  float: right;
-  margin-top: -145px;
+  z-index: 10;
+  position: absolute;
+  transform: translateY(-50%);
+  margin: 120px 835px 0px;
+}
+@media (max-width: 1399px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 715px 0px;
+  }
+}
+@media (max-width: 1199px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 595px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 675px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 500px 0px;
+  }
+}
+@media (max-width: 575px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 485px 0px;
+  }
+}
+@media (max-width: 574px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 400px 0px;
+  }
+}
+@media (max-width: 465px) {
+  .about .info .leftContent .achievements .awardSlideBtn {
+    margin: 120px 300px 0px;
+  }
 }
 .about .info .leftContent .achievements .awardSlideBtn .awardSlideIcon {
   color: white;
@@ -1565,6 +1580,7 @@
   }
 }
 .testimonial .testimonialCard {
+  margin-top: 20px;
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -1934,7 +1950,7 @@
   display: flex;
   align-items: center;
   align-content: center;
-  gap: 16px;
+  gap: 15px;
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -1945,29 +1961,46 @@
 }
 .inquiry .inqForm .formElement .tagsArea .tags .tag {
   display: flex;
-  padding: 12px 20px;
   justify-content: center;
   align-items: center;
-  gap: 6px;
   border-radius: 360px;
   border: 1px solid var(--slate-300, #CBD5E1);
+  position: relative;
+  padding: 0;
 }
 @media (max-width: 425px) {
   .inquiry .inqForm .formElement .tagsArea .tags .tag {
-    padding: 5px 10px;
+    padding: 0;
   }
 }
-.inquiry .inqForm .formElement .tagsArea .tags .tag a {
+.inquiry .inqForm .formElement .tagsArea .tags .tag input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+.inquiry .inqForm .formElement .tagsArea .tags .tag input[type=checkbox]:checked + label {
+  background-color: #0891B2;
+  color: white;
+}
+.inquiry .inqForm .formElement .tagsArea .tags .tag label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--slate-700, #334155);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 360px;
 }
 @media (max-width: 425px) {
-  .inquiry .inqForm .formElement .tagsArea .tags .tag a {
+  .inquiry .inqForm .formElement .tagsArea .tags .tag label {
     font-size: 14px;
+    padding: 5px 10px;
   }
 }
 .inquiry .inqForm .formElement .formItemWide {

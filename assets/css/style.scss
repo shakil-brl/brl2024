@@ -404,29 +404,6 @@
             background: #0891B2;
         }
     }
-
-    .dropdown-menu {
-        max-height: 100vh; 
-        overflow-y: auto;
-        overflow-x: hidden;
-
-        &::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        &::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: #0E7490;
-            border-radius: 10px;
-        }
-
-        &::-webkit-scrollbar-thumb:hover {
-            background: #0891B2;
-        }
-    }
 }
 
 .hero {
@@ -988,6 +965,7 @@
             .achievements {
                 margin-top: 30px;
                 margin-bottom: 40px;
+                position: relative;
             
                 .achivementImgContainer {
                     display: flex;
@@ -1016,8 +994,8 @@
                 }
             
                 .owl-carousel {
-                    position: relative;
-                    padding-right: 45px; 
+                    // position: relative;
+                    // padding-right: 45px; 
                 }
             
                 .awardSlideBtn {
@@ -1028,12 +1006,41 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    position: static;
                     border: none;
                     cursor: pointer;
-                    float: right;
-                    margin-top: -145px;
-            
+                    z-index: 10;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    margin: 120px 835px 0px;
+
+                    @media (max-width: 1399px){
+                        margin: 120px 715px 0px;
+                    }
+
+                    @media (max-width: 1199px){
+                        margin: 120px 595px 0px;
+                    }
+
+                    @media (max-width: 991px){
+                        margin: 120px 675px 0px;
+                    }
+
+                    @media (max-width: 767px){
+                        margin: 120px 500px 0px;
+                    }
+
+                    @media (max-width: 575px){
+                        margin: 120px 485px 0px;
+                    }
+
+                    @media (max-width: 574px){
+                        margin: 120px 400px 0px;
+                    }
+
+                    @media (max-width: 465px){
+                        margin: 120px 300px 0px;
+                    }
+
                     .awardSlideIcon {
                         color: white;
                     }
@@ -1658,6 +1665,7 @@
     }
 
     .testimonialCard{
+        margin-top: 20px;
         display: flex;
         padding: 24px;
         flex-direction: column;
@@ -2046,41 +2054,61 @@
                     display: flex;
                     align-items: center;
                     align-content: center;
-                    gap: 16px;
+                    gap: 15px;
                     align-self: stretch;
                     flex-wrap: wrap;
-
+                
                     @media (max-width: 576px) {
                         gap: 5px;
                     }
-
+                
                     .tag {
                         display: flex;
-                        padding: 12px 20px;
                         justify-content: center;
                         align-items: center;
-                        gap: 6px;
                         border-radius: 360px;
                         border: 1px solid var(--slate-300, #CBD5E1);
-
+                        position: relative;
+                        padding: 0;
+                
                         @media (max-width: 425px) {
-                            padding: 5px 10px;
+                            padding: 0;
                         }
-
-                        a {
+                
+                        input[type="checkbox"] {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 100%;
+                            width: 100%;
+                
+                            &:checked + label {
+                                background-color: #0891B2;
+                                color: white;
+                            }
+                        }
+                
+                        label {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             color: var(--slate-700, #334155);
                             font-family: Poppins;
                             font-size: 16px;
                             font-weight: 600;
                             text-transform: capitalize;
                             text-decoration: none;
-
+                            padding: 12px 20px;
+                            border-radius: 360px;
+                
                             @media (max-width: 425px) {
                                 font-size: 14px;
+                                padding: 5px 10px;
                             }
                         }
                     }
                 }
+                
             }
 
             .formItemWide{

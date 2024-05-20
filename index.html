@@ -472,6 +472,12 @@
         
                          
                             <div class="achievements">
+                                <button class="owl-next awardSlideBtn" type="button">
+                                    <span class="visually-hidden">Next</span>
+                                    <span class="material-symbols-outlined awardSlideIcon">
+                                        keyboard_arrow_right
+                                    </span>
+                                </button>
                                 <div class="owl-carousel owl-theme">
                                     <div class="achivementImgContainer">
                                         <img src="./assets/images/award.png" alt="Achievement 1">
@@ -490,12 +496,7 @@
                                         <h3>BASIS ICT AWARD 2024</h3>
                                     </div>
                                 </div>
-                                <button class="owl-next awardSlideBtn" type="button">
-                                    <span class="visually-hidden">Next</span>
-                                    <span class="material-symbols-outlined awardSlideIcon">
-                                        keyboard_arrow_right
-                                    </span>
-                                </button>
+                                
                             </div>
                             
                             
@@ -1021,7 +1022,7 @@
         <div class="container">
             <h1 class="section-heding">Testimonials</h1>
 
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonialCard">
                         <div class="cardHeader">
@@ -1597,50 +1598,60 @@
                 
                                     <div class="tags">
                                         <div class="tag">
-                                            <a href="#">Branding</a>
+                                            <input type="checkbox" id="branding" />
+                                            <label for="branding">Branding</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">UI/UX Design</a>
+                                            <input type="checkbox" id="uiux" />
+                                            <label for="uiux">UI/UX Design</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">3D Modeling</a>
+                                            <input type="checkbox" id="modeling" />
+                                            <label for="modeling">3D Modeling</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">Web Design</a>
+                                            <input type="checkbox" id="webdesign" />
+                                            <label for="webdesign">Web Design</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">Wordpress</a>
+                                            <input type="checkbox" id="wordpress" />
+                                            <label for="wordpress">WordPress</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">Web Development</a>
+                                            <input type="checkbox" id="webdev" />
+                                            <label for="webdev">Web Development</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">App Development</a>
+                                            <input type="checkbox" id="appdev" />
+                                            <label for="appdev">App Development</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">Marketing</a>
+                                            <input type="checkbox" id="marketing" />
+                                            <label for="marketing">Marketing</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">Mobile App Design</a>
+                                            <input type="checkbox" id="mobiledesign" />
+                                            <label for="mobiledesign">Mobile App Design</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">Games Development</a>
+                                            <input type="checkbox" id="gamesdev" />
+                                            <label for="gamesdev">Games Development</label>
                                         </div>
-                
+                                    
                                         <div class="tag">
-                                            <a href="#">General Enquiry</a>
+                                            <input type="checkbox" id="enquiry" />
+                                            <label for="enquiry">General Enquiry</label>
                                         </div>
                                     </div>
-                
                                     
                                 </div>
                                 
@@ -1988,31 +1999,19 @@
                     768: {
                         items: 2 
                     },
+
                     0: {
                         items: 1 
                     }
                 }
             });
 
-            // Adjust button position when carousel is initialized
-            adjustButtonPosition();
+            $('.awardSlideBtn').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
 
-            // Re-adjust button position on window resize
-            $(window).resize(function(){
-                adjustButtonPosition();
-            });
 
-            // Function to adjust button position
-            function adjustButtonPosition() {
-                var $lastItem = owl.find('.owl-item:last');
-                var lastItemWidth = $lastItem.width();
-                var lastItemPosition = $lastItem.position().left;
-                var buttonWidth = $('.awardSlideBtn').outerWidth();
-                
-                var buttonPosition = lastItemPosition + lastItemWidth - buttonWidth / 2;
-                
-                $('.awardSlideBtn').css('left', buttonPosition + 'px');
-            }
+            
         });
 
     </script>
