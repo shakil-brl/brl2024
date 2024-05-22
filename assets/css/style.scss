@@ -1027,8 +1027,7 @@
         .rightContent {
             padding: 0px 15px 0px 10px;
             position: sticky;
-            top: 0;
-            height: 100%;
+            top: 100px;
 
             @media (max-width: 992px) {
                 padding: 0px 15px 30px 10px;
@@ -1205,7 +1204,7 @@
         }
 
         .productImage {
-            margin: 25px;
+            margin-bottom: 25px;
             display: flex;
             width: 128px;
             height: 128px;
@@ -1681,6 +1680,7 @@
             .personImage {
                 position: sticky;
                 height: 48px;
+                width: 48px;
         
                 img {
                     width: 100%; 
@@ -2110,6 +2110,11 @@
                 font-family: Poppins;
                 font-size: 16px;
                 font-weight: 600;
+
+                button{
+                    border: none;
+                    background: transparent;
+                }
 
                 span {
                     display: flex;
@@ -2552,7 +2557,6 @@
 }
 
 .breadcrumb{
-    margin-top: 40px;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -3533,6 +3537,7 @@
 
         @media(max-width: 480px){
             flex-direction: column;
+            align-items:flex-start
         }
 
         .details{
@@ -3615,6 +3620,14 @@
                 gap: 10px;
                 border-radius: 360px;
                 background: #0891B2;
+            }
+
+            &:hover{
+                background: #0891B2;
+
+                span{
+                    background: #083344;
+                }
             }
         }
     }
@@ -3895,6 +3908,11 @@
             align-items: flex-start;
             border-radius: 64px;
             padding: 0px 25px 25px 0px;
+
+            @media (max-width: 575px){
+                align-items: center;
+                padding: 0px;
+            }
     
             img{
                 height: 64px;
@@ -4157,7 +4175,7 @@
 
 .work-process-banner{
     display: flex;
-    padding: 0px 0px 96px 0px;
+    padding: 40px 0px 96px 0px;
     flex-direction: column;
     align-items: flex-start;
     background: #CFFAFE;

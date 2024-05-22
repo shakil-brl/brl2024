@@ -937,8 +937,7 @@
 .about .info .rightContent {
   padding: 0px 15px 0px 10px;
   position: sticky;
-  top: 0;
-  height: 100%;
+  top: 100px;
 }
 @media (max-width: 992px) {
   .about .info .rightContent {
@@ -1119,7 +1118,7 @@
   }
 }
 .product-section .productCard .productImage {
-  margin: 25px;
+  margin-bottom: 25px;
   display: flex;
   width: 128px;
   height: 128px;
@@ -1595,6 +1594,7 @@
 .testimonial .testimonialCard .cardHeader .personImage {
   position: sticky;
   height: 48px;
+  width: 48px;
 }
 .testimonial .testimonialCard .cardHeader .personImage img {
   width: 100%;
@@ -1995,6 +1995,10 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
+}
+.inquiry .inqForm .formElement .formLabel button {
+  border: none;
+  background: transparent;
 }
 .inquiry .inqForm .formElement .formLabel span {
   display: flex;
@@ -2431,7 +2435,6 @@
 }
 
 .breadcrumb {
-  margin-top: 40px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -3430,6 +3433,7 @@
 @media (max-width: 480px) {
   .career-opening .vacancy-card {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .career-opening .vacancy-card .details {
@@ -3511,6 +3515,12 @@
   gap: 10px;
   border-radius: 360px;
   background: #0891B2;
+}
+.career-opening .vacancy-card .btn-apply:hover {
+  background: #0891B2;
+}
+.career-opening .vacancy-card .btn-apply:hover span {
+  background: #083344;
 }
 
 .activities {
@@ -3802,6 +3812,12 @@
   border-radius: 64px;
   padding: 0px 25px 25px 0px;
 }
+@media (max-width: 575px) {
+  .core-values .content-area .card-area {
+    align-items: center;
+    padding: 0px;
+  }
+}
 .core-values .content-area .card-area img {
   height: 64px;
   width: 64px;
@@ -4039,7 +4055,7 @@
 
 .work-process-banner {
   display: flex;
-  padding: 0px 0px 96px 0px;
+  padding: 40px 0px 96px 0px;
   flex-direction: column;
   align-items: flex-start;
   background: #CFFAFE;

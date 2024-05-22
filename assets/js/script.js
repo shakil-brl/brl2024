@@ -44,6 +44,14 @@ $('.client-carousel').owlCarousel({
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    })
+});
+
 var awardCarousel = document.querySelector('#achievementsCarousel');
 
 var nextButton = document.querySelector('.carousel-control-next');
