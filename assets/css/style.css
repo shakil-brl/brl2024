@@ -30,6 +30,7 @@
 }
 .navbar .nav-link:hover {
   background-color: #A5F3FC;
+  padding: 10px 15px;
 }
 .navbar .nav-item {
   margin-right: 5px;
@@ -46,7 +47,7 @@
   font-weight: 700;
   color: #0E7490;
   border-radius: 360px;
-  padding: 10px;
+  padding: 10px 15px;
   background: #A5F3FC;
 }
 .navbar .nav-button {
@@ -1320,6 +1321,7 @@
 .projectSection .projectCard .projectDetails .projectInfo .projectFooter .live:hover {
   background: #06B6D4;
   color: #FFF;
+  border: none;
 }
 
 .services {
@@ -3886,9 +3888,10 @@
   font-size: 14px;
   font-weight: 400;
 }
-
-.apply-card {
+.job-description .apply-card {
   margin-top: -260px;
+  top: 80px;
+  position: sticky;
   display: flex;
   padding: 40px;
   flex-direction: column;
@@ -3900,36 +3903,36 @@
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
 }
 @media (max-width: 991px) {
-  .apply-card {
+  .job-description .apply-card {
     margin-top: 0px;
   }
 }
-.apply-card .salary {
+.job-description .apply-card .salary {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 992px) {
-  .apply-card .salary {
+  .job-description .apply-card .salary {
     flex-direction: column;
     align-items: start;
   }
 }
 @media (max-width: 767px) {
-  .apply-card .salary {
+  .job-description .apply-card .salary {
     flex-direction: row;
     align-items: center;
   }
 }
-.apply-card .salary h2 {
+.job-description .apply-card .salary h2 {
   color: #083344;
   font-family: Poppins;
   font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
 }
-.apply-card .salary .bdt {
+.job-description .apply-card .salary .bdt {
   padding: 7px 0px 0px 10px;
   color: #0891B2;
   font-family: Poppins;
@@ -3937,42 +3940,41 @@
   font-weight: 500;
 }
 @media (max-width: 992px) {
-  .apply-card .salary .bdt {
+  .job-description .apply-card .salary .bdt {
     padding: 7px 0px 0px 0px;
   }
 }
 @media (max-width: 767px) {
-  .apply-card .salary .bdt {
+  .job-description .apply-card .salary .bdt {
     padding: 7px 0px 0px 10px;
   }
 }
-.apply-card .slr {
-  padding-top: 0px;
+.job-description .apply-card .slr {
   color: #0891B2;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
 }
-.apply-card p {
+.job-description .apply-card p {
   color: #334155;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
 }
-.apply-card p a {
+.job-description .apply-card p a {
   color: #334155;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
   text-decoration-line: underline;
 }
-.apply-card .apply-foot-text {
+.job-description .apply-card .apply-foot-text {
   color: #334155;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
 }
-.apply-card .btn-apply {
+.job-description .apply-card .btn-apply {
   text-decoration: none;
   display: flex;
   padding: 14px 16px;

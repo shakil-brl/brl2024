@@ -30,6 +30,7 @@
 
         &:hover {
             background-color: #A5F3FC;
+            padding: 10px 15px;
         }
     }
 
@@ -47,7 +48,7 @@
             font-weight: 700;
             color: #0E7490;
             border-radius: 360px;
-            padding: 10px;
+            padding: 10px 15px;
             background: #A5F3FC;
         }
     }
@@ -1410,6 +1411,7 @@
                         &:hover {
                             background: #06B6D4;
                             color: #FFF;
+                            border: none;
                         }
                     }
                     
@@ -3992,112 +3994,113 @@
         font-size: 14px;
         font-weight: 400;
     }
-}
 
-.apply-card{
-    margin-top: -260px;
-    display: flex;
-    padding: 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-
-    border-radius: 32px;
-    background: #ECFEFF;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
-
-    @media (max-width: 991px){
-        margin-top: 0px;
-    }
-
-    .salary{
+    .apply-card{
+        margin-top: -260px;
+        top: 80px;
+        position: sticky;
         display: flex;
-        flex-direction: row;
+        padding: 40px;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-
-        @media (max-width: 992px){
-            flex-direction: column;
-            align-items: start;
+        align-items: flex-start;
+        align-self: stretch;
+    
+        border-radius: 32px;
+        background: #ECFEFF;
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.03);
+    
+        @media (max-width: 991px){
+            margin-top: 0px;
         }
-
-        @media (max-width: 767px){
+    
+        .salary{
+            display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
+    
+            @media (max-width: 992px){
+                flex-direction: column;
+                align-items: start;
+            }
+    
+            @media (max-width: 767px){
+                flex-direction: row;
+                align-items: center;
+            }
+    
+            h2{
+                color: #083344;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+    
+            .bdt{
+                padding: 7px 0px 0px 10px;
+                color: #0891B2;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 500;
+                @media (max-width: 992px){
+                    padding: 7px 0px 0px 0px;
+                }
+    
+                @media (max-width: 767px){
+                    padding: 7px 0px 0px 10px;
+                }
+            }
         }
-
-        h2{
-            color: #083344;
-            font-family: Poppins;
-            font-size: 24px;
-            font-weight: 700;
-            text-transform: capitalize;
-        }
-
-        .bdt{
-            padding: 7px 0px 0px 10px;
+    
+        .slr{
             color: #0891B2;
             font-family: Poppins;
             font-size: 14px;
             font-weight: 500;
-            @media (max-width: 992px){
-                padding: 7px 0px 0px 0px;
-            }
-
-            @media (max-width: 767px){
-                padding: 7px 0px 0px 10px;
+        }
+    
+        p{
+            color: #334155;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            a{
+                color: #334155;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration-line: underline;
             }
         }
-    }
-
-    .slr{
-        padding-top: 0px;
-        color: #0891B2;
-        font-family: Poppins;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    p{
-        color: #334155;
-        font-family: Poppins;
-        font-size: 14px;
-        font-weight: 400;
-        a{
+    
+        .apply-foot-text{
             color: #334155;
             font-family: Poppins;
             font-size: 14px;
             font-weight: 600;
-            text-decoration-line: underline;
         }
-    }
-
-    .apply-foot-text{
-        color: #334155;
-        font-family: Poppins;
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .btn-apply{
-        text-decoration: none;
-        display: flex;
-        padding: 14px 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        align-self: stretch;
-
-        border-radius: 12px;
-        background: #06B6D4;
-        box-shadow: 0px 4px 5px 0px rgba(34, 211, 238, 0.20);
-
-        color: #FFF;
-        text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 700;
+    
+        .btn-apply{
+            text-decoration: none;
+            display: flex;
+            padding: 14px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            align-self: stretch;
+    
+            border-radius: 12px;
+            background: #06B6D4;
+            box-shadow: 0px 4px 5px 0px rgba(34, 211, 238, 0.20);
+    
+            color: #FFF;
+            text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
 }
 
