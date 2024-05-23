@@ -1120,6 +1120,7 @@
 }
 .product-section .productCard .productImage {
   margin-bottom: 25px;
+  padding: 15px;
   display: flex;
   width: 128px;
   height: 128px;
@@ -1134,6 +1135,10 @@
     width: 120px;
     height: 120px;
   }
+}
+.product-section .productCard .productImage img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .product-section .productCard a {
   text-decoration: none;
@@ -3059,16 +3064,25 @@
   border: 2px solid #FFF;
   border-radius: 24px;
 }
-.team .employees .employee-card img {
-  border-radius: 360px;
+.team .employees .employee-card .emp-img {
+  display: flex;
   width: 200px;
   height: 200px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #FFF;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
-  .team .employees .employee-card img {
+  .team .employees .employee-card .emp-img {
     width: 150px;
     height: 150px;
   }
+}
+.team .employees .employee-card .emp-img img {
+  width: 100%;
+  height: 100%;
 }
 .team .employees .employee-card .name {
   margin-top: 16px;
@@ -3105,7 +3119,8 @@
 .team .employees .employee-card .social span:hover {
   background-color: #E2E8F0;
 }
-.team .career {
+
+.career {
   margin-top: 192px;
   display: flex;
   flex-direction: column;
@@ -3116,48 +3131,48 @@
   background-color: #A5F3FC;
 }
 @media (max-width: 568px) {
-  .team .career {
+  .career {
     padding: 40px;
     border-radius: 50px;
   }
 }
-.team .career .circle {
+.career .circle {
   margin: -27px 0px 0px 380px;
   width: 40px;
   height: 40px;
   animation: moveCircle 5s infinite;
 }
 @media (max-width: 1399px) {
-  .team .career .circle {
+  .career .circle {
     margin: -27px 0px 0px 290px;
   }
 }
 @media (max-width: 1199px) {
-  .team .career .circle {
+  .career .circle {
     margin: -27px 0px 0px 390px;
   }
 }
 @media (max-width: 992px) {
-  .team .career .circle {
+  .career .circle {
     margin: -27px 0px 0px 200px;
   }
 }
 @media (max-width: 767px) {
-  .team .career .circle {
+  .career .circle {
     margin: -40px 0px 0px 125px;
   }
 }
 @media (max-width: 576px) {
-  .team .career .circle {
+  .career .circle {
     margin: -14px 0px 0px 195px;
   }
 }
 @media (max-width: 490px) {
-  .team .career .circle {
+  .career .circle {
     display: none;
   }
 }
-.team .career .tringle {
+.career .tringle {
   margin: -96px 0px 0px 67px;
   width: 66.313px;
   height: 66.313px;
@@ -3165,169 +3180,169 @@
   animation: moveTriangle 6s infinite;
 }
 @media (max-width: 1399px) {
-  .team .career .tringle {
+  .career .tringle {
     margin: -96px 0px 0px -20px;
   }
 }
 @media (max-width: 1199px) {
-  .team .career .tringle {
+  .career .tringle {
     margin: -135px 0px 0px -38px;
   }
 }
 @media (max-width: 992px) {
-  .team .career .tringle {
+  .career .tringle {
     margin: -135px 0px 0px 130px;
   }
 }
 @media (max-width: 767px) {
-  .team .career .tringle {
+  .career .tringle {
     margin: -220px 0px 0px 220px;
   }
 }
 @media (max-width: 576px) {
-  .team .career .tringle {
+  .career .tringle {
     margin: -314px 0px 0px 303px;
   }
 }
 @media (max-width: 490px) {
-  .team .career .tringle {
+  .career .tringle {
     display: none;
   }
 }
-.team .career .star {
+.career .star {
   margin: -130px 0px 0px 1045px;
   width: 73.964px;
   height: 73.964px;
   animation: moveStar 7s infinite;
 }
 @media (max-width: 1399px) {
-  .team .career .star {
+  .career .star {
     margin: -130px 0px 0px 900px;
   }
 }
 @media (max-width: 1199px) {
-  .team .career .star {
+  .career .star {
     margin: -75px 0px 0px 775px;
   }
 }
 @media (max-width: 992px) {
-  .team .career .star {
+  .career .star {
     margin: -75px 0px 0px 510px;
   }
 }
 @media (max-width: 767px) {
-  .team .career .star {
+  .career .star {
     margin: -75px 0px 0px 345px;
   }
 }
 @media (max-width: 576px) {
-  .team .career .star {
+  .career .star {
     margin: -150px 0px 0px 335px;
   }
 }
 @media (max-width: 490px) {
-  .team .career .star {
+  .career .star {
     display: none;
   }
 }
-.team .career .text-bottom-icons {
+.career .text-bottom-icons {
   display: flex;
 }
-.team .career .text-bottom-icons .octagon {
+.career .text-bottom-icons .octagon {
   margin: 25px 0px 0px 405px;
   width: 45.022px;
   height: 45.022px;
   animation: moveOctagon 8s infinite;
 }
 @media (max-width: 1399px) {
-  .team .career .text-bottom-icons .octagon {
+  .career .text-bottom-icons .octagon {
     margin: 25px 0px 0px 316px;
   }
 }
 @media (max-width: 1199px) {
-  .team .career .text-bottom-icons .octagon {
+  .career .text-bottom-icons .octagon {
     margin: 25px 0px 0px 260px;
   }
 }
 @media (max-width: 992px) {
-  .team .career .text-bottom-icons .octagon {
+  .career .text-bottom-icons .octagon {
     margin: 25px 0px 0px 220px;
   }
 }
 @media (max-width: 767px) {
-  .team .career .text-bottom-icons .octagon {
+  .career .text-bottom-icons .octagon {
     margin: 25px 0px 0px 185px;
   }
 }
 @media (max-width: 576px) {
-  .team .career .text-bottom-icons .octagon {
+  .career .text-bottom-icons .octagon {
     margin: 25px 0px 10px 185px;
   }
 }
 @media (max-width: 490px) {
-  .team .career .text-bottom-icons .octagon {
+  .career .text-bottom-icons .octagon {
     display: none;
   }
 }
-.team .career .text-bottom-icons .rectangle {
+.career .text-bottom-icons .rectangle {
   margin: -35px 0px 0px 182px;
   width: 31.5px;
   height: 31.5px;
   animation: moveRectangle 9s infinite;
 }
 @media (max-width: 1399px) {
-  .team .career .text-bottom-icons .rectangle {
+  .career .text-bottom-icons .rectangle {
     margin: -20px 0px 0px 182px;
   }
 }
 @media (max-width: 992px) {
-  .team .career .text-bottom-icons .rectangle {
+  .career .text-bottom-icons .rectangle {
     margin: -20px 0px 0px 85px;
   }
 }
 @media (max-width: 767px) {
-  .team .career .text-bottom-icons .rectangle {
+  .career .text-bottom-icons .rectangle {
     margin: -20px 0px 0px 55px;
   }
 }
 @media (max-width: 490px) {
-  .team .career .text-bottom-icons .rectangle {
+  .career .text-bottom-icons .rectangle {
     display: none;
   }
 }
-.team .career .text-bottom-icons .hexagonal {
+.career .text-bottom-icons .hexagonal {
   margin: 10px 0px 10px 215px;
   width: 50.7px;
   height: 50.7px;
   animation: moveHexagonal 10s infinite;
 }
 @media (max-width: 992px) {
-  .team .career .text-bottom-icons .hexagonal {
+  .career .text-bottom-icons .hexagonal {
     margin: 10px 0px 10px 145px;
   }
 }
 @media (max-width: 767px) {
-  .team .career .text-bottom-icons .hexagonal {
+  .career .text-bottom-icons .hexagonal {
     margin: 10px 0px 10px 45px;
   }
 }
 @media (max-width: 490px) {
-  .team .career .text-bottom-icons .hexagonal {
+  .career .text-bottom-icons .hexagonal {
     display: none;
   }
 }
-.team .career h1 {
+.career h1 {
   color: #0891B2;
   font-family: "Roboto Slab";
   font-size: 40px;
   font-weight: 900;
 }
 @media (max-width: 568px) {
-  .team .career h1 {
+  .career h1 {
     font-size: 34px;
   }
 }
-.team .career p {
+.career p {
   margin: -25px 0px 25px 0px;
   color: #334155;
   font-family: Poppins;
@@ -3335,23 +3350,24 @@
   font-weight: 500;
 }
 @media (max-width: 568px) {
-  .team .career p {
+  .career p {
     font-size: 14px;
   }
 }
 @media (max-width: 490px) {
-  .team .career p {
+  .career p {
     margin: 0px 0px 25px 0px;
   }
 }
-.team .career .join-button {
+.career .join-button {
   margin: -75px 0px -10px 0px;
 }
 @media (max-width: 490px) {
-  .team .career .join-button {
+  .career .join-button {
     margin: 0px 0px -10px 0px;
   }
 }
+
 @keyframes moveCircle {
   0%, 100% {
     transform: translate(0, 0) rotate(0deg);
@@ -3436,7 +3452,6 @@
     transform: translate(-10px, 10px) rotate(270deg);
   }
 }
-
 .banner-career {
   background-color: #CFFAFE;
   text-align: center;

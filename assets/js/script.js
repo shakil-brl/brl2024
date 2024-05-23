@@ -1,3 +1,38 @@
+$(document).ready(function() {
+    var owl = $('.owl-carousel');
+
+    owl.owlCarousel({
+        loop: true, 
+        autoplay: true, 
+        autoplayTimeout: 3000, 
+        autoplayHoverPause: true,
+        nav: false, 
+        dots: false, 
+        margin: 20,
+        responsive: {
+            992: {
+                items: 3 
+            },
+            768: {
+                items: 2 
+            },
+
+            0: {
+                items: 1 
+            }
+        }
+    });
+
+    $('.awardSlideBtn').click(function() {
+        owl.trigger('next.owl.carousel');
+    })
+
+
+    
+});
+
+
+
 $('.lab-carousel').owlCarousel({
     loop: true, 
     autoplay: true, 
@@ -42,6 +77,13 @@ $('.client-carousel').owlCarousel({
             items:6
         }
     }
+});
+
+
+$(document).ready(function() {
+    $('.video-popup').magnificPopup({
+        type: 'iframe'
+    });
 });
 
 
