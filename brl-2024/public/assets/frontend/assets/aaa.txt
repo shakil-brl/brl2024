@@ -1,0 +1,269 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Case Studies</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <div class="nav-dropdown-section dropdown-lg">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="row row-left">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/uud.png" alt="Image Description">
+                                                </div>
+                                                <p>UX/UI DESIGN</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/gd.png" alt="Image Description">
+                                                </div>
+                                                <p>Games Development</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/mad.png" alt="Image Description">
+                                                </div>
+                                                <p>Mobile App Development</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/oot.png" alt="Image Description">
+                                                </div>
+                                                <p>Online/offline training</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/wdd.png" alt="Image Description">
+                                                </div>
+                                                <p>Web design & Development</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/ts.png" alt="Image Description">
+                                                </div>
+                                                <p>Technical Support</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="row row-right">
+                                        <div class="col-12">
+                                            <a href="work_process.html" class="btn-workprocess">Our Work Process<span class="material-symbols-outlined">call_made</span></a>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="btn-capabilites">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                        <path d="M36 8C37.66 8 39 9.34 39 11V37C39 38.66 37.66 40 36 40C34.34 40 33 38.66 33 37V11C33 9.34 34.34 8 36 8ZM12 28C13.66 28 15 29.34 15 31V37C15 38.66 13.66 40 12 40C10.34 40 9 38.66 9 37V31C9 29.34 10.34 28 12 28ZM24 18C25.66 18 27 19.34 27 21V37C27 38.66 25.66 40 24 40C22.34 40 21 38.66 21 37V21C21 19.34 22.34 18 24 18Z" fill="white"/>
+                                                        </svg>
+                                                </div>
+                                                
+                                                <a href="">
+                                                    Our Work Process
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <div class="nav-dropdown-section dropdown-lg">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="row row-left">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/pe.png" alt="Image Description">
+                                                </div>
+                                                <p>PROTTAY ERP</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/o11.png" alt="Image Description">
+                                                </div>
+                                                <p>ORA 11 JON VR</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/lc.png" alt="Image Description">
+                                                </div>
+                                                <p>LEARNERS CAFE LMS</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/pe.png" alt="Image Description">
+                                                </div>
+                                                <p>PROTTAY ERP</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/o11.png" alt="Image Description">
+                                                </div>
+                                                <p>ORA 11 JON VR</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="" class="dropdown-property">
+                                                <div class="dropdown-image">
+                                                    <img src="./assets/images/dropdown/phr.png" alt="Image Description">
+                                                </div>
+                                                <p>PROTTAY HRMS</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    
+                                    <div class="col-12">
+                                        <a href="" class="dropdown-property">
+                                            <div class="dropdown-image">
+                                                <img src="./assets/images/dropdown/phr.png" alt="Image Description">
+                                            </div>
+                                            <p>PROTTAY HRMS</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="btn-all-products">
+                                            <div class="fonts-product">
+                                                <h1>+12</h1>
+                                                <a href="">
+                                                    See All Products
+                                                </a>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <div class="nav-dropdown-section dropdown-md">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="about-menus">
+                                        <a href="about.html" class="dropdown-property-about">
+                                            ABOUT US
+                                        </a>
+
+                                        <a href="#" class="dropdown-property-about">
+                                            FAQ's
+                                        </a>
+
+                                        <a href="#" class="dropdown-property-about">
+                                            blogs
+                                        </a>
+
+                                        <a href="#" class="dropdown-property-about">
+                                            Help & support
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <a href="" class="btn-teams-nav">
+                                        <div class="members-area">
+                                            <h2>Our Teams</h2>
+                                            <div class="members">
+                                                <div class="avaters">
+                                                    <img src="./assets/images/members/1.png" alt="">
+                                                    <img src="./assets/images/members/2.png" alt="">
+                                                    <img src="./assets/images/members/3.png" alt="">
+                                                </div>
+                                                <div class="total-count">
+                                                    <p>+74</p>
+                                                </div>
+
+                                                <p class="member">Members</p>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                    
+                                    <a href="" class="btn-events">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <path d="M38 8H36V6C36 4.9 35.1 4 34 4C32.9 4 32 4.9 32 6V8H16V6C16 4.9 15.1 4 14 4C12.9 4 12 4.9 12 6V8H10C7.78 8 6.02 9.8 6.02 12L6 40C6 42.2 7.78 44 10 44H38C40.2 44 42 42.2 42 40V12C42 9.8 40.2 8 38 8ZM36 40H12C10.9 40 10 39.1 10 38V18H38V38C38 39.1 37.1 40 36 40ZM16 22H22C23.1 22 24 22.9 24 24V30C24 31.1 23.1 32 22 32H16C14.9 32 14 31.1 14 30V24C14 22.9 14.9 22 16 22Z" fill="white"/>
+                                        </svg>
+
+                                        <h1>Events</h1>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Careers</a>
+                </li>
+            </ul>
+            
+            <div class="nav-button text-center"> <!-- Separate container for the button -->
+                <a class="btn btn-linkPage" href="#">Contact Us <span class="material-symbols-outlined">call_made</span></a>
+            </div>
+        </div>
+    </div>
+</nav>
