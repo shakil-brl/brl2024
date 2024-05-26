@@ -34,7 +34,6 @@ $('.lab-carousel').owlCarousel({
     autoplayHoverPause: true, 
     nav: false, 
     dots: false,
-    autoWidth:true,
     margin:10,
     responsive:{
         0:{

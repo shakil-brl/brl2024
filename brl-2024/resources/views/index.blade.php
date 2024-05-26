@@ -373,7 +373,7 @@
         </div>
 
         <div class="info">
-            <div class="row">
+            <div class="row gx-5">
                 <div class="col-lg-8 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2 order-2">
                     <div class="leftContent">
                         <p>
@@ -400,6 +400,7 @@
                                     <img src="{{ asset('assets/frontend') }}/assets/images/about/1.png" alt="Your Image" height="200px" width="360px">
                                     <div class="text-overlay">
                                         <h2>Business to Business(B2B)</h2>
+                                        <p>Creating user-centric experiences: Designing engaging and feature-rich mobile applications for B2C clients.</p>
                                     </div>
                                 </div>
                             </div>
@@ -408,15 +409,16 @@
                                     <img src="{{ asset('assets/frontend/assets/images/about/2.png') }}" alt="Your Image" height="200px" width="360px">
                                     <div class="text-overlay">
                                         <h2>Business to Consumer(B2C)</h2>
+                                        <p>Creating user-centric experiences: Designing engaging and feature-rich mobile applications for B2C clients.</p>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="aboutImageLeft">
                                     <img src="{{ asset('assets/frontend/assets/images/about/3.png') }}" alt="Your Image" height="200px" width="360px">
                                     <div class="text-overlay">
                                         <h2>Business to Government(B2G)</h2>
+                                        <p>Creating user-centric experiences: Designing engaging and feature-rich mobile applications for B2C clients.</p>
                                     </div>
                                 </div>
                             </div>
@@ -425,6 +427,7 @@
                                     <img src="{{ asset('assets/frontend/assets/images/about/4.png') }}" alt="Your Image" height="200px" width="360px">
                                     <div class="text-overlay">
                                         <h2>ONLINE/OFFLINE TRAINING</h2>
+                                        <p>Creating user-centric experiences: Designing engaging and feature-rich mobile applications for B2C clients.</p>
                                     </div>
                                 </div>
                             </div>
@@ -543,94 +546,92 @@
     <div class="container">
         <h1 class="section-heding">Featured Products</h1>
 
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href="" class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/Layer_1.png') }}">
                     </div>
-                    <a href="#">
-                        <h3>Prottay ERP</h3>
-                        <p>Complete ERP solution for RMG sector </p>
-                    </a>
-                </div>
+
+                    <h3>Prottay ERP</h3>
+                    <p>Complete ERP solution for RMG sector </p>
+
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href="" class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/Layer_1 (1).png') }}">
                     </div>
-                    <a href="#">
-                        <h3>Ora 11 Jon VR</h3>
-                        <p>An epic war game based on some true stories</p>
-                    </a>
-                </div>
+
+                    <h3>Ora 11 Jon VR</h3>
+                    <p>An epic war game based on some true stories</p>
+
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href=""  class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/Layer_1 (2).png') }}">
                     </div>
-                    <a href="#">
-                        <h3>LearnersCafe LMS</h3>
-                        <p>An upgraded e-learning management system. </p>
-                    </a>
-                </div>
+
+                    <h3>LearnersCafe LMS</h3>
+                    <p>An upgraded e-learning management system. </p>
+
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href=""  class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/hrms.png') }}">
                     </div>
-                    <a href="#">
-                        <h3>Prottay HRMS</h3>
-                        <p>A HRMS solution to manage mass number of workers. </p>
-                    </a>
-                </div>
+
+                    <h3>Prottay HRMS</h3>
+                    <p>A HRMS solution to manage mass number of workers. </p>
+
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href=""  class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/Layer_1 (2).png') }}">
                     </div>
-                    <a href="#">
-                        <h3>LearnersCafe LMS</h3>
-                        <p>An upgraded e-learning management system.</p>
-                    </a>
-                </div>
+
+                    <h3>LearnersCafe LMS</h3>
+                    <p>An upgraded e-learning management system.</p>
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href=""  class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/hrms.png') }}">
                     </div>
-                    <a href="#">
-                        <h3>Prottay HRMS</h3>
-                        <p>A HRMS solution to manage mass number of workers.</p>
-                    </a>
-                </div>
+
+                    <h3>Prottay HRMS</h3>
+                    <p>A HRMS solution to manage mass number of workers.</p>
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href=""  class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/Layer_1 (1).png') }}">
                     </div>
-                    <a href="#">
-                        <h3>Ora 11 Jon VR</h3>
-                        <p>An epic war game based on some true stories</p>
-                    </a>
-                </div>
+
+                    <h3>Ora 11 Jon VR</h3>
+                    <p>An epic war game based on some true stories</p>
+
+                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="productCard">
+                <a href=""  class="productCard">
                     <div class="productImage">
                         <img src="{{ asset('assets/frontend/assets/images/product/Layer_1.png') }}">
                     </div>
-                    <a href="#">
-                        <h3>prottay eRP</h3>
-                        <p>Complete ERP Solution for RMG </p>
-                    </a>
-                </div>
+
+                    <h3>prottay eRP</h3>
+                    <p>Complete ERP Solution for RMG sector</p>
+
+                </a>
             </div>
 
         </div>
@@ -646,10 +647,10 @@
     <div class="container">
         <h1 class="section-heding">Featured Projects</h1>
 
-        <div class="row">
+        <div class="row g-3">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="projectCard">
-                    <div class="row">
+                    <div class="row" style="height: 100%;">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <img class="projectImage" src="{{ asset('assets/frontend/assets/images/project/pr1.png') }}">
                         </div>
@@ -676,11 +677,11 @@
                                         <div class="tag">Web App</div>
                                         <div class="tag">Mobile App</div>
                                     </div>
+                                </div>
 
-                                    <div class="projectFooter">
-                                        <a class="case" href="#">Case Study</a>
-                                        <a class="live" href="#">View Live</a>
-                                    </div>
+                                <div class="projectFooter">
+                                    <a class="case" href="#">Case Study</a>
+                                    <a class="live" href="#">View Live</a>
                                 </div>
                             </div>
                         </div>
@@ -689,7 +690,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="projectCard">
-                    <div class="row">
+                    <div class="row" style="height: 100%;">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <img class="projectImage" src="{{ asset('assets/frontend/assets/images/project/pr2.png') }}">
                         </div>
@@ -716,11 +717,10 @@
                                         <div class="tag">Web App</div>
                                         <div class="tag">Mobile App</div>
                                     </div>
-
-                                    <div class="projectFooter">
-                                        <a class="case" href="#">Case Study</a>
-                                        <a class="live" href="#">View Live</a>
-                                    </div>
+                                </div>
+                                <div class="projectFooter">
+                                    <a class="case" href="#">Case Study</a>
+                                    <a class="live" href="#">View Live</a>
                                 </div>
                             </div>
                         </div>
@@ -729,7 +729,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="projectCard">
-                    <div class="row">
+                    <div class="row" style="height: 100%;">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <img class="projectImage" src="{{ asset('assets/frontend/assets/images/project/pr3.png') }}">
                         </div>
@@ -757,10 +757,12 @@
                                         <div class="tag">Mobile App</div>
                                     </div>
 
-                                    <div class="projectFooter">
-                                        <a class="case" href="#">Case Study</a>
-                                        <a class="live" href="#">View Live</a>
-                                    </div>
+
+                                </div>
+
+                                <div class="projectFooter">
+                                    <a class="case" href="#">Case Study</a>
+                                    <a class="live" href="#">View Live</a>
                                 </div>
                             </div>
                         </div>
@@ -771,7 +773,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="projectCard">
-                    <div class="row">
+                    <div class="row" style="height: 100%;">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <img class="projectImage" src="{{ asset('assets/frontend/assets/images/project/pr4.png') }}">
                         </div>
@@ -798,11 +800,11 @@
                                         <div class="tag">Web App</div>
                                         <div class="tag">Mobile App</div>
                                     </div>
+                                </div>
 
-                                    <div class="projectFooter">
-                                        <a class="case" href="#">Case Study</a>
-                                        <a class="live" href="#">View Live</a>
-                                    </div>
+                                <div class="projectFooter">
+                                    <a class="case" href="#">Case Study</a>
+                                    <a class="live" href="#">View Live</a>
                                 </div>
                             </div>
                         </div>
@@ -813,7 +815,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="projectCard">
-                    <div class="row">
+                    <div class="row" style="height: 100%;">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <img class="projectImage" src="{{ asset('assets/frontend/assets/images/project/pr5.png') }}">
                         </div>
@@ -840,11 +842,11 @@
                                         <div class="tag">Web App</div>
                                         <div class="tag">Mobile App</div>
                                     </div>
+                                </div>
 
-                                    <div class="projectFooter">
-                                        <a class="case" href="#">Case Study</a>
-                                        <a class="live" href="#">View Live</a>
-                                    </div>
+                                <div class="projectFooter">
+                                    <a class="case" href="#">Case Study</a>
+                                    <a class="live" href="#">View Live</a>
                                 </div>
                             </div>
                         </div>
@@ -855,7 +857,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="projectCard">
-                    <div class="row">
+                    <div class="row" style="height: 100%;">
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <img class="projectImage" src="{{ asset('assets/frontend/assets/images/project/pr6.png') }}">
                         </div>
@@ -882,11 +884,11 @@
                                         <div class="tag">Web App</div>
                                         <div class="tag">Mobile App</div>
                                     </div>
+                                </div>
 
-                                    <div class="projectFooter">
-                                        <a class="case" href="#">Case Study</a>
-                                        <a class="live" href="#">View Live</a>
-                                    </div>
+                                <div class="projectFooter">
+                                    <a class="case" href="#">Case Study</a>
+                                    <a class="live" href="#">View Live</a>
                                 </div>
                             </div>
                         </div>
@@ -901,12 +903,11 @@
     </div>
 </section>
 
-
 <section class="services">
     <div class="container">
         <h1 class="section-heding">Our Services</h1>
 
-        <div class="row">
+        <div class="row g-3">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="serviceCard">
                     <div class="service-image">
@@ -1497,7 +1498,7 @@
     <div class="container">
         <h1 class="section-heding">Our Blogs</h1>
 
-        <div class="row rowBlogs">
+        <div class="row rowBlogs g-3">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="blogsCard">
                     <div class="cardImage">
@@ -1584,7 +1585,7 @@
         <h1 class="section-heding">Have a Project Idea?</h1>
 
         <div class="rowInquiry">
-            <div class="row">
+            <div class="row gx-5">
                 <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
                     <div class="inqImage">
                         <img src="{{ asset('assets/frontend/assets/images/inq.png') }}" alt="">
