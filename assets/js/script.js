@@ -3,9 +3,6 @@ $(document).ready(function() {
 
     owl.owlCarousel({
         loop: true, 
-        autoplay: true, 
-        autoplayTimeout: 3000, 
-        autoplayHoverPause: true,
         nav: false, 
         dots: false, 
         margin: 20,
@@ -26,9 +23,6 @@ $(document).ready(function() {
     $('.awardSlideBtn').click(function() {
         owl.trigger('next.owl.carousel');
     })
-
-
-    
 });
 
 
