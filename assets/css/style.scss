@@ -1313,7 +1313,7 @@
         background: #ECFEFF;
 
         @media (min-width: 1200px){
-            height: 308px;
+            // height: 308px;
         }
     
         .projectImage {
@@ -1329,6 +1329,7 @@
             justify-content: space-between;
             align-items: flex-start;
             height: 100%;  
+            gap: 10px;
 
             @media (max-width: 1199px){
                 gap: 10px;

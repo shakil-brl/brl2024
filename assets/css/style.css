@@ -1217,11 +1217,6 @@
   border-radius: 32px;
   background: #ECFEFF;
 }
-@media (min-width: 1200px) {
-  .projectSection .projectCard {
-    height: 308px;
-  }
-}
 .projectSection .projectCard .projectImage {
   width: 100%;
   height: 100%;
@@ -1235,6 +1230,7 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
+  gap: 10px;
 }
 @media (max-width: 1199px) {
   .projectSection .projectCard .projectDetails {
