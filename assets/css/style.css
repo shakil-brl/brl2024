@@ -218,6 +218,7 @@
   font-weight: 700;
 }
 .navbar .btn-all-products {
+  text-decoration: none;
   margin-top: 25px;
   display: flex;
   padding: 12px var(--spacing-7, 24px);
@@ -238,7 +239,7 @@
   font-size: 32px;
   font-weight: 700;
 }
-.navbar .btn-all-products .fonts-product a {
+.navbar .btn-all-products .fonts-product h2 {
   text-decoration: none;
   color: #FFF;
   font-size: 24px;
@@ -2232,6 +2233,9 @@
   white-space: nowrap;
 }
 
+.inqForm {
+  width: 100%;
+}
 .inqForm .formElement {
   display: flex;
   flex-direction: column;
@@ -2457,15 +2461,22 @@
 @media (max-width: 540px) {
   .inqForm .formFooter {
     flex-direction: column;
+    align-items: stretch;
   }
 }
 .inqForm .formFooter p {
   margin-top: 10px;
-  color: var(--slate-700, #334155);
+  color: #334155;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+}
+@media (max-width: 540px) {
+  .inqForm .formFooter p {
+    margin-top: 20px;
+    text-align: right;
+  }
 }
 
 .banner-about {
@@ -2476,17 +2487,16 @@
 
 .btn-button {
   display: flex;
-  padding: var(--radius-sm, 4px) var(--radius-sm, 4px) var(--radius-sm, 4px) 22px;
-  justify-content: center;
+  padding: 4px 4px 4px 22px;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   border-radius: 360px;
-  background: var(--cyan-950, #083344);
-  color: var(--base-white, var(--base-white, #FFF));
+  background: #083344;
+  color: #FFF;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
   font-family: Poppins;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
 }
 .btn-button span {
@@ -5038,6 +5048,8 @@
   gap: 48px;
   border-radius: 40px;
   background: #ECFEFF;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 footer {

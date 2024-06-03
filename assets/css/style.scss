@@ -239,6 +239,7 @@
     }
 
     .btn-all-products {
+        text-decoration: none;
         margin-top: 25px;
         display: flex;
         padding: 12px var(--spacing-7, 24px);
@@ -261,7 +262,7 @@
                 font-weight: 700;
             }
 
-            a {
+            h2 {
                 text-decoration: none;
                 color: #FFF;
                 font-size: 24px;
@@ -2382,6 +2383,7 @@
 }
 
 .inqForm {
+    width: 100%; // Ensure form takes full width of the parent
 
     .formElement {
         display: flex;
@@ -2417,11 +2419,11 @@
                 gap: 15px;
                 align-self: stretch;
                 flex-wrap: wrap;
-            
+
                 @media (max-width: 576px) {
                     gap: 5px;
                 }
-            
+
                 .tag {
                     display: flex;
                     justify-content: center;
@@ -2430,25 +2432,25 @@
                     border: 1px solid #CBD5E1;
                     position: relative;
                     padding: 0;
-            
+
                     @media (max-width: 425px) {
                         padding: 0;
                     }
-            
+
                     input[type="checkbox"] {
                         position: absolute;
                         opacity: 0;
                         cursor: pointer;
                         height: 100%;
                         width: 100%;
-            
+
                         &:checked + label {
                             background-color: #0891B2;
                             border: none;
                             color: white;
                         }
                     }
-            
+
                     label {
                         display: flex;
                         justify-content: center;
@@ -2461,7 +2463,7 @@
                         text-decoration: none;
                         padding: 12px 20px;
                         border-radius: 360px;
-            
+
                         @media (max-width: 425px) {
                             font-size: 14px;
                             padding: 5px 10px;
@@ -2469,10 +2471,9 @@
                     }
                 }
             }
-            
         }
 
-        .formItemWide{
+        .formItemWide {
             width: 100%;
         }
 
@@ -2484,7 +2485,7 @@
             align-items: flex-start;
             gap: 4px;
         }
-        
+
         .formLabel {
             display: flex;
             justify-content: space-between;
@@ -2495,7 +2496,7 @@
             font-size: 16px;
             font-weight: 600;
 
-            button{
+            button {
                 border: none;
                 background: transparent;
             }
@@ -2541,7 +2542,7 @@
                 align-items: center; // Changed from flex-start to center to align elements vertically
                 gap: 2px;
                 align-self: stretch;
-            
+
                 select {
                     display: flex;
                     padding: 10px 8px; // Adjusted padding for better alignment
@@ -2557,7 +2558,7 @@
                     font-size: 14px;
                     font-weight: 500;
                 }
-            
+
                 input {
                     flex-grow: 1;
                     border: none;
@@ -2571,7 +2572,6 @@
                     font-weight: 500;
                 }
             }
-            
 
             span {
                 height: 18px;
@@ -2587,41 +2587,41 @@
             align-self: stretch;
             border-radius: 12px;
             background: #ECFEFF;
-        
+
             .attachment-area-inner {
                 width: 100%;
                 display: flex;
-                justify-content: center; 
+                justify-content: center;
                 align-items: center;
                 gap: 10px;
-                padding: 15px 20px; 
+                padding: 15px 20px;
                 border-radius: 6px;
                 border: 2px dashed #67E8F9;
                 background: #ECFEFF;
                 cursor: pointer;
-        
+
                 span {
                     color: #0891B2;
                     width: 20px;
                     height: 20px;
                 }
-        
+
                 input[type="file"] {
                     display: none;
                 }
-        
+
                 p {
                     color: #0891B2;
                     font-family: Poppins;
                     font-size: 14px;
                     font-weight: 600;
-                    margin: 0; 
+                    margin: 0;
                 }
             }
-        }      
+        }
     }
 
-    .formFooter{
+    .formFooter {
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
@@ -2630,15 +2630,25 @@
 
         @media (max-width: 540px) {
             flex-direction: column;
+            align-items: stretch; // Ensure full width on small screens
         }
 
-        p{
+        // button {
+        //     width: 100%; // Ensure button takes full width on small screens
+        // }
+
+        p {
             margin-top: 10px;
-            color: var(--slate-700, #334155);
+            color:  #334155;
             font-family: Poppins;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
+
+            @media (max-width: 540px) {
+                margin-top: 20px; 
+                text-align: right; 
+            }
         }
     }
 }
@@ -2651,18 +2661,17 @@
 
 .btn-button{
     display: flex;
-    padding: var(--radius-sm, 4px) var(--radius-sm, 4px) var(--radius-sm, 4px) 22px;
-    justify-content: center;
+    padding: 4px 4px 4px 22px;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
     border-radius: 360px;
-    background: var(--cyan-950, #083344);
+    background: #083344; 
 
-    color: var(--base-white, var(--base-white, #FFF));
+    color: #FFF;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
     font-family: Poppins;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
 
     span {
@@ -5185,7 +5194,7 @@
         font-weight: 600;
     }
 
-    .form-area{
+    .form-area {
         display: flex;
         padding: 40px;
         flex-direction: column;
@@ -5193,10 +5202,8 @@
         gap: 48px;
         border-radius: 40px;
         background: #ECFEFF;
-
-        // .gap-support{
-        //     gap: 28px !important;
-        // }
+        max-width: 100%;
+        box-sizing: border-box; // Ensure padding is included in the element's total width
     }
 }
   
