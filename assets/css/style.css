@@ -329,6 +329,7 @@
   font-weight: 600;
 }
 .navbar .btn-events {
+  text-decoration: none;
   margin-top: 20px;
   display: flex;
   padding: var(--spacing-7, 24px);
@@ -5039,6 +5040,11 @@
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
+}
+@media (max-width: 658px) {
+  .support-section .support-button {
+    padding: 30px 24px;
+  }
 }
 .support-section .form-area {
   display: flex;

@@ -362,6 +362,7 @@
     }
 
     .btn-events {
+        text-decoration: none;
         margin-top: 20px;
         display: flex;
         padding: var(--spacing-7, 24px);
@@ -5121,11 +5122,6 @@
 }
 
 .support-section{
-    // display: flex;
-    // padding: 96px 0px;
-    // flex-direction: column;
-    // align-items: center;
-    // background: #CFFAFE;
 
     .left-content{
         display: flex;
@@ -5192,6 +5188,10 @@
         font-family: Poppins;
         font-size: 20px;
         font-weight: 600;
+
+        @media (max-width : 658px) {
+            padding: 30px 24px;
+        }
     }
 
     .form-area {
@@ -5203,7 +5203,7 @@
         border-radius: 40px;
         background: #ECFEFF;
         max-width: 100%;
-        box-sizing: border-box; // Ensure padding is included in the element's total width
+        box-sizing: border-box; 
     }
 }
   
