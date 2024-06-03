@@ -16,9 +16,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-<!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
 
@@ -34,7 +31,7 @@
                 
                 <ul class="navbar-nav mx-auto"> 
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Case Studies</a>
+                        <a class="nav-link active" href="projects.html">Case Studies</a>
                     </li>
 
                     <li class="dropdown-center nav-item">
@@ -292,52 +289,585 @@
         </div>
     </nav>
     
-    <section class="inquiry">
+    <section class="common-banner">
         <div class="container">
-            <h1 class="section-heding">Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M8.0876 5L6.9126 6.175L10.7293 10L6.9126 13.825L8.0876 15L13.0876 10L8.0876 5Z" fill="#94A3B8"/>
+                      </svg>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
+                </ol>
+            </nav>
 
-        <div class="rowInquiry">
-            <div class="row gx-5">
-                <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2 order-2">
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7547148731924!2d90.36489797618549!3d23.75612478855491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf5338a5e6f9%3A0xb36d9578052739a!2sBabylon%20Resources%20Ltd!5e0!3m2!1sen!2sbd!4v1717041259234!5m2!1sen!2sbd" width="600" height="735" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="address-overlay">
-                            <div class="row">
-                                <div class="col-9">
-                                    <div class="address-info">
-                                        <h3>
-                                            <span class="material-symbols-outlined footerIcon">place</span>
-                                            Floor – 7A, House 3/1, Block F, Lalmatia, Mohammadpur, Dhaka 1207
-                                        </h3>
-                                        <h3>
-                                            <span class="material-symbols-outlined footerIcon">call</span>
-                                            +880 1707 081 370
-                                        </h3>
-                                        <h3>
-                                            <span class="material-symbols-outlined footerIcon">mail</span>
-                                            brlinfo@babylon-bd.com
-                                        </h3>
+            <div class="common-banner-section">
+                <img src="./assets/images/banner/projects.png" alt="">
+                <div class="banner-content">
+                    <h1>BLOGS</h1>
+                    <p>Discover Our Cutting-Edge Products and Revolutionize Your Business. Find Innovative Solutions for Streamlined Operations and Sustainable Growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                        <h3>
-                                            <span class="material-symbols-outlined footerIcon">access_time_filled</span>
-                                            Office Hours
-                                        </h3>
-                                        <h3 class="ofiice-hour">Sunday -  Thursday</h3>
-                                        <h3 class="ofiice-hour">9:00 AM to 6:00 PM</h3>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="direction">
-                                        <span class="material-symbols-outlined footerIcon">directions</span>
-                                        <p>Direction</p>
-                                    </div>                                    
-                                </div>
-                            </div>
+    <section class="projectSection project-page">
+        <div class="container">
+            <div class="blog-filter-area">
+                <div class="left-filter">
+                    <div class="filter">
+                        <div class="select-container">
+                          <span class="material-symbols-outlined">home_repair_service</span>
+                          <select>
+                            <option value="more">All Services</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                          </select>
+                          <span class="material-symbols-outlined arrow-icon">arrow_drop_down</span>
+                        </div>
+                    </div>
+    
+                    <div class="filter">
+                        <div class="select-container">
+                          <span class="material-symbols-outlined">maps_home_work</span>
+                          <select>
+                            <option value="more">All Industries</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                          </select>
+                          <span class="material-symbols-outlined arrow-icon">arrow_drop_down</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 order-1">
+                <div class="filter">
+                    <div class="select-container">
+                      <span class="material-symbols-outlined">sort</span>
+                      <select>
+                        <option value="more">Most Recent</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                      </select>
+                      <span class="material-symbols-outlined arrow-icon">arrow_drop_down</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">  
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr1.png">       
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">                    
+                                    <div class="projectInfo">
+                                        <h4>Salescare</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Fintech, E-commerce
+                                        </div>
+                
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">        
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr2.png">   
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>Prottay HRMS</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Edtech platform
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Resources Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div>  
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">  
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr3.png">   
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>FoodiPOS</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            POS System
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                    
+                                        
+                                    </div>  
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>               
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">   
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr4.png">  
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>BRL Training</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Edtech platform
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Resources Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>              
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">    
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr5.png"> 
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>Content Repository Management System</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Fintech, E-commerce
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>             
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">  
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr6.png">   
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>Salescare</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Fintech, E-commerce
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">  
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr1.png">       
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">                    
+                                    <div class="projectInfo">
+                                        <h4>Salescare</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Fintech, E-commerce
+                                        </div>
+                
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">        
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr2.png">   
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>Prottay HRMS</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Edtech platform
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Resources Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div>  
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">  
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr3.png">   
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>FoodiPOS</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            POS System
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                    
+                                        
+                                    </div>  
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>               
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">   
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr4.png">  
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>BRL Training</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Edtech platform
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Resources Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>              
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">    
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr5.png"> 
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>Content Repository Management System</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Fintech, E-commerce
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>             
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="projectCard">  
+                        <div class="row" style="height: 100%;">
+                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                                <img class="projectImage" src="./assets/images/project/pr6.png">   
+                            </div>
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                                <div class="projectDetails">
+                                    <div class="projectInfo">
+                                        <h4>Salescare</h4>                  
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                category
+                                            </span>
+                                            Fintech, E-commerce
+                                        </div>
+                    
+                                        <div class="project">
+                                            <span class="material-symbols-outlined projectIcon">
+                                                villa
+                                            </span>
+                                            Babylon Agri science Ltd. 
+                                        </div>
+                    
+                                        <div class="projectTags">
+                                            <div class="tag">uI/UX Design</div>
+                                            <div class="tag">Web App</div>
+                                            <div class="tag">Mobile App</div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="projectFooter">
+                                        <a class="case" href="#">Case Study</a>
+                                        <a class="live" href="#">View Live</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry inq-blog-page">
+        <div class="container">
+            <h1 class="section-heding">Have a Project Idea?</h1>
+
+        <div class="rowInquiry">
+            <div class="row gx-5">
+                <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
+                    <div class="inqImage">
+                        <img src="./assets/images/inq.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12">
                     <div class="inqForm">
                         <form action="" method="POST">
                             <div class="formElement">
@@ -460,7 +990,7 @@
                                                 <div class="formInput">
                                                     <span class="material-symbols-outlined">email</span>
                                                     <div class="inputArea">
-                                                        <input type="email" placeholder="Write your Email">
+                                                        <input type="text" placeholder="Write your Name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -491,7 +1021,7 @@
                             </div>     
                             
                             <div class="formFooter">
-                                <button type="submit" class="btn btn-button" href="#">Send Inquiry <span class="material-symbols-outlined">call_made</span></button>
+                                <button class="btn btn-button" href="#">Send Inquiry <span class="material-symbols-outlined">call_made</span></button>
                                 <p>*We keep your data safe & Secure</p>
                             </div>
                         </form>
@@ -499,59 +1029,6 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
-
-    <section class="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="title">
-                        <h1>Frequently  Asked  Questions</h1>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-12">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                    How to apply?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionPanelsStayOpenExample">
-                                <div class="accordion-body">
-                                    To apply, review our current openings to find a role that aligns with your skills and expertise. Start by providing your email address. After verification, you'll receive a link to proceed with your application.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    What are the steps involved?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#accordionPanelsStayOpenExample">
-                                <div class="accordion-body">
-                                    dsdsdsd
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    What is the timeline for the application process to begin?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordionPanelsStayOpenExample">
-                                <div class="accordion-body">
-                                    sfdsfds
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
         </div>
     </section>
 
@@ -765,18 +1242,43 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <!-- Magnific Popup JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
     <!-- Owl Carousel JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="./assets/js/script.js"></script>
      
 <!-- Bootstrap JS Bundle -->
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/1c44dc43b7.js" crossorigin="anonymous"></script>
 
-<script src="./assets/js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  function updatePaginationVisibility() {
+    const paginationButtons = document.querySelectorAll('.pagination-button .number-buttons');
+    const screenWidth = window.innerWidth;
+
+    paginationButtons.forEach((button, index) => {
+      // Show all buttons by default
+      button.style.display = 'flex';
+
+      // Hide buttons based on screen width
+      if (screenWidth < 590) {
+        if (index > 1 && index < paginationButtons.length - 2) {
+          button.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  // Initial call
+  updatePaginationVisibility();
+
+  // Update on window resize
+  window.addEventListener('resize', updatePaginationVisibility);
+});
+``
+
+</script>
 </body>
 </html>
