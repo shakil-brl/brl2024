@@ -320,20 +320,20 @@
     <section class="blog-content-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-12 col-sm-12">
+                <div class="col-lg-2 col-md-12 col-sm-12 order-lg-1 order-2">
                     <div class="left-content">
                         <h5>Intro</h5>
-                        <a href="#">Defining the Scope</a>
-                        <a href="#">Estimation: Data Math</a>
-                        <a href="#">High-Level Architecture</a>
-                        <a href="#">API Design</a>
-                        <a href="#">Database</a>
-                        <a href="#">URL Shortener Service</a>
-                        <a href="#">Security Considerations</a>
+                        <a class="menus" href="#">Defining the Scope</a>
+                        <a class="menus" href="#">Estimation: Data Math</a>
+                        <a class="menus" href="#">High-Level Architecture</a>
+                        <a class="menus" href="#">API Design</a>
+                        <a class="menus" href="#">Database</a>
+                        <a class="menus" href="#">URL Shortener Service</a>
+                        <a class="menus" href="#">Security Considerations</a>
                     </div>
                 </div>
 
-                <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="col-lg-9 col-md-12 col-sm-12 order-lg-2 order-1">
                     <div class="middle-content">
                         
                         <img class="banner-image" src="./assets/images/banner/blog_page.png" alt="">
@@ -346,7 +346,7 @@
                                 <a href="#">UI/UX Design</a>
                             </div>
                         </div>
-
+    
                         <h1>
                             System Design Interview Question: Design URL Shortener
                         </h1>
@@ -357,7 +357,7 @@
                                     </span>
                                 Mmh Shohagh, UI/UX Designer
                             </p>
-
+    
                             <p>
                                 <span class="material-symbols-outlined">
                                     edit
@@ -365,53 +365,57 @@
                                 8 min
                             </p>
                         </div>
-
+    
                         <p>
                             This is a system design interview question, which is to design a URL shortener tool like TinyURL or Bitly from the ground up. We'll cover everything from design requirements, architecture, and component design to scaling for high-performance and security best practices.
                         </p>
-
-                        <h3>Defining the Scope: Functional and Non-functional Requirements</h3>
-
+    
+                        <h3 class="heading">Defining the Scope: Functional and Non-functional Requirements</h3>
+    
                         <p>This is a contract between you and Quincy. You must read and agree to these Terms before using any part of the Service. If you do not agree, you may not use the Service. You may use the Service only if you can form a binding contract with Quincy, and only in compliance with these Terms and all applicable local, state, national, and international laws, rules and regulations. Any use or access to the Service by anyone under 13 is strictly prohibited and in violation of these Terms. The Service is not available to any Users previously removed from the Service by Quincy.</p>
-
-                        <h3>Estimation: Data Math</h3>
+    
+                        <h3 class="heading">Estimation: Data Math</h3>
                         
-                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
-
+                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
+    
                         <img src="./assets/images/banner/blog_page_i.png" alt="">
-                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
-
-                        <h3>Estimation: Data Math</h3>
-
+                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
+    
+                        <h3 class="heading">High-Level Architecture</h3>
+    
                         <p>Continuing this calculation, we see that 62⁷ (around 3.5 trillion) is the first value larger than our projected 315 billion URLs needed.</p>
-
+    
                         <p>Therefore, to support our projected growth over the next ten years, our shortened URLs need a minimum of 7 characters.</p>
-
+    
                         <img src="./assets/images/banner/blog_page_y.png" alt="">
-
-                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
-
-                        <h3>Defining the Scope: Functional and Non-functional Requirements</h3>
-
+    
+                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
+    
+                        <h3 class="heading">API Design</h3>
+    
                         <p>This is a contract between you and Quincy. You must read and agree to these Terms before using any part of the Service. If you do not agree, you may not use the Service. You may use the Service only if you can form a binding contract with Quincy, and only in compliance with these Terms and all applicable local, state, national, and international laws, rules and regulations. Any use or access to the Service by anyone under 13 is strictly prohibited and in violation of these Terms. The Service is not available to any Users previously removed from the Service by Quincy.</p>
-
-                        <h3>Estimation: Data Math</h3>
-
+    
+                        <h3 class="heading">Database</h3>
+    
                         <p>Continuing this calculation, we see that 62⁷ (around 3.5 trillion) is the first value larger than our projected 315 billion URLs needed.</p>
-
+    
                         <p>Therefore, to support our projected growth over the next ten years, our shortened URLs need a minimum of 7 characters.</p>
-
+    
                         <img src="./assets/images/banner/bolg_page_z.png" alt="">
-
-                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
-
-                        <h3>Defining the Scope: Functional and Non-functional Requirements</h3>
-
+    
+                        <p>With this information, we need to calculate how long the URL should be after shortening. Of course, we're trying to make it as short as possible, but we need to keep in mind the number of created URLs each year.</p>
+    
+                        <h3 class="heading">URL Shortener Service</h3>
+    
+                        <p>This is a contract between you and Quincy. You must read and agree to these Terms before using any part of the Service. If you do not agree, you may not use the Service. You may use the Service only if you can form a binding contract with Quincy, and only in compliance with these Terms and all applicable local, state, national, and international laws, rules and regulations. Any use or access to the Service by anyone under 13 is strictly prohibited and in violation of these Terms. The Service is not available to any Users previously removed from the Service by Quincy.</p>
+    
+                        <h3 class="heading">Security Considerations</h3>
+    
                         <p>This is a contract between you and Quincy. You must read and agree to these Terms before using any part of the Service. If you do not agree, you may not use the Service. You may use the Service only if you can form a binding contract with Quincy, and only in compliance with these Terms and all applicable local, state, national, and international laws, rules and regulations. Any use or access to the Service by anyone under 13 is strictly prohibited and in violation of these Terms. The Service is not available to any Users previously removed from the Service by Quincy.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-1 col-md-12 col-sm-12">
+                <div class="col-lg-1 col-md-12 col-sm-12  order-3">
                     <div class="right-content">
                         <p>Share</p>
                         <a href="#" class="share-icon">
@@ -848,7 +852,51 @@
 <script src="https://kit.fontawesome.com/1c44dc43b7.js" crossorigin="anonymous"></script>
 
 <script>
- 
+// Function to activate menu item based on the heading in view
+function activateMenuItem() {
+    const headings = document.querySelectorAll('.middle-content h3');
+    const menuItems = document.querySelectorAll('.left-content .menus');
+
+    headings.forEach((heading, index) => {
+        const bounding = heading.getBoundingClientRect();
+
+        if (
+            bounding.top >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        ) {
+            menuItems.forEach((item, itemIndex) => {
+                if (index === itemIndex) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+    });
+}
+
+// Function to scroll to the corresponding heading when a menu item is clicked
+function scrollToHeading(event) {
+    event.preventDefault();
+
+    const targetId = event.currentTarget.getAttribute('href').substring(1);
+    const targetHeading = document.getElementById(targetId);
+
+    if (targetHeading) {
+        targetHeading.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Event listener for scrolling to activate menu item
+window.addEventListener('scroll', activateMenuItem);
+
+//Event listener for clicking on menu items
+const menuContainer = document.querySelector('.left-content');
+menuContainer.addEventListener('click', function(event) {
+    if (event.target.classList.contains('menus')) {
+        scrollToHeading(event);
+    }
+});
 </script>
 </body>
 </html>
