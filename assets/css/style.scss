@@ -5035,7 +5035,7 @@
     gap: 32px;
     background: #CFFAFE;
 
-    .left-content{
+    .left-content {
         top: 100px;
         position: sticky;
         margin-top: 80px;
@@ -5043,26 +5043,32 @@
         gap: 14px;
         flex-direction: column;
 
-        @media (max-width : 991px){
+        @media (max-width: 991px) {
             margin-top: 0px;
             flex-direction: row;
             flex-wrap: wrap;
         }
 
-        h5{
+        h5 {
             color: #334155;
             font-family: Poppins;
             font-size: 16px;
             font-weight: 700;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: #475569;
             font-family: Poppins;
             font-size: 16px;
             font-weight: 400;
 
-            @media (max-width : 991px){
+            &.active {
+                color: #0891B2;
+                font-weight: 700;
+            }
+
+            @media (max-width: 991px) {
                 margin-top: -10px;
                 border-radius: 360px;
                 border: 1px solid #E2E8F0;
@@ -5071,18 +5077,18 @@
         }
     }
 
-    .middle-content{
+    .middle-content {
         display: flex;
         flex-direction: column;
         gap: 24px;
         padding: 0px 130px;
         margin-top: -237px;
 
-        @media (max-width : 1199px){
+        @media (max-width: 1199px) {
             padding: 0px 50px;
         }
 
-        @media (max-width : 991px){
+        @media (max-width: 991px) {
             margin-top: 20px;
             padding: 0px;
         }
@@ -5094,33 +5100,34 @@
             object-fit: cover;
         }
 
-        .banner-image{
+        .banner-image {
             height: 292px !important;
         }
 
-        h1{
+        h1 {
             color: #0891B2;
             font-family: "Roboto Slab";
             font-size: 40px;
             font-weight: 900;
         }
 
-        .content-info{
+        .content-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 16px;
             align-self: stretch;
+
             p {
                 color: #01767F;
                 font-family: 'Poppins', sans-serif;
                 font-size: 14px;
                 font-weight: 500;
                 text-transform: capitalize;
-                display: flex; 
+                display: flex;
                 align-items: center;
                 gap: 5px;
-                
+
                 span {
                     width: 20px;
                     height: 20px;
@@ -5132,7 +5139,7 @@
             }
         }
 
-        p{
+        p {
             color: #475569;
             font-family: Poppins;
             font-size: 16px;
@@ -5140,7 +5147,7 @@
             text-transform: capitalize;
         }
 
-        h3{
+        h3 {
             color: #334155;
             font-family: Poppins;
             font-size: 20px;
@@ -5149,7 +5156,7 @@
         }
     }
 
-    .right-content{
+    .right-content {
         top: 100px;
         position: sticky;
         margin-top: 80px;
@@ -5157,7 +5164,7 @@
         gap: 16px;
         flex-direction: column;
 
-        @media (max-width : 991px){
+        @media (max-width: 991px) {
             margin-top: 20px;
             flex-direction: row;
             flex-wrap: wrap;
@@ -5165,7 +5172,7 @@
             justify-content: center;
         }
 
-        p{
+        p {
             overflow: hidden;
             color: #334155;
             text-overflow: ellipsis;
@@ -5175,7 +5182,7 @@
             text-transform: capitalize;
         }
 
-        .share-icon{
+        .share-icon {
             text-decoration: none;
             display: flex;
             width: 48px;
@@ -5185,18 +5192,19 @@
             align-items: center;
             gap: 10px;
             border-radius: 360px;
-            border:  1px solid #E2E8F0;
+            border: 1px solid #E2E8F0;
 
-            @media (max-width : 991px){
+            @media (max-width: 991px) {
                 margin-top: -10px;
             }
 
-            span{
+            span {
                 color: #334155;
             }
         }
     }
 }
+
 
 .support-section{
 
