@@ -853,7 +853,13 @@ function scrollToHeading(event) {
     const targetHeading = document.getElementById(targetId);
 
     if (targetHeading) {
-        targetHeading.scrollIntoView({ behavior: 'smooth' });
+        const topOffset = document.querySelector('.navbar').offsetHeight; // Adjust for fixed navbar height
+        const targetOffset = targetHeading.offsetTop - topOffset; // Calculate target offset
+
+        window.scrollTo({
+            top: targetOffset,
+            behavior: 'smooth'
+        });
 
         // Remove 'active' class from all menu items
         const menuItems = document.querySelectorAll('.left-content .menus');
@@ -866,33 +872,33 @@ function scrollToHeading(event) {
     }
 }
 
-const menuContainer = document.querySelector('.left-content');
-menuContainer.addEventListener('click', scrollToHeading);
+const menuItems = document.querySelectorAll('.left-content .menus');
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', scrollToHeading);
+});
 
 function activateMenuItem() {
     const headings = document.querySelectorAll('.middle-content h3');
     const menuItems = document.querySelectorAll('.left-content .menus');
 
+    const topOffset = document.querySelector('.navbar').offsetHeight; // Adjust for fixed navbar height
+    const scrollPosition = window.scrollY + topOffset; // Calculate scroll position
+
     headings.forEach((heading, index) => {
-        const bounding = heading.getBoundingClientRect();
+        const headingOffset = heading.offsetTop;
 
-        if (
-            bounding.top >= 0 &&
-            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-        ) {
+        if (scrollPosition >= headingOffset) {
+            // Remove 'active' class from all menu items
+            menuItems.forEach(item => item.classList.remove('active'));
 
-            const menuItem = menuItems[index];
-            if (menuItem) {
-                menuItems.forEach(item => item.classList.remove('active'));
-                menuItem.classList.add('active');
-            }
+            // Add 'active' class to the corresponding menu item
+            menuItems[index].classList.add('active');
         }
     });
 }
 
-activateMenuItem();
-
 window.addEventListener('scroll', activateMenuItem);
+
 </script>
 </body>
 </html>
