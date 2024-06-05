@@ -853,19 +853,17 @@ function scrollToHeading(event) {
     const targetHeading = document.getElementById(targetId);
 
     if (targetHeading) {
-        const topOffset = document.querySelector('.navbar').offsetHeight; // Adjust for fixed navbar height
-        const targetOffset = targetHeading.offsetTop - topOffset; // Calculate target offset
+        const topOffset = document.querySelector('.navbar').offsetHeight;
+        const targetOffset = targetHeading.offsetTop - topOffset; 
 
         window.scrollTo({
             top: targetOffset,
             behavior: 'smooth'
         });
 
-        // Remove 'active' class from all menu items
         const menuItems = document.querySelectorAll('.left-content .menus');
         menuItems.forEach(item => item.classList.remove('active'));
 
-        // Add 'active' class to the clicked menu item
         targetElement.classList.add('active');
     } else {
         console.error('Target Heading not found:', targetId);
@@ -881,17 +879,15 @@ function activateMenuItem() {
     const headings = document.querySelectorAll('.middle-content h3');
     const menuItems = document.querySelectorAll('.left-content .menus');
 
-    const topOffset = document.querySelector('.navbar').offsetHeight; // Adjust for fixed navbar height
-    const scrollPosition = window.scrollY + topOffset; // Calculate scroll position
+    const topOffset = document.querySelector('.navbar').offsetHeight; 
+    const scrollPosition = window.scrollY + topOffset; 
 
     headings.forEach((heading, index) => {
         const headingOffset = heading.offsetTop;
 
         if (scrollPosition >= headingOffset) {
-            // Remove 'active' class from all menu items
             menuItems.forEach(item => item.classList.remove('active'));
 
-            // Add 'active' class to the corresponding menu item
             menuItems[index].classList.add('active');
         }
     });
