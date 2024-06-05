@@ -834,66 +834,6 @@
 <script src="https://kit.fontawesome.com/1c44dc43b7.js" crossorigin="anonymous"></script>
 
 <script>
-function scrollToHeading(event) {
-    event.preventDefault();
-
-    const targetElement = event.target.closest('.menus');
-    if (!targetElement) {
-        console.error('Clicked element is not a menu item');
-        return;
-    }
-
-    const href = targetElement.getAttribute('href');
-    if (!href) {
-        console.error('No href attribute found');
-        return;
-    }
-
-    const targetId = href.substring(1);
-    const targetHeading = document.getElementById(targetId);
-
-    if (targetHeading) {
-        const topOffset = document.querySelector('.navbar').offsetHeight;
-        const targetOffset = targetHeading.offsetTop - topOffset; 
-
-        window.scrollTo({
-            top: targetOffset,
-            behavior: 'smooth'
-        });
-
-        const menuItems = document.querySelectorAll('.left-content .menus');
-        menuItems.forEach(item => item.classList.remove('active'));
-
-        targetElement.classList.add('active');
-    } else {
-        console.error('Target Heading not found:', targetId);
-    }
-}
-
-const menuItems = document.querySelectorAll('.left-content .menus');
-menuItems.forEach(menuItem => {
-    menuItem.addEventListener('click', scrollToHeading);
-});
-
-function activateMenuItem() {
-    const headings = document.querySelectorAll('.middle-content h3');
-    const menuItems = document.querySelectorAll('.left-content .menus');
-
-    const topOffset = document.querySelector('.navbar').offsetHeight; 
-    const scrollPosition = window.scrollY + topOffset; 
-
-    headings.forEach((heading, index) => {
-        const headingOffset = heading.offsetTop;
-
-        if (scrollPosition >= headingOffset) {
-            menuItems.forEach(item => item.classList.remove('active'));
-
-            menuItems[index].classList.add('active');
-        }
-    });
-}
-
-window.addEventListener('scroll', activateMenuItem);
 
 </script>
 </body>

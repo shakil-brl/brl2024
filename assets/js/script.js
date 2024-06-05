@@ -91,3 +91,72 @@ document.getElementById('jobOpeningsButton').addEventListener('click', function(
     e.preventDefault();
     document.getElementById('careerOpeningSection').scrollIntoView({ behavior: 'smooth' });
 });
+
+
+
+
+function activateMenuItem() {
+    const headings = document.querySelectorAll('.middle-content h3');
+    const menuItems = document.querySelectorAll('.left-content .menus');
+
+    const topOffset = document.querySelector('.navbar').offsetHeight; // Adjust for fixed navbar height
+    const scrollPosition = window.scrollY + topOffset; // Calculate scroll position
+
+    headings.forEach((heading, index) => {
+        const headingOffset = heading.offsetTop;
+
+        if (scrollPosition >= headingOffset) {
+            // Remove 'active' class from all menu items
+            menuItems.forEach(item => item.classList.remove('active'));
+
+            // Add 'active' class to the corresponding menu item
+            menuItems[index].classList.add('active');
+        }
+    });
+}
+
+
+function scrollToHeading(event) {
+    event.preventDefault();
+
+    const targetElement = event.target.closest('.menus');
+    if (!targetElement) {
+        console.error('Clicked element is not a menu item');
+        return;
+    }
+
+    const href = targetElement.getAttribute('href');
+    if (!href) {
+        console.error('No href attribute found');
+        return;
+    }
+
+    const targetId = href.substring(1);
+    const targetHeading = document.getElementById(targetId);
+
+    if (targetHeading) {
+        const topOffset = document.querySelector('.navbar').offsetHeight; // Adjust for fixed navbar height
+        const targetOffset = targetHeading.offsetTop - topOffset; // Calculate target offset
+
+        window.scrollTo({
+            top: targetOffset,
+            behavior: 'smooth'
+        });
+
+        // Remove 'active' class from all menu items
+        const menuItems = document.querySelectorAll('.left-content .menus');
+        menuItems.forEach(item => item.classList.remove('active'));
+
+        // Add 'active' class to the clicked menu item
+        targetElement.classList.add('active');
+    } else {
+        console.error('Target Heading not found:', targetId);
+    }
+}
+
+const menuItems = document.querySelectorAll('.left-content .menus');
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', scrollToHeading);
+});
+
+window.addEventListener('scroll', activateMenuItem);
