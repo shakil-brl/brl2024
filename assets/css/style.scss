@@ -1,7 +1,13 @@
+$primary-color: #CFFAFE;
+$secondary-color: #A5F3FC;
+
+$primary-bf-color: #0891B2;
+$secondary-bf-color: #083344;
+
 .navbar {
-    background-color: #CFFAFE;
+    background-color: $primary-color;
     width: 100%;
-    border-bottom: 1px solid #A5F3FC;
+    border-bottom: 1px solid $secondary-color;
 
     .dropdown-menu {
         background-color: transparent;
@@ -29,7 +35,7 @@
         padding: 10px 15px !important; 
     
         &:hover {
-            background-color: #A5F3FC;
+            background-color: $secondary-color;
         }
     }
     
@@ -48,7 +54,7 @@
             color: #0E7490;
             border-radius: 360px;
             padding: 10px 15px; // Ensure consistent padding
-            background: #A5F3FC;
+            background: $secondary-color;
         }
     }
     
@@ -61,7 +67,7 @@
     .active {
         padding: 0px 5px;
         border-radius: 360px;
-        background: #A5F3FC;
+        background: $secondary-color;
     }
 
     .nav-dropdown-section {
@@ -104,7 +110,7 @@
         border-radius: 24px;
 
         &:hover {
-            background-color: #CFFAFE;
+            background-color: $primary-color;
         }
 
         .dropdown-image {
@@ -149,7 +155,7 @@
             gap: 12px;
             align-self: stretch;
             border-radius: 24px;
-            background: #A5F3FC !important;
+            background: $secondary-color !important;
         }
 
         .dropdown-property-about {
@@ -159,7 +165,7 @@
             gap: 12px;
             align-self: stretch;
             border-radius: 24px;
-            background: #CFFAFE;
+            background: $primary-color;
             text-decoration: none;
             color: #155E75;
             text-align: center;
@@ -169,7 +175,7 @@
             text-transform: uppercase;
 
             &:hover {
-                background-color: #A5F3FC;
+                background-color: $secondary-color;
             }
         }
     }
@@ -195,7 +201,7 @@
         align-self: stretch;
         border-radius: 360px;
         border: 3px dashed #67E8F9;
-        background: #CFFAFE;
+        background: $primary-color;
         color: #0E7490;
         text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
         font-family: Poppins;
@@ -211,7 +217,7 @@
             align-items: center;
             gap: 10px;
             border-radius: 360px;
-            background: #0891B2;
+            background: $primary-bf-color;
         }
     }
 
@@ -284,7 +290,7 @@
         gap: 8px;
         align-self: stretch;
         border-radius: 24px;
-        background: #CFFAFE;
+        background: $primary-color;
 
         .members-area {
             display: flex;
@@ -302,7 +308,7 @@
             }
 
             h2 {
-                color: #0891B2;
+                color: $primary-bf-color;
                 text-align: center;
                 font-family: Poppins, sans-serif;
                 font-size: 24px;
@@ -406,13 +412,13 @@
         }
     
         &::-webkit-scrollbar-thumb:hover {
-            background: #0891B2;
+            background: $primary-bf-color;
         }
     }
 }
 
 .hero {
-    background-color: #CFFAFE;
+    background-color: $primary-color;
     background-image: url('../images/arts.png');
     background-repeat: no-repeat;
     background-size: 45%;
@@ -457,7 +463,7 @@
 
             h1 {
                 align-self: stretch;
-                color: #0891B2;
+                color: $primary-bf-color;
                 text-align: center;
                 font-family: "Roboto Slab";
                 font-size: 48px;
@@ -548,7 +554,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 360px;
-    background: #083344;
+    background: $secondary-bf-color;
 
     color: #FFF;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
@@ -564,14 +570,14 @@
         align-items: center;
         gap: 10px;
         border-radius: 360px;
-        background-color: #0891B2;
+        background-color: $primary-bf-color;
     }
 
     &:hover {
-        background-color: #0891B2; 
+        background-color: $primary-bf-color; 
         color: #FFF;
         span{
-            background-color: #083344; 
+            background-color: $secondary-bf-color; 
             color: #FFF;
         }
     }
@@ -667,7 +673,7 @@
 }
 
 .section-heding{
-    color:  #0891B2;
+    color:  $primary-bf-color;
     text-align: center;
     font-family: "Roboto Slab";
     font-size: 40px;
@@ -682,7 +688,7 @@
 }
 
 .about {
-    background-color: #083344;
+    background-color: $secondary-bf-color;
     height: auto;
     padding: 92px 0px;
 
@@ -704,7 +710,7 @@
 
     .status {
         width: 100%;
-        background-color: #0891B2;
+        background-color: $primary-bf-color;
         border-radius: 60px;
         padding: 30px;
 
@@ -810,7 +816,7 @@
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
                 font-size: 16px;
-                color: #A5F3FC;
+                color: $secondary-color;
 
                 @media (max-width: 480px) {
                     font-size: 14px;
@@ -900,7 +906,7 @@
 
 
                 .btn-companyDeskDownload {
-                    background-color: #0891B2;
+                    background-color: $primary-bf-color;
                     color: #FFFFFF;
                     border-radius: 70px;
                     height: 75px;
@@ -912,16 +918,16 @@
                     //     background-color: #FFFFFF; 
                     //     color: #67E8F9;
                     //     .companyDownloadIcon{
-                    //         background-color: #0891B2; 
+                    //         background-color: $primary-bf-color; 
                     //         color: #FFF;
 
                     //         h5 {
-                    //             background-color: #0891B2; 
+                    //             background-color: $primary-bf-color; 
                     //             color: #FFF;
                     //         }
                         
                     //         p {
-                    //             background-color: #0891B2; 
+                    //             background-color: $primary-bf-color; 
                     //             color: #FFF;
                     //         }
                     //     }
@@ -940,7 +946,7 @@
                     // }
                 
                     .companyDownloadIcon {
-                        background-color: #083344;
+                        background-color: $secondary-bf-color;
                         border-radius: 50%;
                         padding: 20px;
                         margin-right: 10px;
@@ -953,7 +959,7 @@
                         display: flex;
                         flex-direction: column;
                         &:hover {
-                            background-color: #0891B2;
+                            background-color: $primary-bf-color;
                         }
                     }
                 
@@ -1003,7 +1009,7 @@
                     }
                 
                     .moreInfoIcon {
-                        background-color: #0891B2;
+                        background-color: $primary-bf-color;
                         border-radius: 50%;
                         padding: 20px;
                         margin-right: 10px;
@@ -1070,7 +1076,7 @@
                 }
             
                 .awardSlideBtn {
-                    background-color: #0891B2;
+                    background-color: $primary-bf-color;
                     border-radius: 50%;
                     height: 40px;
                     width: 40px;
@@ -1233,7 +1239,7 @@
 
 .product-page{
     padding: 32px 0px 96px 0px !important;
-    background: #CFFAFE !important;
+    background: $primary-color !important;
 }
 
 .product-section {
@@ -1241,7 +1247,7 @@
     width: 100%;
     padding: 96px 0px 96px 0px;
     gap: 48px;
-    background: #A5F3FC;
+    background: $secondary-color;
 
     @media (max-width: 992px) {
         padding: 50px 0px 40px 0px;
@@ -1272,7 +1278,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 32px;
-        background: #CFFAFE;
+        background: $primary-color;
 
         @media (max-width: 1200px) {
             padding: 20px 5px 20px 5px;
@@ -1340,7 +1346,7 @@
     width: 100%;
     padding: 96px 0px 96px 0px;
     gap: 48px;
-    background: #CFFAFE;
+    background: $primary-color;
 
     @media (max-width: 1400px) {
         padding: 96px 0px 50px 0px;
@@ -1496,7 +1502,7 @@
                     color: #FFF;
     
                     &:hover {
-                        background: #083344;
+                        background: $secondary-bf-color;
                         color: #FFF;
                     }
                 }
@@ -1522,7 +1528,7 @@
     width: 100%;
     padding: 96px 0px 96px 0px;
     gap: 48px;
-    background: #A5F3FC;
+    background: $secondary-color;
 
     @media (max-width: 1200px) {
         padding: 96px 0px 50px 0px;
@@ -1554,7 +1560,7 @@
         gap: 13px;
         flex-shrink: 0;
         border-radius: 32px;
-        background: #CFFAFE;
+        background: $primary-color;
 
         @media (max-width: 1200px) {
             padding: 25px;
@@ -1680,11 +1686,11 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 360px;
-                background: #0891B2;
+                background: $primary-bf-color;
             }
 
             &:hover {
-                background-color: #0891B2; 
+                background-color: $primary-bf-color; 
                 color: #FFF;
                 span{
                     background-color: #FFF; 
@@ -1712,7 +1718,7 @@
 
 .testimonial{
     padding: 96px 0px 96px 0px;
-    background: #CFFAFE;
+    background: $primary-color;
 
     @media (max-width: 1300px) {
         padding: 50px 0px 50px 0px;
@@ -1968,8 +1974,8 @@
             }
             
             &:hover{
-                background-color: #0891B2 !important;
-                border: 1px solid #0891B2;
+                background-color: $primary-bf-color !important;
+                border: 1px solid $primary-bf-color;
                 color: #D6FCFF;
             }
 
@@ -1979,7 +1985,7 @@
         }
 
         .active{
-            background-color: #0891B2 !important;
+            background-color: $primary-bf-color !important;
             border: none !important;
             color: #D6FCFF;
         }
@@ -2047,7 +2053,7 @@
 }
 
 .blogs-page{
-    background: #CFFAFE !important;
+    background: $primary-color !important;
     padding: 32px 0px 64px 0px !important;
 
     .pagination-area{
@@ -2144,7 +2150,7 @@
                 }
             
                 &:hover {
-                    background-color: #0891b2 !important;
+                    background-color: $primary-bf-color !important;
             
                     a {
                     color: #fff !important;
@@ -2171,13 +2177,13 @@
             
                 &:hover {
                     color: #fff !important;
-                    background-color: #0891b2 !important;
+                    background-color: $primary-bf-color !important;
                 }
             }
           
             .active {
                 color: #fff !important;
-                background-color: #0891b2 !important;
+                background-color: $primary-bf-color !important;
                 border: none;
             }
         }
@@ -2189,7 +2195,7 @@
     display: flex;
     padding: 96px;
     gap: 48px;
-    background: #A5F3FC;
+    background: $secondary-color;
 
     @media (max-width: 1200px) {
         padding: 96px 50px 50px 50px;
@@ -2243,7 +2249,7 @@
                     width: 100%;
                     border-bottom-left-radius: 32px;
                     border-bottom-right-radius: 32px;
-                    background: #CFFAFE;
+                    background: $primary-color;
                     padding: 20px;
 
                     .card-title {
@@ -2279,12 +2285,12 @@
 }
 
 .inq-blog-page{
-    background-color: #A5F3FC !important;
+    background-color: $secondary-color !important;
 }
 
 .inquiry {
     padding: 96px;
-    background: #CFFAFE;
+    background: $primary-color;
 
     @media (max-width: 576px) {
         padding: 30px;
@@ -2416,7 +2422,7 @@
 
             .ofiice-hour{
                 margin-left: 32px;
-                color: #0891B2 !important; 
+                color: $primary-bf-color !important; 
             }
         }
 
@@ -2519,7 +2525,7 @@
                         width: 100%;
 
                         &:checked + label {
-                            background-color: #0891B2;
+                            background-color: $primary-bf-color;
                             border: none;
                             color: white;
                         }
@@ -2675,7 +2681,7 @@
                 cursor: pointer;
 
                 span {
-                    color: #0891B2;
+                    color: $primary-bf-color;
                     width: 20px;
                     height: 20px;
                 }
@@ -2685,7 +2691,7 @@
                 }
 
                 p {
-                    color: #0891B2;
+                    color: $primary-bf-color;
                     font-family: Poppins;
                     font-size: 14px;
                     font-weight: 600;
@@ -2728,7 +2734,7 @@
 }
 
 .banner-about{
-    background-color: #CFFAFE;
+    background-color: $primary-color;
     text-align: center;
     padding: 40px 10px 50px 10px;
 }
@@ -2740,7 +2746,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 360px;
-    background: #083344; 
+    background: $secondary-bf-color; 
 
     color: #FFF;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
@@ -2755,14 +2761,14 @@
         align-items: center;
         gap: 10px;
         border-radius: 360px;
-        background-color: #0891B2;
+        background-color: $primary-bf-color;
     }
 
     &:hover {
-        background-color: #0891B2; 
+        background-color: $primary-bf-color; 
         color: #FFF;
         span{
-            background-color: #083344; 
+            background-color: $secondary-bf-color; 
             color: #FFF;
         }
     }
@@ -2804,7 +2810,7 @@
         }
 
         h1{
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: "Roboto Slab";
             font-size: 48px;
             font-weight: 900;
@@ -2945,7 +2951,7 @@
                 width: 41.537px;
                 height: 41.537px;
                 border-radius: 1000px;
-                background: #A5F3FC;
+                background: $secondary-color;
 
                 @media (max-width: 991px) {
                     width: 25px;
@@ -3037,7 +3043,7 @@
     }
 
     .links{
-        color: #CFFAFE !important;
+        color: $primary-color !important;
     }
     .active{
         color: #0E7490;
@@ -3054,7 +3060,7 @@
 
 .about-slider {
     padding: 96px 0 92px;
-    background: #083344;
+    background: $secondary-bf-color;
     text-align: center;
 
     @media (max-width: 1200px) {
@@ -3105,7 +3111,7 @@
 
 .clients {
     padding: 92px 0px 50px 0px;
-    background-color: #A5F3FC;
+    background-color: $secondary-color;
 
     .client-carousel {
         margin-top: -55px;
@@ -3177,7 +3183,7 @@
     justify-content: center;
     align-items: center;
     gap: 48px;
-    background-color: #CFFAFE;
+    background-color: $primary-color;
 
     .left-content{
         width: 685px;
@@ -3216,7 +3222,7 @@
             gap: 8px;
 
             h2{
-                color: #0891B2;
+                color: $primary-bf-color;
                 font-family: "Roboto Slab";
                 font-size: 36px;
                 font-weight: 900;
@@ -3374,7 +3380,7 @@
                 }
 
                 p{
-                    color: #0891B2;
+                    color: $primary-bf-color;
                     text-align: center;
                     font-family: Poppins;
                     font-size: 16px;
@@ -3402,7 +3408,7 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 360px;
-                background: #0891B2;
+                background: $primary-bf-color;
 
                 @media (max-width: 1300px) {
                     width: 120px;
@@ -3461,7 +3467,7 @@
     padding: 96px 0px;
     justify-content: center;
     align-items: center;
-    background-color: #A5F3FC;
+    background-color: $secondary-color;
 
     .leadership-container{
         display: flex;
@@ -3470,7 +3476,7 @@
         gap: 32px;
         align-self: stretch;
         border-radius: 48px;
-        background: #CFFAFE;
+        background: $primary-color;
         
         .image-area{
             @media (max-width: 767px){
@@ -3568,7 +3574,7 @@
     padding: 96px 0px;
     justify-content: center;
     align-items: center;
-    background-color: #CFFAFE;
+    background-color: $primary-color;
 
     .team-tags {
         display: flex;
@@ -3579,7 +3585,7 @@
     
         .active {
             border-radius: 360px;
-            background: #A5F3FC;
+            background: $secondary-color;
         }
     
         .tag {
@@ -3597,7 +3603,7 @@
     
             &:hover {
                 border-radius: 360px;
-                background: #A5F3FC;
+                background: $secondary-color;
             }
         }
 
@@ -3721,7 +3727,7 @@
     justify-content: left;
     align-items: left;
     border-radius: 72px;
-    background-color: #A5F3FC;
+    background-color: $secondary-color;
 
     @media (max-width: 568px) {
         padding: 40px;
@@ -3900,7 +3906,7 @@
     }
 
     h1 {
-        color: #0891B2;
+        color: $primary-bf-color;
         font-family: "Roboto Slab";
         font-size: 40px;
         font-weight: 900;
@@ -3978,7 +3984,7 @@
 }
 
 .banner-career{
-    background-color: #CFFAFE;
+    background-color: $primary-color;
     text-align: center;
     padding: 40px 10px 50px 10px;
 
@@ -3992,7 +3998,7 @@
         gap: 15px;
 
         h1{
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: "Roboto Slab";
             font-size: 48px;
             font-weight: 900;
@@ -4042,7 +4048,7 @@
 
 .career-opening{
     padding: 96px 0px; 
-    background: #A5F3FC;
+    background: $secondary-color;
 
     .vacancy-card{
         display: flex;
@@ -4050,7 +4056,7 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 32px;
-        background: #CFFAFE;
+        background: $primary-color;
         margin-top: 25px;
 
         @media(max-width: 991px){
@@ -4130,7 +4136,7 @@
             align-items: center;
             align-self: stretch;
             border-radius: 360px;
-            background: #083344;
+            background: $secondary-bf-color;
 
             color: #FFF;
             text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
@@ -4145,14 +4151,14 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 360px;
-                background: #0891B2;
+                background: $primary-bf-color;
             }
 
             &:hover{
-                background: #0891B2;
+                background: $primary-bf-color;
 
                 span{
-                    background: #083344;
+                    background: $secondary-bf-color;
                 }
             }
         }
@@ -4163,7 +4169,7 @@
     display: flex;
     gap: 96px;
     padding: 96px 0px; 
-    background: #CFFAFE;
+    background: $primary-color;
 
     .right-content{
         display: flex;
@@ -4190,7 +4196,7 @@
         }
     
         h1{
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: "Roboto Slab";
             font-size: 48px;
             font-weight: 900;
@@ -4216,7 +4222,7 @@
             align-items: left;
             gap: 15px;
             border-radius: 32px;
-            background: #CFFAFE;
+            background: $primary-color;
 
             @media (max-width: 767px){
                 margin-top: 15px;
@@ -4407,7 +4413,7 @@
         h1{
             width: 100%;
             text-align: left;
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: "Roboto Slab";
             font-size: 48px;
             font-weight: 900;
@@ -4480,7 +4486,7 @@
         }
 
         p{
-            color: #CFFAFE;
+            color: $primary-color;
             font-family: Poppins;
             font-size: 14px;
             font-weight: 500;
@@ -4502,7 +4508,7 @@
 }
 
 .job-description{
-    background-color: #CFFAFE;
+    background-color: $primary-color;
     padding: 20px 0px;
 
     h3{
@@ -4555,7 +4561,7 @@
             }
     
             h2{
-                color: #083344;
+                color: $secondary-bf-color;
                 font-family: Poppins;
                 font-size: 24px;
                 font-weight: 700;
@@ -4564,7 +4570,7 @@
     
             .bdt{
                 padding: 7px 0px 0px 10px;
-                color: #0891B2;
+                color: $primary-bf-color;
                 font-family: Poppins;
                 font-size: 14px;
                 font-weight: 500;
@@ -4579,7 +4585,7 @@
         }
     
         .slr{
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: Poppins;
             font-size: 14px;
             font-weight: 500;
@@ -4638,14 +4644,14 @@
     justify-content: center;
     align-items: flex-start;
     gap: 256px;
-    background: #A5F3FC;
+    background: $secondary-color;
 
     .title{
         display: flex;
         flex-direction: column;
 
         h1{
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: "Roboto Slab";
             font-size: 40px;
             font-weight: 900;
@@ -4668,7 +4674,7 @@
         margin-bottom: 10px;
         padding: 12px 24px;
         border-radius: 16px;
-        background: #CFFAFE;
+        background: $primary-color;
         position: relative; 
     }
 
@@ -4727,7 +4733,7 @@
     padding: 40px 0px 96px 0px;
     flex-direction: column;
     align-items: flex-start;
-    background: #CFFAFE;
+    background: $primary-color;
 
     .banner-section {
         padding-top: 45px;
@@ -4751,7 +4757,7 @@
             align-items: center;
             gap: 10px;
             border-radius: 0px 0px 16px 16px;
-            background: #083344;
+            background: $secondary-bf-color;
 
             @media (max-width: 461px){
                 margin: -44px 0px 68px 0px;
@@ -4790,7 +4796,7 @@
 
 .work-process{
     display: flex;
-    background: #CFFAFE;
+    background: $primary-color;
 
     .row-work-process{
         display: flex;
@@ -4834,11 +4840,11 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 24px;
-                background: #A5F3FC;
+                background: $secondary-color;
             }
 
             h2{
-                color: #0891B2;
+                color: $primary-bf-color;
                 font-family: "Roboto Slab";
                 font-size: 36px;
                 font-weight: 900;
@@ -4878,7 +4884,7 @@
                 align-items: center;
                 gap: 10px;
                 border-radius: 360px;
-                background: #083344;
+                background: $secondary-bf-color;
 
                 color: #FFF;
                 text-align: center;
@@ -4916,7 +4922,7 @@
                 align-items: center;
                 align-self: stretch;
                 border-radius: 360px;
-                background: #A5F3FC;
+                background: $secondary-color;
 
                 color: #0E7490;
                 text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
@@ -4931,7 +4937,7 @@
                     align-items: center;
                     gap: 10px;
                     border-radius: 360px;
-                    background: #CFFAFE;
+                    background: $primary-color;
                 }
             }
         }
@@ -4957,7 +4963,7 @@
     padding: 40px 0px 0px 0px;
     flex-direction: column;
     align-items: flex-start;
-    background: #CFFAFE;
+    background: $primary-color;
     .common-banner-section {
         position: relative;
         display: flex;
@@ -5022,7 +5028,7 @@
     padding: 40px 0px 96px 0px;
     flex-direction: column;
     align-items: flex-start;
-    background: #A5F3FC;
+    background: $secondary-color;
     height: 260px;
     @media (max-width : 991px){
         height: 0px;
@@ -5033,7 +5039,7 @@
     display: flex;
     padding: 90px 0px 96px 0px;
     gap: 32px;
-    background: #CFFAFE;
+    background: $primary-color;
 
     .left-content {
         top: 100px;
@@ -5064,7 +5070,7 @@
             font-weight: 400;
 
             &.active {
-                color: #0891B2;
+                color: $primary-bf-color;
                 font-weight: 700;
             }
 
@@ -5105,7 +5111,7 @@
         }
 
         h1 {
-            color: #0891B2;
+            color: $primary-bf-color;
             font-family: "Roboto Slab";
             font-size: 40px;
             font-weight: 900;
@@ -5404,7 +5410,7 @@ footer{
             align-items: center;
             align-self: stretch;
             border-radius: 360px;
-            background: #083344;
+            background: $secondary-bf-color;
 
             input{
                 width: 15px;
@@ -5556,7 +5562,7 @@ footer{
                 align-items: center;
                 gap: 10px;
                 border-radius: 360px;
-                border:  1px solid  #083344;
+                border:  1px solid  $secondary-bf-color;
             }
         }
         
