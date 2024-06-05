@@ -834,29 +834,6 @@
 <script src="https://kit.fontawesome.com/1c44dc43b7.js" crossorigin="anonymous"></script>
 
 <script>
-function activateMenuItem() {
-    const headings = document.querySelectorAll('.middle-content h3');
-    const menuItems = document.querySelectorAll('.left-content .menus');
-
-    headings.forEach((heading, index) => {
-        const bounding = heading.getBoundingClientRect();
-
-        if (
-            bounding.top >= 0 &&
-            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-        ) {
-            menuItems.forEach((item, itemIndex) => {
-                if (index === itemIndex) {
-                    item.classList.add('active');
-                } else {
-                    item.classList.remove('active');
-                }
-            });
-        }
-    });
-}
-
-// Function to scroll to the corresponding heading when a menu item is clicked
 function scrollToHeading(event) {
     event.preventDefault();
 
@@ -878,25 +855,44 @@ function scrollToHeading(event) {
     if (targetHeading) {
         targetHeading.scrollIntoView({ behavior: 'smooth' });
 
-        // After scrolling, manually set the active class for the clicked menu item
+        // Remove 'active' class from all menu items
         const menuItems = document.querySelectorAll('.left-content .menus');
         menuItems.forEach(item => item.classList.remove('active'));
+
+        // Add 'active' class to the clicked menu item
         targetElement.classList.add('active');
     } else {
         console.error('Target Heading not found:', targetId);
     }
 }
 
-// Event listener for scrolling to activate menu item
-window.addEventListener('scroll', activateMenuItem);
-
-// Event listener for clicking on menu items
 const menuContainer = document.querySelector('.left-content');
-menuContainer.addEventListener('click', function(event) {
-    if (event.target.classList.contains('menus')) {
-        scrollToHeading(event);
-    }
-});
+menuContainer.addEventListener('click', scrollToHeading);
+
+function activateMenuItem() {
+    const headings = document.querySelectorAll('.middle-content h3');
+    const menuItems = document.querySelectorAll('.left-content .menus');
+
+    headings.forEach((heading, index) => {
+        const bounding = heading.getBoundingClientRect();
+
+        if (
+            bounding.top >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        ) {
+
+            const menuItem = menuItems[index];
+            if (menuItem) {
+                menuItems.forEach(item => item.classList.remove('active'));
+                menuItem.classList.add('active');
+            }
+        }
+    });
+}
+
+activateMenuItem();
+
+window.addEventListener('scroll', activateMenuItem);
 </script>
 </body>
 </html>
